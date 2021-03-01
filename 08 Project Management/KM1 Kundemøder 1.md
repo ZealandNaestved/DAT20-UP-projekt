@@ -2,8 +2,9 @@
 
 **Hvem er vores kunde?:** Handelsøkonomerne - 2. semester - både hold A og B
 
-### Tiderne
+## Tiderne
 **Hvornår starter mødet?:** 9:10
+<br/>
 **Hvor lang tid er der sat af til møderne?:** 2 lektioner 9:10 - 10:50 (2 x 45 min med 10 minutters pause imellem)
 
 ## Hvilke mål har vi for mødet?:
@@ -21,6 +22,7 @@
 4. Hvad hvis der ikke er fuldt fremmøde for datamatikerne - ift vores planlægning?
 - Vi forbereder at grupperne kan gå op, selvom vi er i undertal (se anbefalet personantal ud for hver gruppe)
 
+<br/>
 <br/>
 
 ## Mødets forløb:

@@ -36,7 +36,7 @@
 
 
 
-![Image1](/imgGuidePullRequestMerge/img1.png)
+![Image1](https://github.com/sasaje/Test/blob/master/imgGuidePullRequestMerge/img1.png)
 
 Nu er der sendt en request om at MMadsen99 har oprettet en pull request, som han ønsker et review af på mail (den mail tilknyttet din GitHub konto). Her findes et link til den aktuelle pull request, som du skal review.
 
@@ -51,7 +51,7 @@ Tryk på ***“Review changes”***.
 Så kommer der en dropdown menu, hvori du skal tilføje eventuelle kommentarer du måtte have til det pågældende kode eller artefakt. 
 
 
-![Image2](/imgGuidePullRequestMerge/img4.png)
+![Image2](https://github.com/sasaje/Test/blob/master/imgGuidePullRequestMerge/img4.png)
 
 Vælg en af de følgende ***“Comment”***, ***“Approve”*** eller ***“Request Changes”***. 
 
@@ -59,12 +59,12 @@ Vælg en af de følgende ***“Comment”***, ***“Approve”*** eller ***“Re
 **COMMENT** vælges hvis der er kommentarer til det pågældende.  
 **REQUEST** CHANGES vælges hvis der skal foretages ændringer af den som har lavet pull requestet. 
  
-![Image3](/imgGuidePullRequestMerge/img3.png)
+![Image3](https://github.com/sasaje/Test/blob/master/imgGuidePullRequestMerge/img3.png)
 
 Tryk på ***“Merge pull request”***. 
 
 
-![Image4](/imgGuidePullRequestMerge/img5.png)
+![Image4](https://github.com/sasaje/Test/blob/master/imgGuidePullRequestMerge/img5.png)
 
 **“Create a merge commit”**	
 - Hvis man har lavet flere commits, bliver de alle sammen commited til masteren.
@@ -78,7 +78,7 @@ Tryk på ***“Merge pull request”***.
 VÆLG **ALTID** CREATE A MERGE COMMIT.
 
 
-![Image5](/imgGuidePullRequestMerge/img6.png)
+![Image5](https://github.com/sasaje/Test/blob/master/imgGuidePullRequestMerge/img6.png)
 
 **Husk** at delete din branch efter den er merged ind i masteren. 
 

@@ -17,12 +17,12 @@ Hvis det ønskes at intellij kun skal vise filer som er relevante for implementa
 - Ekstra step: Klik på Project (lige over projectstrukturvinduet) -> Packages, 
 
 
-- Klik Edit Configurations (Run -> Edit Configuration), tryk derefter på Modify options, og vælg “add VM options”, kopier nedenstående linje ind i feltet beskrevet som “vm options”, og erstat “[STI]” med stien til din downloadede javafx lib mappe. Tryk derefter på “OK”
-
---module-path
+- Klik Edit Configurations (Run -> Edit Configuration), tryk derefter på Modify options, og vælg “add VM options”, kopier følgende linje ind i feltet beskrevet som “vm options”, --module-path
 "[STI]\javafx-sdk-11.0.2\lib"
 --add-modules
-javafx.controls,javafx.fxml
+javafx.controls,javafx.fxml, og erstat “[STI]” med stien til din downloadede javafx lib mappe. Tryk derefter på “OK”
+
+
 
 
 - Ekstra step: Åben Main.java for at tjekke om der opstår fejl.

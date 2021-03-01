@@ -16,11 +16,14 @@ Hvis du ikke allerede har dem downloaded
 Hvis det ønskes at intellij kun skal vise filer som er relevante for implementationen følges næste skridt
 - Ekstra step: Klik på Project (lige over projectstrukturvinduet) -> Packages, 
 
-
-- Klik Edit Configurations (Run -> Edit Configuration), tryk derefter på Modify options, og vælg “add VM options”, kopier følgende linje ind i feltet beskrevet som “vm options”, ***--module-path
+- Klik Edit Configurations (Run -> Edit Configuration),tryk på det lille plus(+) i øverste venstre hjørne, og vælg "Application", i feltet benævnt "Main class" trykkes der shift+enter, hvorefter klassen "Main" vælges, tryk herefter ok. Tryk derefter på Modify options, og vælg “add VM options”, kopier følgende linje ind i feltet beskrevet som “vm options”, ***--module-path
 "[STI]\javafx-sdk-11.0.2\lib"
 --add-modules
-javafx.controls,javafx.fxml***, og erstat “[STI]” med stien til din downloadede javafx lib mappe. Tryk derefter på “OK”
+javafx.controls,javafx.fxml***, og erstat “[STI]” med stien til din downloadede javafx lib mappe. Tryk derefter på “OK”. Se eventuelt nedenstående billeder for før og efter dette step. 
+
+<img src="https://user-images.githubusercontent.com/70686136/109497439-57b18e00-7a92-11eb-994b-e12ab1046ba7.png" width="250" height="250"> <img src="https://user-images.githubusercontent.com/70686136/109497635-a3643780-7a92-11eb-9e3e-ef0f31fe10ec.png" width="250" height="250">
+
+
 
 
 
@@ -29,3 +32,4 @@ javafx.controls,javafx.fxml***, og erstat “[STI]” med stien til din download
 
 
     - Hvis den fejler, tjek om Intellij har importet JavaFX korrect.
+

@@ -8,9 +8,9 @@
 
 **Regler for gode navne**
 
-Navngiv branchen efter issue titlen + understreg + datoen for skabelse
-eksempel på dette kan ses nedenfor
-issueNavn_01/03/2021
+Navngiv branchen efter issue titlen.
+Et eksempel på dette kan ses nedenfor:
+issueNavn
 
 _Brug camelCase_
 

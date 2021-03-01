@@ -2,6 +2,10 @@
 
 **Hvem er vores kunde?:** Handelsøkonomerne - 2. semester - både hold A og B
 
+### Tiderne
+**Hvornår starter mødet?:** 9:10
+**Hvor lang tid er der sat af til møderne?:** 2 lektioner 9:10 - 10:50 (2 x 45 min med 10 minutters pause imellem)
+
 ## Hvilke mål har vi for mødet?:
 1. Byd kunden velkommen og tak dem for deres tid
 2. Afslut mødet med god stemning og afklaring fra begge parter
@@ -24,6 +28,8 @@ Vi starter med at 1-2 personer laver et use case diagram, mens 1 anden person sn
 
 
 Når vi har indsamlet use case diagram - så skal vi vælge de 2 vigtigste use cases at arbejde med - herefter splittes vi ud i 7 teams som fokusere på forskellige ting -  Det vigtige er at få indsamlet data i grupperne. Efter mødet kan vi færdiggøre disse opgaver. 
+
+<br/>
 
 ### Gruppe 1
 **Medlemmer:** Denne gruppe består af 3 eller flere medlemmer fra datamatiker og 3 til 4 medlemmer fra HØK holdet
@@ -74,28 +80,42 @@ Underopgaver:
 
 <br/>
 
-Gruppe 5 (usecase 2):
-aktivitetsdiagram
-	testcases (input/output til funktion)
-mockups af GUI (dem der indsamler mockups skal lave brugertest)
+### Gruppe 5 
+**Medlemmer:** Denne gruppe består af 3 eller flere medlemmer fra datamatiker og 3 til 5 medlemmer fra HØK holdet
+<br/>
+**Opgave:** Denne gruppe tager sig af USECASE 2
+<br/>
+**Underopgaver:**
+- Aktivitetsdiagram
+- Testcases (input/output til funktion)
+- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
-Gruppe 6 (usecase 2): 4+
-domænemodel
-	data ordbog
-	testcases (input/output til funktion)
-mockups af GUI (dem der indsamler mockups skal lave brugertest)
+<br/>
 
-Gruppe 7: 2+ dat
-	visionsdokument 
-	furps(+?)
+### Gruppe 6 
+**Medlemmer:** Denne gruppe består af 4 eller flere medlemmer fra datamatiker og 3 til 5 medlemmer fra HØK holdet
+<br/>
+**Opgave:** Denne gruppe tager sig af USECASE 2
+<br/>
+**Underopgaver:**
+- Domænemodel
+- Data ordbog
+- Testcases (input/output til funktion)
+- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
-Efterfølgende skal vi sammenligne holdenes usecase og aktivitetsdiagram?
-Hvor lang tid skal bruges på dette?
+<br/>
 
-Lav testcases færdige
+### Gruppe 7
+**Medlemmer:** Denne gruppe består af 2 eller flere medlemmer fra datamatiker og 3 til 5 medlemmer fra HØK holdet
+<br/>
+**Opgaver:**
+- Visionsdokument 
+- Furps+
 
-Målet er at alle tingene stemmer overens / Krydstjek af usecase 1 og 2
+<br/>
 
-Hvor lang tid er der sat af til møderne? - 2 lektioner 9:10 - 10:50
-Hvor lang tid er der sat af mellem møderne? 2 x 45 min med 10 i mellem
-Hvornår starter mødet? 9:10
+Efterfølgende skal vi sammenligne holdenes usecase og aktivitetsdiagrammer. Målet er at alle tingene stemmer overens (Krydstjek af usecase 1 og 2). Derudover skal vi bruge resten af lektionerne indtil det næste møde starter, på at lave alle opgaverne og underopgaverne færdige.
+
+
+
+

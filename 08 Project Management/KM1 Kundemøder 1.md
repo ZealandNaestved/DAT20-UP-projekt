@@ -17,6 +17,8 @@
 4. Hvad hvis der ikke er fuldt fremmøde for datamatikerne - ift vores planlægning?
 - Vi forbereder at grupperne kan gå op, selvom vi er i undertal (se anbefalet personantal ud for hver gruppe)
 
+<br/>
+
 ## Mødets forløb:
 Vi starter med at 1-2 personer laver et use case diagram, mens 1 anden person snakker med kunden på vegne af klassen om hvad kunden ønsker sig (ud fra hvilke informationer vi skal bruge i et usecase diagram, så vi kan lave et usecase diagram efter mødet) - Dette tager omkring 30-45 minutter
 
@@ -33,6 +35,8 @@ Når vi har indsamlet use case diagram - så skal vi vælge de 2 vigtigste use c
 - Indsamle testcases (input/output til funktion)
 - Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
+<br/>
+
 ### Gruppe 2 
 Medlemmer: Denne gruppe består af 3 eller flere medlemmer fra datamatiker og 3 til 5 medlemmer fra HØK holdet
 <br/>
@@ -43,16 +47,32 @@ Underopgaver:
 - Testcases (input/output til funktion)
 - Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
-Gruppe 3 (usecase 1): 4+
-	domænemodel
-	data ordbog
-	testcases (input/output til funktion)
-mockups af GUI (dem der indsamler mockups skal lave brugertest)
+<br/>
 
-Gruppe 4 (usecase 2):
-	usecase 
-testcases (input/output til funktion)
-mockups af GUI (dem der indsamler mockups skal lave brugertest)
+### Gruppe 3
+**Medlemmer:** Denne gruppe består af 4 eller flere medlemmer fra datamatiker og 3 til 4 medlemmer fra HØK holdet
+<br/>
+**Opgave:** Denne gruppe tager sig af USECASE 1
+<br/>
+**Underopgaver:**
+- Domænemodel
+- Data ordbog
+- Testcases (input/output til funktion)
+- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
+
+<br/>
+
+### Gruppe 4 
+**Medlemmer:** Denne gruppe består af 3 eller flere medlemmer fra datamatiker og 3 til 5 medlemmer fra HØK holdet
+<br/>
+**Opgave:** Denne gruppe tager sig af USECASE 2
+<br/>
+**Underopgaver:**
+- Usecase 
+- Testcases (input/output til funktion)
+- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
+
+<br/>
 
 Gruppe 5 (usecase 2):
 aktivitetsdiagram

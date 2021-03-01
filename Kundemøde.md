@@ -1,30 +1,35 @@
-**Planlægning af kundemøde**
+# Planlægning af kundemøde
 
 **Hvem er vores kunde?:** Handelsøkonomerne - 2. semester - både hold A og B
 
-**Hvilke mål har vi for mødet?:**
+## Hvilke mål har vi for mødet?:
 1. Byd kunden velkommen og tak dem for deres tid
 2. Afslut mødet med god stemning og afklaring fra begge parter
-2.a Remse op hvad kunden ønsker, så der ikke er nogen tvivl
+3. Remse op hvad kunden ønsker, så der ikke er nogen tvivl
 
-Plan B - mulige udfordringer:
-Zoom crasher
-Lav et teams rum inden zoom mødet, så man har en hurtig redning -  et link til dette rum sender vi til kunden inden vi mødes
-Kunden dukker ikke op
-Få Karsten til at kontakte dem med en ny aftale/dato
-Vi har problemer med at visualisere kundens ønsker
-(De viser os eksempelvis de værktøjer de bruger i forvejen, og hvad de godt kan lide ved dem)
-Hvad hvis der ikke er fuldt fremmøde for datamatikerne - ift vores planlægning?
-Vi forbereder at grupperne kan gå op, selvom vi er i undertal (se anbefalet personantal ud for hver gruppe)
+## Plan B - mulige udfordringer:
+1. Zoom crasher
+- Lav et teams rum inden zoom mødet, så man har en hurtig redning -  et link til dette rum sender vi til kunden inden vi mødes
+2. Kunden dukker ikke op
+- Få Karsten til at kontakte dem med en ny aftale/dato
+3. Vi har problemer med at visualisere kundens ønsker
+- (De viser os eksempelvis de værktøjer de bruger i forvejen, og hvad de godt kan lide ved dem)
+4. Hvad hvis der ikke er fuldt fremmøde for datamatikerne - ift vores planlægning?
+- Vi forbereder at grupperne kan gå op, selvom vi er i undertal (se anbefalet personantal ud for hver gruppe)
 
-Mødets forløb:
-Vi starter med at 1-2 personer laver et use case diagram, mens 1 anden person snakker med kunden på vegne af klassen om hvad kunden ønsker sig (ud fra hvilke informationer vi skal bruge i et usecase diagram, så vi kan lave et usecase diagram  efter mødet) (30-45 minutter)
+## Mødets forløb:
+Vi starter med at 1-2 personer laver et use case diagram, mens 1 anden person snakker med kunden på vegne af klassen om hvad kunden ønsker sig (ud fra hvilke informationer vi skal bruge i et usecase diagram, så vi kan lave et usecase diagram efter mødet) - Dette tager omkring 30-45 minutter
 
-Når vi har indsamlet use case diagram - så skal vi vælge de 2 vigtigste use cases at arbejde med -  herefter splittes vi ud i 7 teams som fokusere på forskellige ting 
-Gruppe 1 (usecase 1): 3+ personer dat / 3-4  høk
-	usecase 
-indsamle testcases (input/output til funktion)
-mockups af GUI (dem der indsamler mockups skal lave brugertest)
+
+Når vi har indsamlet use case diagram - så skal vi vælge de 2 vigtigste use cases at arbejde med - herefter splittes vi ud i 7 teams som fokusere på forskellige ting -  Det vigtige er at få indsamlet data i grupperne. Efter mødet kan vi færdiggøre disse opgaver. 
+
+### Gruppe 1
+Medlemmer: Denne gruppe består af 3 eller flere medlemmer fra datamatiker og 3 til 4 medlemmer fra HØK holdet
+Opgave: Denne gruppe tager sig af USECASE 1
+Underopgaver: 
+- Usecase
+- indsamle testcases (input/output til funktion)
+- mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
 Gruppe 2 (usecase 1):
 	aktivitetsdiagram

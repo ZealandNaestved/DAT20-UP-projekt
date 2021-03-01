@@ -24,17 +24,24 @@ Vi starter med at 1-2 personer laver et use case diagram, mens 1 anden person sn
 Når vi har indsamlet use case diagram - så skal vi vælge de 2 vigtigste use cases at arbejde med - herefter splittes vi ud i 7 teams som fokusere på forskellige ting -  Det vigtige er at få indsamlet data i grupperne. Efter mødet kan vi færdiggøre disse opgaver. 
 
 ### Gruppe 1
-Medlemmer: Denne gruppe består af 3 eller flere medlemmer fra datamatiker og 3 til 4 medlemmer fra HØK holdet
-Opgave: Denne gruppe tager sig af USECASE 1
-Underopgaver: 
+**Medlemmer:** Denne gruppe består af 3 eller flere medlemmer fra datamatiker og 3 til 4 medlemmer fra HØK holdet
+<br/>
+**Opgave:** Denne gruppe tager sig af USECASE 1
+<br/>
+**Underopgaver:**
 - Usecase
-- indsamle testcases (input/output til funktion)
-- mockups af GUI (dem der indsamler mockups skal lave brugertest)
+- Indsamle testcases (input/output til funktion)
+- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
-Gruppe 2 (usecase 1):
-	aktivitetsdiagram
-	testcases (input/output til funktion)
-mockups af GUI (dem der indsamler mockups skal lave brugertest)
+### Gruppe 2 
+Medlemmer: Denne gruppe består af 3 eller flere medlemmer fra datamatiker og 3 til 5 medlemmer fra HØK holdet
+<br/>
+Opgave: Denne gruppe tager sig af USECASE 1
+<br/>
+Underopgaver: 
+- Aktivitetsdiagram
+- Testcases (input/output til funktion)
+- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
 Gruppe 3 (usecase 1): 4+
 	domænemodel

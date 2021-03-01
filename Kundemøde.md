@@ -27,7 +27,7 @@ Når vi har indsamlet use case diagram - så skal vi vælge de 2 vigtigste use c
 Medlemmer: Denne gruppe består af 3 eller flere medlemmer fra datamatiker og 3 til 4 medlemmer fra HØK holdet
 Opgave: Denne gruppe tager sig af USECASE 1
 Underopgaver: 
-- Usecase
+- [ ] Usecase
 - indsamle testcases (input/output til funktion)
 - mockups af GUI (dem der indsamler mockups skal lave brugertest)
 

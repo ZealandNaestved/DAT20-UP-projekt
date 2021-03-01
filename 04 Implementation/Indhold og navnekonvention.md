@@ -1,3 +1,5 @@
-# Indhold
+# Kildekode
+Skriv generelle ting som navne på klasser (camelCase og ting som det).
+
 ## Intellj-projekt
-IP1 Intellj-projekt 1.md
+

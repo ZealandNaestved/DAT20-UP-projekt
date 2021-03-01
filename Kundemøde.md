@@ -1,11 +1,11 @@
 **Planlægning af kundemøde**
 
 **Hvem er vores kunde?:** Handelsøkonomerne - 2. semester - både hold A og B
-**
-**Hvilke mål har vi for mødet?: 
-Byd kunden velkommen og tak dem for deres tid
-Afslut mødet med god stemning og afklaring fra begge parter
-Remse op hvad kunden ønsker, så der ikke er nogen tvivl
+
+**Hvilke mål har vi for mødet?:**
+1. Byd kunden velkommen og tak dem for deres tid
+2. Afslut mødet med god stemning og afklaring fra begge parter
+2.a Remse op hvad kunden ønsker, så der ikke er nogen tvivl
 
 Plan B - mulige udfordringer:
 Zoom crasher

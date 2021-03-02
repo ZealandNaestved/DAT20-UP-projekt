@@ -13,7 +13,7 @@ WorkFlow for både IntelliJ og Github:
 
 Regler for pull requests:
 
-1 Skriv alt dokumentation på Dansk, så alle kan forstå hvad i skriver.
+1 Skriv alt dokumentation på Dansk, men hold filnavne engelsk, så alle kan forstå hvad i skriver (Følg de regler for sprog Anders har skrevet).
 
 2 Hav en god kommunikation, med den gruppe i vil lave en pull request med, hvis den anden gruppe ikke reagere, er det deres fejl.
 

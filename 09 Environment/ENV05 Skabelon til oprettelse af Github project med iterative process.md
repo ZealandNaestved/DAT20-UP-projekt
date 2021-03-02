@@ -34,12 +34,16 @@ Krydset af.
 Vores Igang skal have preset in progress men intet krydset af.
 
 Vores Afventer review skal have preset in progress:
+
 (pullrequest) Newly added 	(pullrequest)  reopened		(pullrequest)  pending approval by reviewer
+
 Krydset af.
 
 
 Vores Under review skal have preset in progress:
+
 (pullrequest)  Approved by reviewer
+
 Krydset af.
 
 Vores Afsluttet skal have preset Done, med alt krydset af

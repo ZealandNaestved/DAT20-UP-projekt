@@ -21,9 +21,7 @@ Hvis det ønskes at intellij kun skal vise filer som er relevante for implementa
 --add-modules
 javafx.controls,javafx.fxml***, og erstat “[STI]” med stien til din downloadede javafx lib mappe. Tryk derefter på “OK”. Se eventuelt nedenstående billeder for før og efter dette step. 
 
-![editrunfør](https://user-images.githubusercontent.com/70686136/109497439-57b18e00-7a92-11eb-994b-e12ab1046ba7.png)
-
-![editrunefter](https://user-images.githubusercontent.com/70686136/109497635-a3643780-7a92-11eb-9e3e-ef0f31fe10ec.png)
+<img src="https://user-images.githubusercontent.com/70686136/109497439-57b18e00-7a92-11eb-994b-e12ab1046ba7.png" width="250" height="250"> <img src="https://user-images.githubusercontent.com/70686136/109497635-a3643780-7a92-11eb-9e3e-ef0f31fe10ec.png" width="250" height="250">
 
 
 

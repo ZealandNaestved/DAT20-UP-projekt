@@ -1,4 +1,4 @@
-package sample;
+package hoekcel;
 
 public class Controller {
 }

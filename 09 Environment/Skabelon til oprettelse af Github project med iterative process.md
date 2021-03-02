@@ -18,7 +18,7 @@ Done
 I vores project bruger vi:
 To do
 Igang
-Afventer Review
+Afventer review
 Under review
 Afsluttet
 

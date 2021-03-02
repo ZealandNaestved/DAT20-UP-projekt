@@ -28,6 +28,9 @@
 ## Mødets forløb:
 Vi starter med at 1-2 personer laver et use case diagram, mens 1 anden person snakker med kunden på vegne af klassen om hvad kunden ønsker sig (ud fra hvilke informationer vi skal bruge i et usecase diagram, så vi kan lave et usecase diagram efter mødet) - Dette tager omkring 30-45 minutter
 
+Mødeleder: Fredrik
+Use case-diagram: Patrick
+
 
 Når vi har indsamlet use case diagram - så skal vi vælge de 2 vigtigste use cases at arbejde med - herefter splittes vi ud i 7 teams som fokusere på forskellige ting -  Det vigtige er at få indsamlet data i grupperne. Efter mødet kan vi færdiggøre disse opgaver. 
 
@@ -39,9 +42,9 @@ Når vi har indsamlet use case diagram - så skal vi vælge de 2 vigtigste use c
 **Opgave:** Denne gruppe tager sig af USECASE 1
 <br/>
 **Underopgaver:**
-- Usecase
-- Indsamle testcases (input/output til funktion)
-- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
+- Mikkel A: Usecase
+- Chilas: Indsamle testcases (input/output til funktion)
+- Daniella: Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
 <br/>
 
@@ -51,9 +54,9 @@ Medlemmer: Denne gruppe består af 3 eller flere medlemmer fra datamatiker og 3 
 Opgave: Denne gruppe tager sig af USECASE 1
 <br/>
 Underopgaver: 
-- Aktivitetsdiagram
-- Testcases (input/output til funktion)
-- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
+- Lasse: Aktivitetsdiagram
+- Gustav: Testcases (input/output til funktion)
+- Sara: Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
 <br/>
 
@@ -63,10 +66,10 @@ Underopgaver:
 **Opgave:** Denne gruppe tager sig af USECASE 1
 <br/>
 **Underopgaver:**
-- Domænemodel
-- Data ordbog
-- Testcases (input/output til funktion)
-- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
+- Mathias: Domænemodel
+- Louise: Data ordbog
+- Andreas: Testcases (input/output til funktion)
+- Jenna: Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
 <br/>
 
@@ -76,9 +79,9 @@ Underopgaver:
 **Opgave:** Denne gruppe tager sig af USECASE 2
 <br/>
 **Underopgaver:**
-- Usecase 
-- Testcases (input/output til funktion)
-- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
+- Usamah: Usecase 
+- Mikkel B: Testcases (input/output til funktion)
+- Danijel: Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
 <br/>
 
@@ -88,9 +91,9 @@ Underopgaver:
 **Opgave:** Denne gruppe tager sig af USECASE 2
 <br/>
 **Underopgaver:**
-- Aktivitetsdiagram
-- Testcases (input/output til funktion)
-- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
+- Mike: Aktivitetsdiagram
+- ???: Testcases (input/output til funktion)
+- Deniz: Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
 <br/>
 
@@ -100,10 +103,10 @@ Underopgaver:
 **Opgave:** Denne gruppe tager sig af USECASE 2
 <br/>
 **Underopgaver:**
-- Domænemodel
-- Data ordbog
-- Testcases (input/output til funktion)
-- Mockups af GUI (dem der indsamler mockups skal lave brugertest)
+- Kim: Domænemodel
+- Anders L: Data ordbog
+- ???: Testcases (input/output til funktion)
+- Fredrik: Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
 <br/>
 
@@ -111,8 +114,8 @@ Underopgaver:
 **Medlemmer:** Denne gruppe består af 2 eller flere medlemmer fra datamatiker og 3 til 5 medlemmer fra HØK holdet
 <br/>
 **Opgaver:**
-- Visionsdokument 
-- Furps+
+- Asta: Visionsdokument 
+- Lukas: Supplerende kravspecifikation (FURPS+)
 
 <br/>
 

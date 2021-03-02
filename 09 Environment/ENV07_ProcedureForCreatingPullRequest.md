@@ -13,13 +13,12 @@
 
 ## Regler for pull requests: ##
 
-1. Skriv alt dokumentation på Dansk, men hold filnavne engelsk, så alle kan forstå hvad i skriver (Følg de regler for sprog Anders har skrevet).
-
-2. Hav en god kommunikation, med den gruppe i vil lave en pull request med.
-
-3. Sørg for at det hele er gennemgået og godkendt i gruppen, så i ikke skal lave unødvendige requests, der kan forstyrre den anden gruppe, med hvad de nu engang har gang i.
+1. Skriv alt dokumentation på dansk, men hold filnavne engelsk.
 
 
+2. Sørg for at det hele er gennemgået og godkendt i gruppen, så i ikke skal lave unødvendige requests, der kan forstyrre den anden gruppe, med hvad de nu engang har gang i.
+
+  2,1. 
 
 ## Lav pull request gennem IntelliJs Git: (Se billederne under) ##
 
@@ -28,11 +27,11 @@
 ![Image1](https://github.com/Dani025a/pullrequestpic/blob/main/Billede1.png)
 ![Image2](https://github.com/Dani025a/pullrequestpic/blob/main/Billede2.png)
 
-2. Du kan lave en pull request ved at trykke på Git, Github og derefter Create Pull Request
+2. Du kan lave en pull request ved at trykke på Git, Github og derefter Create Pull Request.
 
 ![Image3](https://github.com/Dani025a/pullrequestpic/blob/main/Billede3.png)
 
-3. Efter kan du vælge branchen du ønsker at lave en pull request til, titel og beskrivelse. Når du er færdig med at vælge så kan du trykke ”OK”
+3. Efter kan du vælge branchen du ønsker at lave en pull request til, titel og beskrivelse. Når du er færdig med at vælge så kan du trykke ”OK”.
 
 
 ![Image4](https://github.com/Dani025a/pullrequestpic/blob/main/Billede4.png)
@@ -52,11 +51,11 @@
 
 ![Image7](https://github.com/Dani025a/pullrequestpic/blob/main/Billede8.png)
 
-3. Du kan nu vælge om du ønsker at lave en ny branch og commit eller commit i den samme branch
+3. Du kan nu vælge om du ønsker at lave en ny branch og commit eller commit i den samme branch.
 
 ![Image8](https://github.com/Dani025a/pullrequestpic/blob/main/Billede9.png)
 
-4. Du går nu ind på pull request og new pull request
+4. Du går nu ind på pull request og new pull request.
 
 ![Image9](https://github.com/Dani025a/pullrequestpic/blob/main/Billede10.png)
 
@@ -64,6 +63,6 @@
  
 ![Image10](https://github.com/Dani025a/pullrequestpic/blob/main/Billede11.png)
 
-6. Her kan du tilføje Co-author ved at skrive “@Github_brugernavn”
+6. Her kan du tilføje Co-author ved at skrive “@Github_brugernavn”.
  
 ![Image11](https://github.com/Dani025a/pullrequestpic/blob/main/Billede12.png)

@@ -18,10 +18,15 @@ _Brug camelCase_
 
 1. Åben repository
 2. Tryk på Master Branch knappen.
+
    ![CreateBranchGithub](../assets/branchingProcedure/CreateBranchGithub.png)
+
 3. Giv branchen et meningsfuldt navn. Følg Regler for gode navne.
+
    ![CreateBranchGithub](../assets/branchingProcedure/CreateBranchGithub2.png)
+
 4. Tryk på “Create” Knappen.
+
    ![CreateBranchGithub](../assets/branchingProcedure/CreateBranchGithub3.png)
 
 <br>
@@ -85,7 +90,9 @@ git push origin [branch_name]
 **Slet Branch gennem IntelliJ**
 
 1. Klip på branch knappen.
+
    ![CreateBranchGithub](../assets/branchingProcedure/CreateBranchIntelliJ.png)
+
 2. Find feature branchen som skal slettes. og klik på delete.
 
 ![DeleteBranchIntelliJ](../assets/branchingProcedure/deleteBranchIntelliJbranch.png)

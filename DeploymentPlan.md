@@ -12,4 +12,4 @@
 <br/>
 1. Der skal laves en klasse der kalder Main klassen
 
-![Opret klasse](../assets/JarDeployment/Billed1.png)
+![Opret klasse](../assets/JarDeployment/Billede1.png)

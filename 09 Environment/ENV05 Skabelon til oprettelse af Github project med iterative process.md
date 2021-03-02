@@ -2,11 +2,13 @@ Skabelon til oprettelse af Github project med iterative process
 
 Oprettelse:
 Du kan oprette dit project direkte I det github repository som dit project tilhører.
+
 I fanebladene som ligger under projekt navn og organization er der en fane kaldet “projects”,
 ved at klikke på denne får man overblik over åbne og lukkede projekter til repoet, for at oprette et nyt trykkes der på “New project” over oversigts vinduet.
 
-Efter du har valgt “new project” skal du give projektet et navn, regler for håndtering af kolonner og evt. En description. “Templates” er de regler som vi giver til projektet og vi kommer til at bruge
-“Automated Kanban with reviews”, hver template har en forklaring på hvad de gør.
+Efter du har valgt “new project” skal du give projektet et navn, regler for håndtering af kolonner og evt. En description. “Templates” er de regler som vi giver til projektet og vi kommer til at bruge “Automated Kanban with reviews”.
+
+hver template har en forklaring på hvad de gør.
 Hvis ingen template vælges bliver et projekt uden kolonner og automatiserede function oprettet.
  
 Tilrettelse af kolonner:

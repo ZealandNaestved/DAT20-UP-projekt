@@ -10,18 +10,32 @@ Efter du har valgt “new project” skal du give projektet et navn, regler for 
 
 hver template har en forklaring på hvad de gør.
 Hvis ingen template vælges bliver et projekt uden kolonner og automatiserede function oprettet.
- 
+
+<details>
+<summary> billede eksempler</summary>
+</details>
 Tilrettelse af kolonner:
-Som udgangspunkt vil “Kanban with Automated reviews” lave 4 kolonner, 
-To do 
-Assigned 
-Reviews 
-Done
-I vores project bruger vi:
+Som udgangspunkt vil “Kanban with Automated reviews” lave 4 kolonner,
+
 To do
+
+Assigned 
+
+Reviews 
+
+Done
+
+
+**I vores project bruger vi:**
+
+To do
+
 Igang
+
 Afventer review
+
 Under review
+
 Afsluttet
 
 Hvis det klikkes på manage knappen nederst I en kolonne kan redigere reglerne for den kolonne. 

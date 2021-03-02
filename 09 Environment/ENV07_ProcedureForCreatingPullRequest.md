@@ -2,7 +2,7 @@
 
 1. Send pull request (se billederne nedenunder i guiden).
 
-2. Beskrev hvem der har lavet hvad.
+2. Beskriv hvem der har lavet hvad.
 
 3. Hav mindst en i gruppen, som kan være med til at lave et review så alt der skal forklares, eller rettes på, kan blive nedskrevet.
 
@@ -17,7 +17,7 @@
 
 2. Husk at opdatere din branch i forhold til main, inden du laver en pull request. 
 
-3. Sørg for at det hele er gennemgået og godkendt i gruppen, så i ikke skal lave unødvendige requests, der kan forstyrre den anden gruppe, med hvad de nu engang har gang i.
+3. Sørg for at det hele er gennemgået og godkendt i gruppen, så i ikke skal lave unødvendige requests.
 
 ## Update  branch i forhold til main ##
 Du kan se om din branch er opdateret i forhold til main her:

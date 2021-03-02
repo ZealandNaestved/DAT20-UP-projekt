@@ -28,22 +28,17 @@ Hvis det klikkes på manage knappen nederst I en kolonne kan redigere reglerne f
 OBS. 2 kolonner kan ikke have de same regler krydset af.
 Presets er skabelonen for de regler er tilhører og uden preset har en kolonne ingen regler.
 
-Vores To Do skal have preset  To Do:	Newly added	reopened
+* Vores To Do skal have preset  To Do:
+  -	(issues)Newly added,	(issues)reopened
 Krydset af.
 
-Vores Igang skal have preset in progress men intet krydset af.
+* Vores Igang skal have preset in progress men intet krydset af.
 
-Vores Afventer review skal have preset in progress:
-
-(pullrequest) Newly added 	(pullrequest)  reopened		(pullrequest)  pending approval by reviewer
-
-Krydset af.
+* Vores Afventer review skal have preset in progress:
+  - (pullrequest) Newly added 	(pullrequest)  reopened		(pullrequest)  pending approval by reviewer krydset af.
 
 
-Vores Under review skal have preset in progress:
+* Vores Under review skal have preset in progress:
+  - (pullrequest)  Approved by reviewer krydset af.
 
-(pullrequest)  Approved by reviewer
-
-Krydset af.
-
-Vores Afsluttet skal have preset Done, med alt krydset af
+* Vores Afsluttet skal have preset Done, med alt krydset af

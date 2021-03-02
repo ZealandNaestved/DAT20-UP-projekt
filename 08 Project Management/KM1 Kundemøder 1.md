@@ -92,7 +92,7 @@ Underopgaver:
 <br/>
 **Underopgaver:**
 - Mike: Aktivitetsdiagram
-- ???: Testcases (input/output til funktion)
+- Anders J: Testcases (input/output til funktion)
 - Deniz: Mockups af GUI (dem der indsamler mockups skal lave brugertest)
 
 <br/>

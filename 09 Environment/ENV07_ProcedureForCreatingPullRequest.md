@@ -15,12 +15,29 @@
 
 1. Skriv alt dokumentation på dansk, men hold filnavne engelsk.
 
+2. Husk at opdatere din branch i forhold til main, inden du laver en pull request. 
 
-2. Sørg for at det hele er gennemgået og godkendt i gruppen, så i ikke skal lave unødvendige requests, der kan forstyrre den anden gruppe, med hvad de nu engang har gang i.
+3. Sørg for at det hele er gennemgået og godkendt i gruppen, så i ikke skal lave unødvendige requests, der kan forstyrre den anden gruppe, med hvad de nu engang har gang i.
 
-  2,1. 
+## Update  branch i forhold til main ##
+Du kan se om din branch er opdateret i forhold til main her:
 
-## Lav pull request gennem IntelliJs Git: (Se billederne under) ##
+![Image14](https://github.com/Dani025a/pullrequestpic/blob/main/billede15.PNG)
+
+1. Du går ind på "pull request" og derefter "New Pull Request".
+
+2. Du vælger nu den branch du vil opdatere og trykker "Create Pull Request" (HUSK MAIN SKAL VÆRE I HØJRE SIDE OG BRANCHEN I VENSTRE!).
+
+
+![Image12](https://github.com/Dani025a/pullrequestpic/blob/main/Billed13.PNG)
+
+3. til sidst skal du merge din pull request.
+
+![Image13](https://github.com/Dani025a/pullrequestpic/blob/main/Billede14.PNG)
+
+
+
+## Lav pull request gennem IntelliJs Git: ##
 
 1. Commit dit projekt undervejs og skriv kommentarer.
 
@@ -40,7 +57,7 @@
 
 ![Image5](https://github.com/Dani025a/pullrequestpic/blob/main/Billede6.png)
 
-## Lav pull request gennem Github hjemmeside: Se billederne under. ## 
+## Lav pull request gennem Github hjemmeside: ## 
 
 1. Vælg den branch du ønsker at redigere ved.
 
@@ -65,4 +82,4 @@
 
 6. Her kan du tilføje Co-author ved at skrive “@Github_brugernavn”.
  
-![Image11](https://github.com/Dani025a/pullrequestpic/blob/main/Billede12.png)
+![Image11](https://github.com/Dani025a/pullrequestpic/blob/main/Bilede12.png)

@@ -64,6 +64,6 @@
  
 ![Image10](https://github.com/Dani025a/pullrequestpic/blob/main/Billede11.png)
 
-6. Her kan du tilføje Co-author ved at skrive “Co-authored-by: (githubname) (email)”
+6. Her kan du tilføje Co-author ved at skrive “@Github_brugernavn”
  
 ![Image11](https://github.com/Dani025a/pullrequestpic/blob/main/Billede12.png)

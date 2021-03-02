@@ -6,8 +6,11 @@ Du kan oprette dit project direkte I det github repository som dit project tilh�
 I fanebladene som ligger under projekt navn og organization er der en fane kaldet “projects”,
 ved at klikke på denne får man overblik over åbne og lukkede projekter til repoet, for at oprette et nyt trykkes der på “New project” over oversigts vinduet.
 
+
 <details>
 <summary> billede eksempler</summary>
+  
+  ![CreateBranchGithub](../assets/ProjectSkabelonAssets/56d5e3ebc74acad9bdd40adedc4d55fb.png)
 </details>
 
 Efter du har valgt “new project” skal du give projektet et navn, regler for håndtering af kolonner og evt. En description. “Templates” er de regler som vi giver til projektet og vi kommer til at bruge “Automated Kanban with reviews”.

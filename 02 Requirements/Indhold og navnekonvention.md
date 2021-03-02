@@ -1,7 +1,0 @@
-# Indhold
-
-## Use-cases
-
-## Aktivitetsdiagrammer
-
-

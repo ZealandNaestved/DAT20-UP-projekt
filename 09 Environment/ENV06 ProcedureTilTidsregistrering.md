@@ -1,8 +1,9 @@
 
 
 **Tidsregistering skal udfyldes på følgende måde:**
-- Indtast Dato,samt antal timer du har brugt på Aktivitet(er)
-- Beskriv Aktivitet
+- Indtast Dato 
+- Indtast antal timer du har brugt på Aktivitet(er)
+- Beskriv Aktivitet(er)
 - Vælg Disciplin ud fra den prædefinerede liste
 - Vælg rolle ud fra den prædefinerede liste
 

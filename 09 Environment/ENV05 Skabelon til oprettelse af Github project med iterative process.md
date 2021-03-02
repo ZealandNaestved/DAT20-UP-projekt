@@ -17,6 +17,8 @@ Efter du har valgt “new project” skal du give projektet et navn, regler for 
 
 <details>
 <summary> billede eksempler</summary>
+  
+ ![CreateBranchGithub](../assets/ProjectSkabelonAssets/dc9b192f11714a2e550c3636a68fc989.png)
 </details>
 
 hver template har en forklaring på hvad de gør.
@@ -34,10 +36,6 @@ Reviews
 
 Done
 
-<details>
-<summary> billede eksempler</summary>
-</details>
-
 
 **I vores project bruger vi:**
 
@@ -51,10 +49,6 @@ Under review
 
 Afsluttet
 
-<details>
-<summary> billede eksempler</summary>
-  
-</details>
 
 Hvis det klikkes på manage knappen nederst I en kolonne kan redigere reglerne for den kolonne. 
 OBS. 2 kolonner kan ikke have de same regler krydset af.
@@ -64,13 +58,49 @@ Presets er skabelonen for de regler er tilhører og uden preset har en kolonne i
   -	(issues)Newly added,	(issues)reopened
 Krydset af.
 
+<details>
+<summary> billede eksempler</summary>
+  
+   ![CreateBranchGithub](../assets/ProjectSkabelonAssets/3a581020ff27ae6de4850f7a1a6ca4b7.png)
+  
+</details>
+
 * Vores Igang skal have preset in progress men intet krydset af.
+
+<details>
+<summary> billede eksempler</summary>
+  
+   ![CreateBranchGithub](../assets/ProjectSkabelonAssets/4b24545b2a56f04d1508f6e07074e9dd.png)
+  
+</details>
 
 * Vores Afventer review skal have preset in progress:
   - (pullrequest) Newly added 	(pullrequest)  reopened		(pullrequest)  pending approval by reviewer krydset af.
 
+<details>
+<summary> billede eksempler</summary>
+  
+   ![CreateBranchGithub](../assets/ProjectSkabelonAssets/b9a65880fbfe3cd85d9294cf3db0bcfb.png)
+
+  
+</details>
 
 * Vores Under review skal have preset in progress:
   - (pullrequest)  Approved by reviewer krydset af.
 
+
+<details>
+<summary> billede eksempler</summary>
+  
+   ![CreateBranchGithub](../assets/ProjectSkabelonAssets/1c29c7e1b680967d7f9f3960ce953bd1.png)
+ 
+</details>
+
 * Vores Afsluttet skal have preset Done, med alt krydset af
+
+
+<details>
+<summary> billede eksempler</summary>
+  
+   ![CreateBranchGithub](../assets/ProjectSkabelonAssets/5d9268ef47761d142305f31e7184a3f1.png)
+</details>

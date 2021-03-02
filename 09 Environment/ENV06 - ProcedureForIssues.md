@@ -9,7 +9,8 @@
 
 
 For at skabe en issue kan du hurtigt hoppe ind i “Issues” og skabe en ny issue dog skal du lige huske at til højre skal du sætte det projekt den skal hænges på, eller du kan også gå ind i “Projects” og skabe en ny note og så konvertere den til en issue.
-<br/>
+
+
 
 ### Guide
 
@@ -37,7 +38,7 @@ For at skabe en issue kan du hurtigt hoppe ind i “Issues” og skabe en ny iss
 
   - Hvis du så klikker på titlen til højre vil den åbne en ny fane med din issue
 
-<br/>
+
 
 2. **Add issue gennem Issues**
 
@@ -56,7 +57,7 @@ For at skabe en issue kan du hurtigt hoppe ind i “Issues” og skabe en ny iss
 
 -  Derefter kan du Submit new issue
 
-<br/>
+
 
 ###### Ekstra
 

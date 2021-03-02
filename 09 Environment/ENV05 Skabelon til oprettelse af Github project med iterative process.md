@@ -6,14 +6,20 @@ Du kan oprette dit project direkte I det github repository som dit project tilh�
 I fanebladene som ligger under projekt navn og organization er der en fane kaldet “projects”,
 ved at klikke på denne får man overblik over åbne og lukkede projekter til repoet, for at oprette et nyt trykkes der på “New project” over oversigts vinduet.
 
-Efter du har valgt “new project” skal du give projektet et navn, regler for håndtering af kolonner og evt. En description. “Templates” er de regler som vi giver til projektet og vi kommer til at bruge “Automated Kanban with reviews”.
+<details>
+<summary> billede eksempler</summary>
+</details>
 
-hver template har en forklaring på hvad de gør.
-Hvis ingen template vælges bliver et projekt uden kolonner og automatiserede function oprettet.
+Efter du har valgt “new project” skal du give projektet et navn, regler for håndtering af kolonner og evt. En description. “Templates” er de regler som vi giver til projektet og vi kommer til at bruge “Automated Kanban with reviews”.
 
 <details>
 <summary> billede eksempler</summary>
 </details>
+
+hver template har en forklaring på hvad de gør.
+Hvis ingen template vælges bliver et projekt uden kolonner og automatiserede function oprettet.
+
+
 Tilrettelse af kolonner:
 Som udgangspunkt vil “Kanban with Automated reviews” lave 4 kolonner,
 
@@ -24,6 +30,10 @@ Assigned
 Reviews 
 
 Done
+
+<details>
+<summary> billede eksempler</summary>
+</details>
 
 
 **I vores project bruger vi:**
@@ -37,6 +47,11 @@ Afventer review
 Under review
 
 Afsluttet
+
+<details>
+<summary> billede eksempler</summary>
+  
+</details>
 
 Hvis det klikkes på manage knappen nederst I en kolonne kan redigere reglerne for den kolonne. 
 OBS. 2 kolonner kan ikke have de same regler krydset af.

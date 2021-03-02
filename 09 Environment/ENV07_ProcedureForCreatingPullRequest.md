@@ -1,27 +1,27 @@
-WorkFlow for både IntelliJ og Github: 
+ ## Procedure til oprettelse af pull request for både IntelliJ og Github: ##
 
-1 Send pull request (se billederne nedenunder i guiden).
+1. Send pull request (se billederne nedenunder i guiden).
 
-2 Beskrev hvem der har lavet hvad.
+2. Beskrev hvem der har lavet hvad.
 
-3 Hav mindst en i gruppen, som kan være med til at lave et review så alt der skal forklares, eller rettes på, kan blive nedskrevet.
+3. Hav mindst en i gruppen, som kan være med til at lave et review så alt der skal forklares, eller rettes på, kan blive nedskrevet.
 
-4 Spørg om feedback, så i er sikre på at jeres arbejde stemmer overens med de andre grupper.
-
-
-
-
-Regler for pull requests:
-
-1 Skriv alt dokumentation på Dansk, men hold filnavne engelsk, så alle kan forstå hvad i skriver (Følg de regler for sprog Anders har skrevet).
-
-2 Hav en god kommunikation, med den gruppe i vil lave en pull request med.
-
-3 Sørg for at det hele er gennemgået og godkendt i gruppen, så i ikke skal lave unødvendige requests, der kan forstyrre den anden gruppe, med hvad de nu engang har gang i.
+4. Spørg om feedback, så i er sikre på at jeres arbejde stemmer overens med de andre grupper.
 
 
 
-Lav pull request gennem IntelliJs Git: Se billdere under.
+
+## Regler for pull requests: ##
+
+1. Skriv alt dokumentation på Dansk, men hold filnavne engelsk, så alle kan forstå hvad i skriver (Følg de regler for sprog Anders har skrevet).
+
+2. Hav en god kommunikation, med den gruppe i vil lave en pull request med.
+
+3. Sørg for at det hele er gennemgået og godkendt i gruppen, så i ikke skal lave unødvendige requests, der kan forstyrre den anden gruppe, med hvad de nu engang har gang i.
+
+
+
+## Lav pull request gennem IntelliJs Git: (Se billederne under) ##
 
 1. Commit dit projekt undervejs og skriv kommentarer.
 
@@ -41,7 +41,7 @@ Lav pull request gennem IntelliJs Git: Se billdere under.
 
 ![Image5](https://github.com/Dani025a/pullrequestpic/blob/main/Billede6.png)
 
-Lav pull request gennem Github hjemmeside: Se billderne under. 
+## Lav pull request gennem Github hjemmeside: Se billderne under. ## 
 
 1. Vælg den branch du ønsker at redigere ved.
 
@@ -64,6 +64,6 @@ Lav pull request gennem Github hjemmeside: Se billderne under.
  
 ![Image10](https://github.com/Dani025a/pullrequestpic/blob/main/Billede11.png)
 
- 6. Her kan du tilføje Co-author ved at skrive “Co-authored-by: (githubname) (email)”
+6. Her kan du tilføje Co-author ved at skrive “Co-authored-by: (githubname) (email)”
  
 ![Image11](https://github.com/Dani025a/pullrequestpic/blob/main/Billede12.png)

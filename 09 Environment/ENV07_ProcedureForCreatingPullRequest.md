@@ -41,7 +41,7 @@
 
 ![Image5](https://github.com/Dani025a/pullrequestpic/blob/main/Billede6.png)
 
-## Lav pull request gennem Github hjemmeside: Se billderne under. ## 
+## Lav pull request gennem Github hjemmeside: Se billederne under. ## 
 
 1. Vælg den branch du ønsker at redigere ved.
 

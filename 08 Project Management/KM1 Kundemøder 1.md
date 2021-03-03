@@ -6,6 +6,7 @@
 **Hvornår starter mødet?:** 9:10
 <br/>
 **Hvor lang tid er der sat af til møderne?:** 2 lektioner 9:10 - 10:50 (2 x 45 min med 10 minutters pause imellem)
+<br/>
 **Zoom-link: https://zealand.zoom.us/j/61503119232
 
 ## Hvilke mål har vi for mødet?:

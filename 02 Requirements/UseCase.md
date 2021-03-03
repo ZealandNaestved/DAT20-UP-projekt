@@ -43,7 +43,7 @@ Programmet beregner markedsføringsbidrag ved at subtraherer bruttofortjeneste m
 
 Handelsøkonomen åbner programmet.
 
-Handelsøkonomen indtaster de vigtige afskrivninger (Tallene er kun i tusinder)
+Handelsøkonomen indtaster de vigtige afskrivninger (Tallene er kun i tusinder.)
 
 Excel arket (programmet) beregner resultat før renter.
 

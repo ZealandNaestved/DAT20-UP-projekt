@@ -11,4 +11,3 @@ Excel arket (programmet) beregner resultat før renter.
 ### **Alternative flow**
 
 Handelsøkonomen åbner programmet. Handelsøkonomen indtaster afskrivninger. Tallene som bliver indtastet bliver lavet om til tusinder af programmet. Programmet beregner resultat før renter ved at subtrahere afskrivninger med indtjeningsbidrag.
-

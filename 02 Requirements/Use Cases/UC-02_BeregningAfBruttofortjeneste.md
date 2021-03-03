@@ -1,12 +1,3 @@
-##
-
-| Scope: HØK projektNiveau: bruger målPrimær aktør: HØK studerendeInteressenters interesse:
-- Resultatopgørelsen for et bestemt år skal kunne gemmes som excel ark ved et klik på en knap.
-- Resultatopgørelsen skal være opstillet med alle værdier og udregninger således at det nemt kan tages i brug efterfølgende.
-- Excel arket med resultatopgørelsen skal være pænt opstillet.
- |
-| --- |
-
 # UC-02 Beregning af bruttofortjeneste
 
 ### **Main succeskriterier (Basis flow).**

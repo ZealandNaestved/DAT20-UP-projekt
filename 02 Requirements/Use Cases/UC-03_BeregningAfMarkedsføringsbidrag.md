@@ -13,4 +13,3 @@ Programmet viser alle udregninger pænt stillet op, inkl. Bruttofortjeneste, mar
 Handelsøkonomen åbner programmet. Handelsøkonom indtaster nøgletallene. Tallene som bliver indtastet bliver lavet om til tusinder af programmet.
 
 Programmet beregner markedsføringsbidrag ved at subtraherer bruttofortjeneste med salgsfremmende omkostninger. Excel arket (programmet) giver resultatet markedsføring bidrag
-

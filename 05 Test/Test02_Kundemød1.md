@@ -1,4 +1,4 @@
-## Test scenario 1
+## Test scenarie 1
 
 **Test scenarie beskrivelse**
 
@@ -33,7 +33,7 @@
 
 > TODO
 
-## Test scenario 2
+## Test scenarie 2
 
 **Test scenarie beskrivelse**
 
@@ -68,7 +68,7 @@
 
 > TODO
 
-## Test scenario 3
+## Test scenarie 3
 
 **Test scenarie beskrivelse**
 

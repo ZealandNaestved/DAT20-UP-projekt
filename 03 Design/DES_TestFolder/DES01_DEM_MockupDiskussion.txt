@@ -1,0 +1,23 @@
+Julie:
+
+Kan man direkte skrive omsætningen, ja det man kan godt - man skal bare ikke trykke overfør.
+Løn skal ikke med i vareforbrug. (Kommer først med i kontant kapacitets)
+Markedsføringsomkostninger skal hellere ikke med.
+Vareforbrug er hvad der kommer med i produktionen.
+
+Nogen ting skal man manuelt tilføje til balancebudgettet, nogle ting er automatisk.
+
+Resultatopgørelse er fint nok.
+
+Fane som kan man skrive ting i kvalitetsbudgettet - for jeg mener at man skal bruge mange oplysninger fra kvalitetsbudgettet for at kunne generere en balancebudget.
+
+Det kunne være meget smart, at kunne sætte flere resultatopgørelser op ad hinanden på flere år - og endda skrive hvilket år man førihen arbejdet. Årene skal samles, så resultatopgørelsen, balancen og nøgletal burde vises samlet.
+
+Kommentarfelter er ret fedt, at have - da man skal kommenter ned ændringer og lignende.
+
+Tilføje/fjerne rækker, da der er forholdsvis MANGE ting som man skal tilføje i resultatsopgørelsen.
+
+Gule er værdier som man indtaster, mens de grønne farver er summen af de gule.
+
+Lange kommentarer? Forholdsvis kort, maximum et par sætninger.
+

@@ -41,49 +41,61 @@ Tekst kan ikke benyttes. Du skal angive et heltal.
 
 
 ### TestCase06: Tallet nul
+Bruttofortjenesten er 1.000.000, hvilket vises som 1.000 i feltet for bruttofortjeneste
 **Input** 0
 
-**Output**
+**Output** 1.000
 <br><br>
 
 
 ### TestCase07: Tal mindre end tusind, enere
+Bruttofortjenesten er 1.000.000, hvilket vises som 1.000 i feltet for bruttofortjeneste
 **Input** 2
 
-**Output**
+**Output** 1.000
 <br><br>
 
 
 ### TestCase08: Tal mindre end tusind, tiere
+Bruttofortjenesten er 1.000.000
 **Input** 28
 
-**Output**
+**Output** 1.000
 <br><br>
 
 
-### TestCase09: Tal mindre end tusind, hundrede (som rundes op)
+### TestCase09: Tal mindre end tusind, hundrede (som rundes ned)
+Bruttofortjenesten er 1.000.000
 **Input** 917
 
-**Output**
+**Output** 999
 <br><br>
 
 
-### TestCase09:  Tal mindre end tusind, hundrede (som rundes ned)
+### TestCase09: Tal mindre end tusind, hundrede (som rundes ned)
 **Input** 312
 
-**Output**
+**Output** 1.000
 <br><br>
 
 
-### TestCase10:
+### TestCase10: Procenttegn
 **Input** %
 
 **Output**  Tegn kan ikke benyttes. Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet). 
 <br><br>
 
 
-### TestCase11:
-**Input** 
+### TestCase11: Input er større end bruttofortjeneste
+Bruttofortjenesten er 1.000.000
+**Input** 2000000
 
-**Output**
+**Output** -1.000
 <br><br>
+
+
+### TestCase12: Input er mindre end bruttofortjeneste
+Bruttofortjenesten er 1.000.000
+**Input** 800000
+
+**Output** 200

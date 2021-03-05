@@ -14,8 +14,6 @@ Programmet skal smide en fejlmeddelelse, der fortæller brugeren, at han har gjo
 | Der skal ikke godkendes bogstaver    | Checker om input felterne udelukkende indeholder tal | ABCdef    | String    | False              |
 | Der skal ikke godkendes tomme felter | Checker om input felterne udelukkende indeholder tal |           | String    | False              |
 
----
-
 <br>
 
 ### Test relevant for konvertering til tusinder
@@ -24,5 +22,3 @@ Programmet skal smide en fejlmeddelelse, der fortæller brugeren, at han har gjo
 | ------------------------------------------------ | --------------------------------------------------- | --------- | --------- | ------------------ | -------- | ---------- |
 | 4 decimal tal skal omskrives korrekt med punktum | Check om punktum er sat korrekt på et 4 decimal tal | 4100      | String    | 4.100              | 4.100    | PASS       |
 | Tal skal omskrives korrekt                       | Check om punktum er sat korrekt på et 4 decimal tal | 4100      | String    | 4.100              | 40.10    | FAIL       |
-
----

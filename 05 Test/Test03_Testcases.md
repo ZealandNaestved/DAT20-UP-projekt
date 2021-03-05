@@ -1,4 +1,6 @@
-# Testne matcher hvad jeg fik af information, under mødet 03-03-21
+# Testene er baseret på kundemøde 2 (03-03-21)
+
+Der testes for forkert input som bogstaver, tomme felter
 
 Brugerens input bliver testet, ved at brugeren indtaster data, der ikke passer kan beregnes.
 Programmet skal smide en fejlmeddelelse, der fortæller brugeren, at han har gjort den ting forkert (dette kan være at brugeren, skriver bogstaver ind i et input til tal.)

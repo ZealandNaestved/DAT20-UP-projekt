@@ -1,7 +1,7 @@
 # Testdata til brug i UC03 (Markedsføringsbidrag):
 
 I testen antages det at Bruttofortjenesten er angivet samt, at Markedsføringsbidraget findes ved, at trække de salgsfremmende omkostninger fra bruttofortjenesten.
-Brugeren indtaster selv "Salgsfremmende omkostninger" som her angives som input. Alle tallene er angivet i tusinder.
+Brugeren indtaster selv "Salgsfremmende omkostninger" som her angives som input.
 
 
 ### TestCase01: Tekst
@@ -40,39 +40,39 @@ Tekst kan ikke benyttes. Du skal angive et heltal.
 <br><br>
 
 
-### TestCase06: Tallet nul
-Bruttofortjenesten er 1.000.000, hvilket vises som 1.000 i feltet for bruttofortjeneste
+### TestCase06: Tallet nul<br>
+Bruttofortjenesten er 1.000.000, hvilket vises som 1.000 i feltet for bruttofortjeneste<br>
 **Input** 0
 
 **Output** 1.000
 <br><br>
 
 
-### TestCase07: Tal mindre end tusind, enere
-Bruttofortjenesten er 1.000.000, hvilket vises som 1.000 i feltet for bruttofortjeneste
+### TestCase07: Tal mindre end tusind, enere<br>
+Bruttofortjenesten er 1.000.000, hvilket vises som 1.000 i feltet for bruttofortjeneste<br>
 **Input** 2
 
 **Output** 1.000
 <br><br>
 
 
-### TestCase08: Tal mindre end tusind, tiere
-Bruttofortjenesten er 1.000.000
+### TestCase08: Tal mindre end tusind, tiere<br>
+Bruttofortjenesten er 1.000.000<br>
 **Input** 28
 
 **Output** 1.000
 <br><br>
 
 
-### TestCase09: Tal mindre end tusind, hundrede (som rundes ned)
-Bruttofortjenesten er 1.000.000
+### TestCase09: Tal mindre end tusind, hundrede (som rundes ned)<br>
+Bruttofortjenesten er 1.000.000<br>
 **Input** 917
 
 **Output** 999
 <br><br>
 
 
-### TestCase09: Tal mindre end tusind, hundrede (som rundes ned)
+### TestCase09: Tal mindre end tusind, hundrede (som rundes ned)<br>
 **Input** 312
 
 **Output** 1.000
@@ -86,16 +86,16 @@ Bruttofortjenesten er 1.000.000
 <br><br>
 
 
-### TestCase11: Input er større end bruttofortjeneste
-Bruttofortjenesten er 1.000.000
+### TestCase11: Input er større end bruttofortjeneste<br>
+Bruttofortjenesten er 1.000.000<br>
 **Input** 2000000
 
 **Output** -1.000
 <br><br>
 
 
-### TestCase12: Input er mindre end bruttofortjeneste
-Bruttofortjenesten er 1.000.000
+### TestCase12: Input er mindre end bruttofortjeneste<br>
+Bruttofortjenesten er 1.000.000<br>
 **Input** 800000
 
 **Output** 200

@@ -11,7 +11,7 @@
   
   **3:** Test om programmet regner i tusende.
   
-  **4:** Test at punktum bliver sat ind automatisk, inden tusende decimalet.
+  **4:** Test at punktum bliver sat ind automatisk, inden tusinde decimalet.
   
   **5:** Test om der kan bruges ulovlige tegn.
   
@@ -24,7 +24,7 @@
   
   **3:** Skriv et tal, ind i et hvilke som helst input, som tusinde : Alle tal bliver regnet om, til det nærmeste tusinde. : 600
   
-  **4:** Skriv et tal ind, i et hvilke som helst input, i tusinde : Der bliver automatisk sat et punktum ind, for hver tredje decimal : 4100
+  **4:** Skriv et tal ind, i et hvilke som helst input, i tusinde : Der bliver automatisk sat et punktum ind, for hver tredje decimal : 4.100
   
   **5:** Skriv et tilfældigt tegn, ind i et hvilke som helst input : Foventet fejlmeddelelse om, tegnset ikke kan bruges : !/()#&"
   

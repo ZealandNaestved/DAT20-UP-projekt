@@ -1,13 +1,8 @@
 # Testene er baseret på kundemøde 2 (03-03-21)
 
-Der testes for forkert input som bogstaver, tomme felter
+## Test relevant for uønsket input
 
-Brugerens input bliver testet, ved at brugeren indtaster data, der ikke passer kan beregnes.
-Programmet skal smide en fejlmeddelelse, der fortæller brugeren, at han har gjort den ting forkert (dette kan være at brugeren, skriver bogstaver ind i et input til tal.)
-
-<br>
-
-### Test relevant for forkert input
+Der testes for uønsked input som bogstaver, tomme felter og tegn. Der testes også for accept af tal. Der testes ikke for negative tal da de bliver konverteret.
 
 | Test beskrivelse                     | Test trin                                            | Test data | Data type | Forventet resultat |
 | ------------------------------------ | ---------------------------------------------------- | --------- | --------- | ------------------ |
@@ -18,7 +13,9 @@ Programmet skal smide en fejlmeddelelse, der fortæller brugeren, at han har gjo
 
 <br>
 
-### Test relevant for konvertering til tusinder
+## Test relevant for visualisering
+
+Der testes for korrekt formatering i forbindelse med visualiseringen af resultatopgørelsen.
 
 | Test beskrivelse                                 | Test trin                                           | Test data | Data type | Forventet resultat | Resultat | Gennemført |
 | ------------------------------------------------ | --------------------------------------------------- | --------- | --------- | ------------------ | -------- | ---------- |

@@ -9,7 +9,7 @@
 * OC’er for SSD 1 Færdig.
 * OC’er for SSD 2 Færdig.
 * OC’er Færdig.
-* Design påbegyndt.
+* Design fase påbegyndt (Sekvensdiagram og Design Klasse Diagram).
 * Iterationsplan 2 Færdiggjort i Githup Prokjekt. 
 * Iterationsplan færdiggjort i Githup prokjekt. 
 * Alle har tidsregistreret.

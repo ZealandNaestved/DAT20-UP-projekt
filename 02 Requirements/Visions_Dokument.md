@@ -1,15 +1,15 @@
 # Visions Dokument
 
-###Vision:
+### Vision:
 Produktet henvender sig til folk der ønsker en simpel måde at sætte et resultatbudget/resultatopgørelse op. Formålet er at give brugeren en overblik over hele budget og udviklingen af firmaets nøgletal over en periode. Produktet vil assistere brugeren i at indsætte de korrekte værdier og samtidig give dem mulighed for at tilpasse budget efter deres behov.
 
-###Interessentanalyse:
+### Interessentanalyse:
 Brugere: HØK-studerende (samarbejdspartnere til projekt)
 Kunde: HØK-studerende (?), undervisere (Carsten og Anders)
 Lovgivere: Undervisningministeriet
 Understøttende systemer: JetBrains (IntelliJ), Oracle (Java)
 
-###Featureliste:
+### Featureliste:
 -	Vise grafisk underskud og overskud (rød og grøn)
 -	Grafisk oversigt over om nøgletal falder eller stiger (Kræver min 2 eksisterende resultatbudgetter/resultatopgørelser)
 -	Redigere poster i resultatbudget efter behov
@@ -23,7 +23,7 @@ Understøttende systemer: JetBrains (IntelliJ), Oracle (Java)
  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-###Noter fra samtale med HØK (formiddag)
+### Noter fra samtale med HØK (formiddag)
 Hvorfor i excel: Det regner det ud, mindre skrivearbejde. Mangel på bedre program.
 Bare indskrive tal, tryk på knappen og får resultatet
 Vise om der er overskud eller underskud

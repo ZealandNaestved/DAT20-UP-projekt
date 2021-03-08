@@ -1,13 +1,15 @@
-Vision:
+# Visions Dokument
+
+###Vision:
 Produktet henvender sig til folk der ønsker en simpel måde at sætte et resultatbudget/resultatopgørelse op. Formålet er at give brugeren en overblik over hele budget og udviklingen af firmaets nøgletal over en periode. Produktet vil assistere brugeren i at indsætte de korrekte værdier og samtidig give dem mulighed for at tilpasse budget efter deres behov.
 
-Interessentanalyse:
+###Interessentanalyse:
 Brugere: HØK-studerende (samarbejdspartnere til projekt)
 Kunde: HØK-studerende (?), undervisere (Carsten og Anders)
 Lovgivere: Undervisningministeriet
-Understøttende systemer: NetBrains (IntelliJ), Oracle (Java)
+Understøttende systemer: JetBrains (IntelliJ), Oracle (Java)
 
-Featureliste:
+###Featureliste:
 -	Vise grafisk underskud og overskud (rød og grøn)
 -	Grafisk oversigt over om nøgletal falder eller stiger (Kræver min 2 eksisterende resultatbudgetter/resultatopgørelser)
 -	Redigere poster i resultatbudget efter behov
@@ -21,21 +23,21 @@ Featureliste:
  
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Noter fra samtale med HØK (formiddag)
+###Noter fra samtale med HØK (formiddag)
 Hvorfor i excel: Det regner det ud, mindre skrivearbejde. Mangel på bedre program.
 Bare indskrive tal, tryk på knappen og får resultatet
 Vise om der er overskud eller underskud
 Helst med farver (grøn for overskud, og rød for underskud)
 Statistik oversigt (brug af program på længere oversigt)
 Klikke på tal og se om de stiger eller faldet. Se individuelle tal
-redigere poster til budget efter behov.
+Redigere poster til budget efter behov.
 Tilføje skriftlige note til poster
 Advarelse om forkerte placeringer
 Eksempler på hvad der står i de forksellige poster
 Ingen decimaler i resultatbudget
 Sætte det i 1.000 eller normale tal
 Hvis det ligner et resultatbudget, og man selv kan forklare det
-Expoteres til pdf, excel
+Ekspoteres til pdf, excel
 Må ikke kommunikere på nettet eller med andre individer
 Enkelt og simpelt design
 Automatisk gemme hver ændring man fortager

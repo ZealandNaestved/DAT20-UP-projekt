@@ -3,8 +3,8 @@
 ## Functionality
 - Skal kunne eksportere til filformat Excel + PDF.
 - Gemte Udregning Metoder til tilfælde hvis bruger skulle glemme metoden 
-- nøgleord   
-- hvordan sætter man et resultatbudget op, bid for bid
+- Nøgleord   
+- Hvordan sætter man et resultatbudget op, bid for bid
 
 ## Usability
 - Applikationen skal være let til hurtig forbrug af brugere
@@ -18,10 +18,10 @@
 - Applikationen skal være responsiv og være klar til indtastning med det samme.
 
 ## Supportability
-- platformsuafhængig (windows/mac) applikation i form af Java.
+- Platformsuafhængig (windows/mac) applikation i form af Java.
 - Kundesupport
 
-## Præcision
+## Precision
 - Applikationen skal udregne resultatsbudgettet med 2 decimaler, muligvis 0
 
 

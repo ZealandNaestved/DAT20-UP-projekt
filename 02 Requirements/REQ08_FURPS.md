@@ -1,7 +1,7 @@
 # FURPS+
 
 ## Functionality
-- Skal kunne eksportere til filformat Excel.
+- Skal kunne eksportere til Excel.
 - Skal kunne både beregne nølgetal hvis de er ukendte, og bruge dem til at beregne andre nølgetal.   
 - Skal kunne hjælpe brugeren med at sætter et resultatbudget op.
 

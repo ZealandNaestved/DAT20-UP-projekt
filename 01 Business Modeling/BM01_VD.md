@@ -38,8 +38,3 @@ Ingen decimaler i resultatbudget
 Sætte det i 1.000 eller normale tal
 Hvis det ligner et resultatbudget, og man selv kan forklare det
 Ekspoteres til pdf, excel
-Må ikke kommunikere på nettet eller med andre individer
-Enkelt og simpelt design
-Automatisk gemme hver ændring man fortager
-Resultatbudget 101 fane/ordbog til forkortelser og forklaringer på nøgleord
-

@@ -47,10 +47,11 @@
 
 <br/>
 
-8. Nu kan du bygge programmet ved at trykke på Build og vælge Artifacts
+8. Nu kan du bygge programmet ved at trykke på Build og vælge Build Artifacts
 
 ![BilledeTilPunkt8](../assets/JarDeployment/BilledeTilPunkt8.png)
 
 <br/>
 
-9. Den færdige jar fil er nu klar til deployment og kan åbnes uden nogle ekstra programmer
+9. En pop-up menue kommer frem og der vælges build. <br> 
+10. Den færdige jar fil er nu klar til deployment og kan åbnes uden nogle ekstra programmer

@@ -1,21 +1,20 @@
 # FURPS+
 
 ## Functionality
-- Skal kunne eksportere til filformat Excel + PDF.
-- Gemte Udregning Metoder til tilfælde hvis bruger skulle glemme metoden 
-- Nøgleord   
-- Hvordan sætter man et resultatbudget op, bid for bid
+- Skal kunne eksportere til filformat Excel.
+- Skal kunne både beregne nølgetal hvis de er ukendte, og bruge dem til at beregne andre nølgetal.   
+- Skal kunne hjælpe brugeren med at sætter et resultatbudget op.
 
 ## Usability
-- Applikationen skal være let til hurtig forbrug af brugere
-- Simpelt som muligt
+- Applikationen skal være let for brugere at forstå og bruge.
+- Programmet skal være så simpelt som muligt
 
 ## Reliability
 - Applikationen skal gemme automatisk pr. Sektion eller måske pr. indtastning.
 - Sikre imod fejl40/crash
 
 ## Performance
-- Applikationen skal være responsiv og være klar til indtastning med det samme.
+- Applikationen skal være responsivt og være klar til indtastning med det samme.
 
 ## Supportability
 - Platformsuafhængig (windows/mac) applikation i form af Java.
@@ -23,7 +22,3 @@
 
 ## Precision
 - Applikationen skal udregne resultatsbudgettet med 2 decimaler, muligvis 0
-
-
-Link til Document:
-https://docs.google.com/document/d/14XIilhn2Mb-wedw4ZC-HeMdl5JB11_9pcCdYiSEikKs/edit#

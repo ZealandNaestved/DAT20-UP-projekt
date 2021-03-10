@@ -6,7 +6,7 @@ UseCase navn | Beregning af bruttofortjeneste |
 Scope        | Hoekcel                       
 Primary Actor| HØK Studerende    
 Level        | User Goal
-Beskrivelse  | Systemet skal kunne udregne indtjeningsbidrag baseet på markedsføringsbidrag og Kontante omkostninger, og præsentere denne værdi til HØK Studerende. 
+Beskrivelse  | Systemet skal kunne udregne indtjeningsbidrag baseret på markedsføringsbidrag og Kontante omkostninger, og præsentere denne værdi til HØK Studerende. 
 Stakeholders and Interests | HØK-studerende (Ønsker at finde frem til indtjeningsbidrag).  
 Preconditions | 1. UseCase-01 Beregning af Omsætning. <br> 2. Vareforbrug skal være kendt. <br> 3. UseCase-02 Beregning af bruttofortjeneste <br> 4. Salgsfremmende Omkostninger <br> 5. UseCase-03 beregning af markedsføringsbidrag <br> 6. Kontante Omkostninger  
 Succes Guarantee | Indtjeningsbidrag skal være beregnet og præsenteret. 

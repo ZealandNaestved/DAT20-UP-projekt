@@ -3,14 +3,16 @@
 
 
 #### ***Operation*** <br>
-Beregn indtjeningsbidrag <br>
+Beregn indtjeningsbidrag (double markedsførsingsBidrag, double kontanteOmkostninger) <br> <br>
 
 #### ***Cross-reference*** <br>
-UseCase 04 beregn indtjeningsbidrag (UC-04_BeregnIndtjeningsbidrag.md) <br>
+UseCase 04 beregn indtjeningsbidrag (UC-04_BeregnIndtjeningsbidrag.md) <br> <br>
 
-#### ***Pre-conditions*** <br>
-<br>
+#### ***Pre-conditions*** <br
+- markedsføringsbidrag skal være udregnet fra en tidligere operation(OC03) eller kendt og angivet <br>
+- kontantOmkostninger skal være kendt og angivet
+<br> <br>
 
 #### ***Post-conditions*** <br>
-
+- indtjeningsbidrag er blevet beregnet og præsenteret
 

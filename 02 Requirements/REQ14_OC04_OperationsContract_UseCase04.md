@@ -14,6 +14,6 @@ UseCase 04 beregn indtjeningsbidrag (UC-04_BeregnIndtjeningsbidrag.md) <br> <br>
 <br> <br>
 
 #### ***Post-conditions*** <br>
-- indtjeningsbidrag er blevet beregnet(attribute redefined) <br>
+- indtjeningsbidrag er blevet beregnet <br>
 - indtjeningsbidrag bliver præsenteret
 

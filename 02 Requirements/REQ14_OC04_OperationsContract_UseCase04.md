@@ -8,11 +8,12 @@ Beregn indtjeningsbidrag (double markedsførsingsBidrag, double kontanteOmkostni
 #### ***Cross-reference*** <br>
 UseCase 04 beregn indtjeningsbidrag (UC-04_BeregnIndtjeningsbidrag.md) <br> <br>
 
-#### ***Pre-conditions*** <br
+#### ***Pre-conditions*** <br>
 - markedsføringsbidrag skal være udregnet fra en tidligere operation(OC03) eller kendt og angivet <br>
 - kontantOmkostninger skal være kendt og angivet
 <br> <br>
 
 #### ***Post-conditions*** <br>
-- indtjeningsbidrag er blevet beregnet og præsenteret
+- indtjeningsbidrag er blevet beregnet(attribute redefined) <br>
+- indtjeningsbidrag bliver præsenteret
 

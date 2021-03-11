@@ -6,7 +6,7 @@ UseCase navn | Beregning af bruttofortjeneste |
 Scope        | Hoekcel                       
 Primary Actor| HØK Studerende    
 Level        | User Goal
-Beskrivelse  | Systemet skal kunne udregne bruttofortjeneste baseet på omsætning og vareforbrug, og præsentere denne værdi til HØK Studerende. 
+Beskrivelse  | Systemet skal kunne udregne bruttofortjeneste baseret på omsætning og vareforbrug, og præsentere denne værdi til HØK Studerende. 
 Stakeholders and Interests | HØK-studerende (Ønsker at finde frem til bruttofortjeneste).  
 Preconditions | UseCase-01 Beregning af Omsætning. Vareforbrug skal være kendt.  
 Succes Guarantee | Bruttofortjeneste skal være beregnet og præsenteret. 

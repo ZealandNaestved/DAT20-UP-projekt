@@ -2,15 +2,15 @@
 # OC04 UseCase04 Beregn Indtjeningsbidrag
 
 
-### ***Operation*** <br>
-Beregn indtjeningsbidrag <br> <br>
+#### ***Operation*** <br>
+Beregn indtjeningsbidrag <br>
 
-### ***Cross-reference*** <br>
-UseCase 04 beregn indtjeningsbidrag (UC-04_BeregnIndtjeningsbidrag.md) <br> <br>
+#### ***Cross-reference*** <br>
+UseCase 04 beregn indtjeningsbidrag (UC-04_BeregnIndtjeningsbidrag.md) <br>
 
-### ***Pre-conditions*** <br>
-<br> <br>
+#### ***Pre-conditions*** <br>
+<br>
 
-### ***Post-conditions*** <br>
+#### ***Post-conditions*** <br>
 
 

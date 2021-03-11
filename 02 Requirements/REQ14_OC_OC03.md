@@ -1,8 +1,16 @@
-##**Operation**## : beregn_Markedfoeringsbidrag(double salgsfremmendeomkostninger, double bruttofortjaeneste)
+**Operation** :<br> beregn_Markedfoeringsbidrag(double salgsfremmendeomkostninger, double bruttofortjeneste)
 
-**Cross References**: Use case 03
+**Cross References**: <br>Use case 03 beregn markedsfoeringsbidrag
 
-**Preconditions**: salgsfremmendeomkostninger skal være angives og bruttofortjaeneste skal være udregnet udfra Usecase 02. Bruger eksistere.
+**Preconditions**: <br>
+Høk-studerende høk eksisterer <br>
+View v eksisterer <br>
+ResultatBudget rb existerer <br>
+rb.bruttofortjeneste skal være sat ud fra Use case 02<br> 
+Lommeregner l eksisterer <br>
+l implementerer Begrænsinger<br>
+salgsfremmendeomkostninger skal være angivet<br>
 
-**Postconditions**: - markedsføringsbidrag bliver givet en værdi.
-                    - markedsføringsbidrag bliver repræsenteret i programmet.
+**Postconditions**: <br>
+rb.markedsføringsbidrag bliver sat til værdien beregnet af l.<br>
+v præsenterer rb.markedsføringsbidrag.<br>

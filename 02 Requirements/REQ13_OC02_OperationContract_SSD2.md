@@ -1,21 +1,21 @@
 
 
-OC02 UseCase2
+**OC02 UseCase2**
 
-Operation:
+**Operation:**
 
 Beregning af bruttofortjeneste
 
-Cross-reference:
+**Cross-reference:**
 
 UC-02 Beregning af bruttofortjeneste
 
-Pre-conditions:
+**Pre-conditions:**
 
 UseCase-01 Beregning af Omsætning.
 
 Vareforbrug skal være kendt.
 
-Post-conditions:
+**Post-conditions:**
 
 Bruttofortjeneste er beregnet

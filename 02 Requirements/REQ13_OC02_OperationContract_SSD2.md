@@ -1,10 +1,10 @@
 
 
-**OC02 UseCase2**
+# OC02 UseCase2 Beregn bruttofortjeneste
 
 **Operation:**
 
-Beregning af bruttofortjeneste
+Beregning af bruttofortjeneste (double omsætning, double vareforbrug)
 
 **Cross-reference:**
 

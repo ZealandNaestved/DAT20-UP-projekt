@@ -4,6 +4,7 @@
 
 **Preconditions**:
 
+- Resultatopgørelse template rb existerer.
 - Indtjeningsbidrag skal være udregnet (OC04).
 - Afskrivning skal være angivet.
 

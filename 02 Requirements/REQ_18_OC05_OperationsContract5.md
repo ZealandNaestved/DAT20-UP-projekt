@@ -1,0 +1,13 @@
+**Operation** : beregn_resultatFoerRenter(double indtjeningsbidrag, double afskrivninger)
+
+**Cross References**: Use case 05
+
+**Preconditions**:
+
+- Indtjeningsbidrag skal være udregnet (OC04).
+- Afskrivning skal være angivet.
+
+**Postconditions**:
+
+- Resultat før renter er blevet udregnet.
+- Resultat før renter er blevet præsenteret.

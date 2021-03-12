@@ -1,5 +1,7 @@
 # DAT20-UP-projekt
 
+![](assets/ReadmeAssets/fullview.png)
+
 # Fælles projekt for os datamatiker på dette 3 ugers projekt.
 Projektet formår, at nemmeliggøre fremtidige og nuværende økonomers arbejde i forhold til at kunne udregne specifikke værdier på effektiv vis. Ofte set er udregningen et tidskrævende arbejde, men det endelige program vil kunne hurtiggøre arbejdet i fremtiden. 
 
@@ -117,4 +119,5 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
 
 </p>
 </details>
+
 

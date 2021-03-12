@@ -3,13 +3,13 @@
 
 
 #### ***Operation*** <br>
-Beregn indtjeningsbidrag (double markedsførsingsBidrag, double kontante KapacitetsOmkostninger) <br> <br>
+Beregn indtjeningsbidrag (double markedsførsingsBidrag, double kontante Kapacitetsomkostninger) <br> <br>
 
 #### ***Cross-reference*** <br>
 UseCase 04 beregn indtjeningsbidrag (UC-04_BeregnIndtjeningsbidrag.md) <br> <br>
 
 #### ***Pre-conditions*** <br>
-- Bruger eksiterer <br>
+- Bruger eksisterer <br>
 - markedsføringsbidrag skal være udregnet fra en tidligere operation(OC03) eller kendt og angivet <br>
 - kontantOmkostninger skal være kendt og angivet
 <br> <br>

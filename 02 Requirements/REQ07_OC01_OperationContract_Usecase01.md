@@ -2,15 +2,15 @@
 
 OC01_UseCase01_Beregn_Omkostninger :
 
-Operation:
+**Operation:**
 
 Beregn omkostninger
 
-Cross-reference:
+**Cross-reference:**
 
 UseCase 01_Omkostninger
 
-Pre-conditions:
+**Pre-conditions:**
 
     Udvikler eksisterer
     Beregn omkostninger klasse eksisterer
@@ -21,7 +21,7 @@ Pre-conditions:
     Et resultat eksisterer
     Omkostninger implementerer restraints
 
-Post-conditions:
+**Post-conditions:**
 
     Beregn Omkostninger klasse tilføjet til implementation klasse
 

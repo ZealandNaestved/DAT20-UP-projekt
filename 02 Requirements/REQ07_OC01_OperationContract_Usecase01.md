@@ -1,10 +1,10 @@
 
 
-# OC01_UseCase01_Beregn_Omkostninger :
+# OC01_UseCase01_Beregn_Omsætning :
 
 **Operation:**
 
-Beregn omkostninger
+Beregn Omsætning (Long mængde, double stk. pris)
 
 **Cross-reference:**
 

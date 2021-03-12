@@ -3,7 +3,7 @@
 
 
 #### ***Operation*** <br>
-Beregn indtjeningsbidrag (double markedsførsingsBidrag, double kontanteOmkostninger) <br> <br>
+Beregn indtjeningsbidrag (double markedsførsingsBidrag, double kontante KapacitetsOmkostninger) <br> <br>
 
 #### ***Cross-reference*** <br>
 UseCase 04 beregn indtjeningsbidrag (UC-04_BeregnIndtjeningsbidrag.md) <br> <br>

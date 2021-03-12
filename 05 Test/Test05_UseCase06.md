@@ -10,12 +10,12 @@ Indtast begge tal som positive tal, programmet laver de nødvendige beregninger 
 3. klik på beregn knappen. 
 
 *Forventet Resultat:* 
-Brugeren bliver præsenteret for et slut resultat, hvor talende er blevet trukket for hinanden og det korrekte resultat vises. 
+Brugeren bliver præsenteret for et slut resultat, hvor talende er blevet trukket for hinanden og det korrekte resultat vises.
+output = 780
 
 
 ## Test scenarie 2: 
-Indtast begge tal som negative tal, programmet laver de nødvendige konventioner samt beregninger og giver et resultat. 
-
+Indtast begge tal som negative tal, programmet præsentere en fejl. 
 *Test Data:* Resultat før renter 2.028, Renteomkostninger 1.248.
 
 ## Test 2: 
@@ -24,7 +24,7 @@ Indtast begge tal som negative tal, programmet laver de nødvendige konventioner
 3. klik på beregn knappen. 
 
 *Forventet Resultat:* 
-Brugeren bliver præsenteret for et slut resultat, hvor talende er blevet konverteret til positive tal og trukket for hinanden og det korrekte resultat vises. 
+Brugeren bliver præsenteret for et fejl. som siger at man ikke kan bruge negative tal. 
 
 
 ## Test scenarie 3: 
@@ -44,7 +44,6 @@ Brugeren bliver præsenteret for en fejlmeddelelse af programmet der medler om e
 
 ## Test scenarie 4: 
 Bruger indtaster ikke understøttet data. i.e bogstaver eller symboler. 
-
 *Test Data:* Resultat før renter 2.028, Renteomkostninger g 
 
 ## Test 4: 

@@ -12,11 +12,6 @@ Indtast begge tal som positive tal, programmet laver de nødvendige beregninger 
 *Forventet Resultat:* 
 Brugeren bliver præsenteret for et slut resultat, hvor talende er blevet trukket for hinanden og det korrekte resultat vises. 
 
-*Egentlige resultat.* 
-TODO 
-
-*Resultat* 
-TODO  
 
 ## Test scenarie 2: 
 Indtast begge tal som negative tal, programmet laver de nødvendige konventioner samt beregninger og giver et resultat. 
@@ -31,11 +26,6 @@ Indtast begge tal som negative tal, programmet laver de nødvendige konventioner
 *Forventet Resultat:* 
 Brugeren bliver præsenteret for et slut resultat, hvor talende er blevet konverteret til positive tal og trukket for hinanden og det korrekte resultat vises. 
 
-*Egentlige resultat.* 
-TODO 
-
-*Resultat*  
-TODO  
 
 ## Test scenarie 3: 
 Bruger glemmer at indtaste et tal. Programmet melder dette i en exception.  
@@ -51,11 +41,6 @@ Bruger glemmer at indtaste et tal. Programmet melder dette i en exception.
 Fejlmeddelelse “Indput mangler” 
 Brugeren bliver præsenteret for en fejlmeddelelse af programmet der medler om en manglede indtastning. 
 
-*Egentlige resultat.* 
-TODO 
-
-*Resultat* 
-TODO  
 
 ## Test scenarie 4: 
 Bruger indtaster ikke understøttet data. i.e bogstaver eller symboler. 
@@ -70,9 +55,3 @@ Bruger indtaster ikke understøttet data. i.e bogstaver eller symboler.
 *Forventet Resultat:*  
 Fejlmeddelelse “Ikke understøtte data, benyt kun tal” 
 Brugeren bliver præsenteret for en fejlmeddelelse af programmet der melder om input af data som ikke er understøttet . 
-
-*Egentlige resultat.* 
-TODO 
-
-*Resultat*  
-TODO  

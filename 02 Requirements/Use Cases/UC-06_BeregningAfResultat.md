@@ -10,7 +10,7 @@ Description  | Det samlede resultat er baseret på en fratrækning af resultat f
 Stakeholders and Interests  | HOEK-studerende
 Preconditions  | UC1, UC2, UC3, UC4, UC5, resultatet før renter, renteomkostninger.
 Succes Guarantee  | Resultatet bliver beregnet og præsenteret.
-Main Succes Scenario  | Systemet præsenterer resultatet før renter. <br> De HØK-studerende angiver renteomkostninger. <br>Systemet udregner det endelige resultat.<br>Systemet præsenterer resultatet.  
+Main Succes Scenario  | 1. Systemet præsenterer resultatet før renter. <br> 2. De HØK-studerende angiver renteomkostninger. <br>3. Systemet udregner det endelige resultat.<br> 4. Systemet præsenterer resultatet.  
 Extensions  | 1 HØK-studerende angiver non-numeriske tegn i renteomkostninger.<br>  1a. Systemet oplyser at renteomkostninger skal beskrives med tal, og beder om et nyt input.<br> 2. HØK-studerende angiver et negativt tal i renteomkostninger.<br>  2a. Systemet oplyser at renteomkostninger skal beskrives med tal, som ikke må være mindre end 0, og beder om et nyt input.
 Special Requirements  | --
 Technology and Data Variations List  | Mulighed for at angive enheder i 1kr. og i 1000kr.

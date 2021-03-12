@@ -6,7 +6,7 @@ UseCase navn | UC-03 beregning af markedsføringsbidrag |
 Scope        | Hoekcel                       
 Primary Actor| HØK Studerende    
 Level        | User Goal
-Beskrivelse  | Systemet skal kunne udregne markedsføringsbidrag baseet på Bruttofortjenese og Salgsfremmende omkostninger, og præsentere markedsføringsbidrag værdi til HØK Studerende. 
+Beskrivelse  | Systemet skal kunne udregne markedsføringsbidrag baseet på Bruttofortjeneste og Salgsfremmende omkostninger, og præsentere markedsføringsbidrag værdi til HØK Studerende. 
 Stakeholders and Interests | HØK-studerende (Ønsker at finde frem til markedsføringsbidrag).  
 Preconditions | 1. UseCase-01 Beregning af Omsætning. <br> 2. Vareforbrug skal være kendt. <br> 3. UseCase-02 Beregning af bruttofortjeneste <br> 4. Salgsfremmende Omkostninger 
 Succes Guarantee | markedsføringsbidrag skal være beregnet og præsenteret. 

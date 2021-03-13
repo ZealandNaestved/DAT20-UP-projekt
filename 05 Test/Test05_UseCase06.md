@@ -2,7 +2,7 @@
 ## Test Scenarie 1: 
 Indtast begge tal som positive tal, programmet laver de nødvendige beregninger og giver et resultat. 
 
- Test Data: Resultat før renter 2.028, Renteomkostninger 1.248,
+ Test Data: Resultat før renter 2000000, Renteomkostninger 1000000,
 
 ## Test 1:  
 1. Indtast Resultat før renter som et positivt tal. 
@@ -11,7 +11,7 @@ Indtast begge tal som positive tal, programmet laver de nødvendige beregninger 
 
 *Forventet Resultat:* 
 Brugeren bliver præsenteret for et slut resultat, hvor talende er blevet trukket for hinanden og det korrekte resultat vises.
-output = 780
+output = 1000000
 
 
 ## Test scenarie 2: 

@@ -163,22 +163,21 @@ public class Controller implements Initializable {
 
     private void updateIndtbi() {
 
-        if (true) {
-            var marketingContribution = incomeStatement.getMarketingContribution();
-            var capacityCost = incomeStatement.getCapacityCost();
-            var marketingContributionAsString = String.valueOf(marketingContribution);
-            var capacityCostAsString = String.valueOf(capacityCost);
 
-            try {
-                var earningsContribution = incomeStatement.calculateEarningsContribution(marketingContributionAsString,
-                        capacityCostAsString);
+        var marketingContribution = incomeStatement.getMarketingContribution();
+        var capacityCost = incomeStatement.getCapacityCost();
+        var marketingContributionAsString = String.valueOf(marketingContribution);
+        var capacityCostAsString = String.valueOf(capacityCost);
 
-                incomeStatement.setEarningsContribution(earningsContribution);
-                mainText_Indtbi.setText(String.valueOf(incomeStatement.getEarningsContribution()));
+        try {
+            var earningsContribution = incomeStatement.calculateEarningsContribution(marketingContributionAsString,
+                    capacityCostAsString);
 
-            } catch (EmptyInput | DoesNotContainNumbersOnly | NegativNumberException exception) {
+            incomeStatement.setEarningsContribution(earningsContribution);
+            mainText_Indtbi.setText(String.valueOf(incomeStatement.getEarningsContribution()));
 
-            }
+        } catch (EmptyInput | DoesNotContainNumbersOnly | NegativNumberException exception) {
+
         }
     }
 

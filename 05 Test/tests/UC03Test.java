@@ -1,196 +1,255 @@
+import hoekcel.exceptions.DoesNotContainNumbersOnly;
+import hoekcel.exceptions.EmptyInput;
+import hoekcel.exceptions.NegativNumberException;
+import hoekcel.model.IncomeStatementFactory;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
 
 import static org.junit.jupiter.api.Assertions.fail;
 
 public class UC03Test {
 
+    IncomeStatementFactory incomeStatementFactory = new IncomeStatementFactory();
     //Text
     @Test
     public void TestCase01() {
 
-        var incomeStatement = new IncomeStatement();
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
         var grossProfit = "1000";
         var salesPromotionCosts = "To millioner";
+        var errorMessage = "";
 
         try{
-            incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+            var marketingContribution = incomeStatement.
+                    calculateMarketingContribution(grossProfit, salesPromotionCosts);
+            incomeStatement.setMarketingContribution(marketingContribution);
             fail("setMarkedsfoeringsbidrag fejlede ikke");
         } catch (Exception e){
-
+            errorMessage = e.getMessage();
         }
+
+        Assertions.assertEquals("Tegn kan ikke benyttes. " +
+                        "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).",
+                errorMessage);
     }
 
     //Negativ numbers
     @Test
     public void TestCase02() {
 
-        var incomeStatement = new IncomeStatement();
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
         var grossProfit = "1000";
         var salesPromotionCosts = "-40163000";
+        var errorMessage = "";
 
         try{
-            incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+            var marketingContribution = incomeStatement.
+                    calculateMarketingContribution(grossProfit, salesPromotionCosts);
+            incomeStatement.setMarketingContribution(marketingContribution);
             fail("setMarkedsfoeringsbidrag fejlede ikke");
         } catch (Exception e){
-
+            errorMessage = e.getMessage();
         }
+
+        Assertions.assertEquals("Negative tal kan ikke benyttes. Du skal angive et heltal.", errorMessage);
     }
 
     //Punktum
     @Test
     public void TestCase03() {
 
-        var incomeStatement = new IncomeStatement();
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
         var grossProfit = "1000";
         var salesPromotionCosts = "401.630.00";
+        var errorMessage = "";
 
         try{
-            incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+            var marketingContribution = incomeStatement.
+                    calculateMarketingContribution(grossProfit, salesPromotionCosts);
+            incomeStatement.setMarketingContribution(marketingContribution);
             fail("setMarkedsfoeringsbidrag fejlede ikke");
         } catch (Exception e){
-
+            errorMessage = e.getMessage();
         }
+
+        Assertions.assertEquals("Tegn kan ikke benyttes. " +
+                        "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).",
+                errorMessage);
     }
 
     //comma
     @Test
     public void TestCase04() {
 
-        var incomeStatement = new IncomeStatement();
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
         var grossProfit = "1000";
         var salesPromotionCosts = "401,630,00";
+        var errorMessage = "";
 
         try{
-            incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+            var marketingContribution = incomeStatement.
+                    calculateMarketingContribution(grossProfit, salesPromotionCosts);
+            incomeStatement.setMarketingContribution(marketingContribution);
             fail("setMarkedsfoeringsbidrag fejlede ikke");
         } catch (Exception e){
-
+            errorMessage = e.getMessage();
         }
+
+        Assertions.assertEquals("Tegn kan ikke benyttes. " +
+                "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).",
+                errorMessage);
     }
 
     //Negativ number and comma
     @Test
     public void TestCase05() {
-        var incomeStatement = new IncomeStatement();
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
         var grossProfit = "1000";
-        var salesPromotionCosts = "-401,630,00";
+        var salesPromotionCosts = "-401630,00";
+        var errorMessage = "";
 
         try{
-            incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+            var marketingContribution = incomeStatement.
+                    calculateMarketingContribution(grossProfit, salesPromotionCosts);
+            incomeStatement.setMarketingContribution(marketingContribution);
             fail("setMarkedsfoeringsbidrag fejlede ikke");
         } catch (Exception e){
-
+            errorMessage = e.getMessage();
         }
+
+        Assertions.assertEquals("Tegn kan ikke benyttes. " +
+                        "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).",
+                errorMessage);
     }
 
     //number zero
     @Test
-    public void TestCase06() {
+    public void TestCase06() throws DoesNotContainNumbersOnly, NegativNumberException, EmptyInput {
 
-        var incomeStatement = new IncomeStatement();
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
         var grossProfit = "1000";
         var salesPromotionCosts = "0";
 
-        incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+        int marketingContribution = incomeStatement.
+                calculateMarketingContribution(grossProfit, salesPromotionCosts);
+        System.out.println(marketingContribution);
+        incomeStatement.setMarketingContribution(marketingContribution);
 
-        Assertions.assertTrue(incomeStatement.getMarketingContribution() == 1000);
+        Assertions.assertEquals(1000, incomeStatement.getMarketingContribution());
     }
 
     //Number less than thousand, ones
-    @Test
-    public void TestCase07() {
+   /* @Test
+    public void TestCase07() throws NegativNumberException, DoesNotContainNumbersOnly, EmptyInput {
 
-        var incomeStatement = new IncomeStatement();
-        var grossProfit = "1000";
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
+        var grossProfit = "1000000";
         var salesPromotionCosts = "2";
 
-        incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+        var marketingContribution = incomeStatement.
+                calculateMarketingContribution(grossProfit, salesPromotionCosts);
+        incomeStatement.setMarketingContribution(marketingContribution);
 
-        Assertions.assertTrue(incomeStatement.getMarketingContribution() == 1000);
+        Assertions.assertEquals(1000000, incomeStatement.getMarketingContribution());
     }
+
 
     //Number less than thousand, tens
     @Test
-    public void TestCase08() {
+    public void TestCase08() throws NegativNumberException, DoesNotContainNumbersOnly, EmptyInput {
 
-        var incomeStatement = new IncomeStatement();
-        var grossProfit = "1000";
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
+        var grossProfit = "1000000";
         var salesPromotionCosts = "28";
 
-        incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+        var marketingContribution = incomeStatement.
+                calculateMarketingContribution(grossProfit, salesPromotionCosts);
+        incomeStatement.setMarketingContribution(marketingContribution);
 
-        Assertions.assertTrue(incomeStatement.getMarketingContribution() == 1000);
+        Assertions.assertEquals(1000000, incomeStatement.getMarketingContribution());
     }
 
     // Number less than thousand, hundred
     @Test
-    public void TestCase09() {
+    public void TestCase09() throws NegativNumberException, DoesNotContainNumbersOnly, EmptyInput {
 
-        var incomeStatement = new IncomeStatement();
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
         var grossProfit = "1000000";
         var salesPromotionCosts = "917";
 
-        incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+        var marketingContribution = incomeStatement.
+                calculateMarketingContribution(grossProfit, salesPromotionCosts);
+        incomeStatement.setMarketingContribution(marketingContribution);
 
-        Assertions.assertTrue(incomeStatement.getMarketingContribution() == 999);
+        Assertions.assertEquals(999000,incomeStatement.getMarketingContribution() );
     }
 
     //Numbers
     @Test
-    public void TestCase10() {
+    public void TestCase10() throws NegativNumberException, DoesNotContainNumbersOnly, EmptyInput {
 
-        var incomeStatement = new IncomeStatement();
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
         var grossProfit = "1000000";
         var salesPromotionCosts = "312";
 
-        incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+        var marketingContribution = incomeStatement.
+                calculateMarketingContribution(grossProfit, salesPromotionCosts);
+        incomeStatement.setMarketingContribution(marketingContribution);
 
-        Assertions.assertTrue(incomeStatement.getMarketingContribution() == 1000);
-    }
+        Assertions.assertEquals(1000000, incomeStatement.getMarketingContribution());
+    }*/
     //Percentage character
     @Test
     public void TestCase11() {
 
-        var incomeStatement = new IncomeStatement();
-        var grossProfit = "1000000";
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
+        var grossProfit = "1000";
         var salesPromotionCosts = "%";
+        var errorMessage = "";
 
         try{
-            incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+            var marketingContribution = incomeStatement.
+                    calculateMarketingContribution(grossProfit, salesPromotionCosts);
+            incomeStatement.setMarketingContribution(marketingContribution);
             fail("setMarkedsfoeringsbidrag fejlede ikke");
         } catch (Exception e){
-            var testOutput = e.getMessage();
-            Assertions.assertEquals("Tegn kan ikke benyttes. " +
-                    "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).", testOutput);
+            errorMessage = e.getMessage();
         }
+
+        Assertions.assertEquals("Tegn kan ikke benyttes. " +
+                        "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).",
+                errorMessage);
     }
 
     //Input larger than gross profit
     @Test
-    public void TestCase12() {
+    public void TestCase12() throws NegativNumberException, DoesNotContainNumbersOnly, EmptyInput {
 
-        var incomeStatement = new IncomeStatement();
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
         var grossProfit = "1000000";
         var salesPromotionCosts = "2000000";
 
-        incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+        var marketingContribution = incomeStatement.
+                calculateMarketingContribution(grossProfit, salesPromotionCosts);
+        incomeStatement.setMarketingContribution(marketingContribution);
 
-        Assertions.assertTrue(incomeStatement.getMarketingContribution() == -1000);
+
+        Assertions.assertEquals(-1000000, incomeStatement.getMarketingContribution());
     }
 
 
     //Input is less than gross profit
     @Test
-    public void TestCase13() {
+    public void TestCase13() throws NegativNumberException, DoesNotContainNumbersOnly, EmptyInput {
 
-        var incomeStatement = new IncomeStatement();
+        var incomeStatement = incomeStatementFactory.getIncomeStatement();
         var grossProfit = "1000000";
         var salesPromotionCosts = "800000";
 
-        incomeStatement.setMarketingContribution(grossProfit, salesPromotionCosts);
+        var marketingContribution = incomeStatement.
+                calculateMarketingContribution(grossProfit, salesPromotionCosts);
+        incomeStatement.setMarketingContribution(marketingContribution);
 
-        Assertions.assertTrue(incomeStatement.getMarketingContribution() == 200);
+        Assertions.assertEquals(200000, incomeStatement.getMarketingContribution());
     }
 }

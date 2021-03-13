@@ -10,8 +10,8 @@ Indtast begge tal som positive tal, programmet laver de nødvendige beregninger 
 3. klik på beregn knappen. 
 
 *Forventet Resultat:* 
-Brugeren bliver præsenteret for et slut resultat, hvor talende er blevet trukket for hinanden og det korrekte resultat vises.
-output = 1000000
+Brugeren bliver præsenteret for et slut resultat, hvor talende er blevet lagt til hinanden og det korrekte resultat vises.
+output = 3000000
 
 
 ## Test scenarie 2: 
@@ -22,8 +22,8 @@ Indtast begge tal som negative tal, programmet præsentere resultatet.
 3. klik på beregn knappen. 
 
 *Forventet Resultat:* 
-Brugeren bliver præsenteret for et slut resultat, hvor talende er blevet lagt til hinaden hinanden og det korrekte resultat vises.
-output = 3000000
+Brugeren bliver præsenteret for et slut resultat, hvor talende er blevet trukket fra  hinaden hinanden og det korrekte resultat vises.
+output = 1000000
 
 
 

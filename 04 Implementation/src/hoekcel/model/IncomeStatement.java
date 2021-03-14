@@ -8,25 +8,24 @@ import hoekcel.inputvalidation.InputChecker;
 public class IncomeStatement {
 
     InputChecker inputChecker;
-
-    private int turnover;
-    private int productConsumption;
-    private int grossProfits;
-    private int marketingCost;
-    private int marketingContribution;
-    private int capacityCost;
-    private int earningsContribution;
-    private int depreciations;
-    private int profitBeforeInterest;
-    private int interest;
-    private int result;
+    private long turnover;
+    private long productConsumption;
+    private long grossProfits;
+    private long marketingCost;
+    private long marketingContribution;
+    private long capacityCost;
+    private long earningsContribution;
+    private long depreciations;
+    private long profitBeforeInterest;
+    private long interest;
+    private long result;
 
     public IncomeStatement() {
         inputChecker = new InputChecker();
     }
 
 
-    public int calculateTurnover(String amountOfGoods, String priceOfgood) throws DoesNotContainNumbersOnly, EmptyInput, NegativNumberException {
+    public long calculateTurnover(String amountOfGoods, String priceOfgood) throws DoesNotContainNumbersOnly, EmptyInput, NegativNumberException {
         checkInputNotEmpty(amountOfGoods);
         checkInputNotEmpty(priceOfgood);
         checkInputsNondigits(amountOfGoods);
@@ -34,13 +33,13 @@ public class IncomeStatement {
         checkNegativ(amountOfGoods);
         checkNegativ(priceOfgood);
 
-        int amountOfGoodsAsint = Integer.parseInt(amountOfGoods);
-        int priceOfGoodAsint = Integer.parseInt(priceOfgood);
+        long amountOfGoodsAsint = Long.parseLong(amountOfGoods);
+        long priceOfGoodAsint = Long.parseLong(priceOfgood);
 
         return amountOfGoodsAsint * priceOfGoodAsint;
     }
 
-    public int calculateProductConsumption(String amountOfGoods, String priceOfgood) throws DoesNotContainNumbersOnly, EmptyInput, NegativNumberException {
+    public long calculateProductConsumption(String amountOfGoods, String priceOfgood) throws DoesNotContainNumbersOnly, EmptyInput, NegativNumberException {
         checkInputNotEmpty(amountOfGoods);
         checkInputNotEmpty(priceOfgood);
         checkInputsNondigits(amountOfGoods);
@@ -48,15 +47,15 @@ public class IncomeStatement {
         checkNegativ(amountOfGoods);
         checkNegativ(priceOfgood);
 
-        int amountOfGoodsAsint = Integer.parseInt(amountOfGoods);
-        int priceOfGoodAsint = Integer.parseInt(priceOfgood);
+        long amountOfGoodsAsint = Long.parseLong(amountOfGoods);
+        long priceOfGoodAsint = Long.parseLong(priceOfgood);
 
         return amountOfGoodsAsint * priceOfGoodAsint;
     }
 
 
 
-    public int calculateGrossProfit(String turnover, String costOfGoods) throws EmptyInput, DoesNotContainNumbersOnly, NegativNumberException {
+    public long calculateGrossProfit(String turnover, String costOfGoods) throws EmptyInput, DoesNotContainNumbersOnly, NegativNumberException {
         checkInputNotEmpty(turnover);
         checkInputNotEmpty(costOfGoods);
         checkInputsNondigits(turnover);
@@ -64,27 +63,27 @@ public class IncomeStatement {
         checkNegativ(turnover);
         checkNegativ(costOfGoods);
 
-        int turnoverAsint = Integer.parseInt(turnover);
-        int costOfGoodsAsint = Integer.parseInt(costOfGoods);
+        long turnoverAsint = Long.parseLong(turnover);
+        long costOfGoodsAsint = Long.parseLong(costOfGoods);
 
 
         return (turnoverAsint - costOfGoodsAsint);
     }
 
-    public int calculateMarketingContribution(String grossProfit, String salesPromotionCosts) throws DoesNotContainNumbersOnly, NegativNumberException, EmptyInput {
+    public long calculateMarketingContribution(String grossProfit, String salesPromotionCosts) throws DoesNotContainNumbersOnly, NegativNumberException, EmptyInput {
         checkInputNotEmpty(grossProfit);
         checkInputNotEmpty(salesPromotionCosts);
         checkInputsNondigits(grossProfit);
         checkInputsNondigits(salesPromotionCosts);
         checkNegativ(salesPromotionCosts);
 
-        int grossProfitsAsint = Integer.parseInt(grossProfit);
-        int salesPromotionCostsAsint = Integer.parseInt(salesPromotionCosts);
+        long grossProfitsAsint = Long.parseLong(grossProfit);
+        long salesPromotionCostsAsint = Long.parseLong(salesPromotionCosts);
 
         return grossProfitsAsint - salesPromotionCostsAsint;
     }
 
-    public int calculateEarningsContribution(String marketingContribution, String cashCapacityCosts) throws DoesNotContainNumbersOnly, NegativNumberException, EmptyInput {
+    public long calculateEarningsContribution(String marketingContribution, String cashCapacityCosts) throws DoesNotContainNumbersOnly, NegativNumberException, EmptyInput {
         checkInputNotEmpty(marketingContribution);
         checkInputsNondigits(marketingContribution);
         checkInputNotEmpty(cashCapacityCosts);
@@ -92,13 +91,13 @@ public class IncomeStatement {
         checkNegativ(marketingContribution);
         checkNegativ(cashCapacityCosts);
 
-        int marketingContributionAsint = Integer.parseInt(marketingContribution);
-        int cashCapacityCostsAsint = Integer.parseInt(cashCapacityCosts);
+        long marketingContributionAsint = Long.parseLong(marketingContribution);
+        long cashCapacityCostsAsint = Long.parseLong(cashCapacityCosts);
 
         return marketingContributionAsint - cashCapacityCostsAsint;
     }
 
-    public int calculateProfitBeforeInterest(String earningsContribution, String depreciation) throws DoesNotContainNumbersOnly, NegativNumberException, EmptyInput {
+    public long calculateProfitBeforeInterest(String earningsContribution, String depreciation) throws DoesNotContainNumbersOnly, NegativNumberException, EmptyInput {
         checkInputNotEmpty(earningsContribution);
         checkInputNotEmpty(depreciation);
         checkInputsNondigits(earningsContribution);
@@ -106,104 +105,104 @@ public class IncomeStatement {
         checkNegativ(depreciation);
 
 
-        int earningsContributionAsint = Integer.parseInt(earningsContribution);
-        int depreciationAsint = Integer.parseInt(depreciation);
+        long earningsContributionAsint = Long.parseLong(earningsContribution);
+        long depreciationAsint = Long.parseLong(depreciation);
 
         return earningsContributionAsint - depreciationAsint;
     }
 
-    public int calculateResult(String profitBeforeInterest, String interest) throws DoesNotContainNumbersOnly, EmptyInput {
+    public long calculateResult(String profitBeforeInterest, String interest) throws DoesNotContainNumbersOnly, EmptyInput {
         checkInputNotEmpty(profitBeforeInterest);
         checkInputNotEmpty(interest);
         checkInputsNondigits(profitBeforeInterest);
         checkInputsNondigits(interest);
 
 
-        int profitBeforeInterestAsint = Integer.parseInt(profitBeforeInterest);
-        int depreciationAsint = Integer.parseInt(interest);
+        long profitBeforeInterestAsint = Long.parseLong(profitBeforeInterest);
+        long depreciationAsint = Long.parseLong(interest);
 
         return profitBeforeInterestAsint - depreciationAsint;
     }
 
-    public void setTurnover(int turnover) {
+    public void setTurnover(long turnover) {
         this.turnover = turnover;
     }
 
-    public void setProductConsumption(int productConsumption) {
+    public void setProductConsumption(long productConsumption) {
         this.productConsumption = productConsumption;
     }
 
-    public void setMarketingCost(int marketingCost) {
+    public void setMarketingCost(long marketingCost) {
         this.marketingCost = marketingCost;
     }
 
-    public void setGrossProfits(int grossProfits) {
+    public void setGrossProfits(long grossProfits) {
         this.grossProfits = grossProfits;
     }
 
-    public void setMarketingContribution(int marketingContribution) {
+    public void setMarketingContribution(long marketingContribution) {
         this.marketingContribution = marketingContribution;
     }
 
-    public void setCapacityCost(int capacityCost) {
+    public void setCapacityCost(long capacityCost) {
         this.capacityCost = capacityCost;
     }
 
-    public void setEarningsContribution(int earningsContribution) {
+    public void setEarningsContribution(long earningsContribution) {
         this.earningsContribution = earningsContribution;
     }
 
-    public void setDepreciations(int depreciations) {
+    public void setDepreciations(long depreciations) {
         this.depreciations = depreciations;
     }
 
-    public void setProfitBeforeInterest(int profitBeforeInterest) {
+    public void setProfitBeforeInterest(long profitBeforeInterest) {
         this.profitBeforeInterest = profitBeforeInterest;
     }
-    public void setInterest(int interest) {
+    public void setInterest(long interest) {
         this.interest = interest;
     }
-    public void setResult(int result) {
+    public void setResult(long result) {
         this.result = result;
     }
 
-    public int getTurnover() {
+    public long getTurnover() {
         return this.turnover;
     }
-    public int getProductConsumption() {
+    public long getProductConsumption() {
         return this.productConsumption;
     }
-    public int getGrossProfits() {
+    public long getGrossProfits() {
         return this.grossProfits;
     }
-    public int getMarketingCost() {
+    public long getMarketingCost() {
         return this.marketingCost;
     }
-    public int getMarketingContribution() {
+    public long getMarketingContribution() {
         return this.marketingContribution;
     }
 
-    public int getCapacityCost() {
+    public long getCapacityCost() {
         return this.capacityCost;
     }
 
-    public int getEarningsContribution() {
+    public long getEarningsContribution() {
         return this.earningsContribution;
     }
 
-    public int getDepreciations() {
+    public long getDepreciations() {
         return this.depreciations;
     }
 
-    public int getProfitsBeforeInterest() {
+    public long getProfitsBeforeInterest() {
         return this.profitBeforeInterest;
     }
 
-    public int getInterest() {
+    public long getInterest() {
         return this.interest;
     }
 
-    public int getResult() {
+    public long getResult() {
         return result;
     }
 

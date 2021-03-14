@@ -44,7 +44,7 @@ public class Controller implements Initializable {
         this.incomeStatement = incomeStatementFactory.getIncomeStatement();
 
         mainText_Om.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setTurnover(Integer.parseInt(newValue));
+            incomeStatement.setTurnover(Long.parseLong(newValue));
 
             if (!mainText_Vf.getText().isEmpty()) {
 
@@ -64,16 +64,15 @@ public class Controller implements Initializable {
         });
 
         mainText_Vf.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setProductConsumption(Integer.parseInt(newValue));
+            incomeStatement.setProductConsumption(Long.parseLong(newValue));
             if (!mainText_Om.getText().isEmpty()) {
-                var turnover = incomeStatement.getTurnover();
-                var productConsumption = incomeStatement.getProductConsumption();
+                long turnover = incomeStatement.getTurnover();
+                long productConsumption = incomeStatement.getProductConsumption();
                 var turnoverAsString = String.valueOf(turnover);
                 var productionConsumptionAsString = String.valueOf(productConsumption);
 
                 try {
                     var grossProfit = incomeStatement.calculateGrossProfit(turnoverAsString, productionConsumptionAsString);
-
 
                     incomeStatement.setGrossProfits(grossProfit);
                     mainText_Btf.setText(String.valueOf(incomeStatement.getGrossProfits()));
@@ -85,49 +84,49 @@ public class Controller implements Initializable {
         });
 
         mainText_Btf.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setGrossProfits(Integer.parseInt(newValue));
+            incomeStatement.setGrossProfits(Long.parseLong(newValue));
             updateMkbi(mainText_Mkbi);
         });
 
         mainText_Mfomk.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setMarketingCost(Integer.parseInt(newValue));
+            incomeStatement.setMarketingCost(Long.parseLong(newValue));
             updateMkbi(mainText_Btf);
         });
 
         mainText_Mkbi.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setMarketingContribution(Integer.parseInt(newValue));
+            incomeStatement.setMarketingContribution(Long.parseLong(newValue));
             updateIndtbi();
         });
 
         mainText_Ovkpomk.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setCapacityCost(Integer.parseInt(newValue));
+            incomeStatement.setCapacityCost(Long.parseLong(newValue));
             updateIndtbi();
         });
 
         mainText_Indtbi.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setEarningsContribution(Integer.parseInt(newValue));
+            incomeStatement.setEarningsContribution(Long.parseLong(newValue));
             updateResfr();
         });
 
         mainText_Afskr.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setDepreciations(Integer.parseInt(newValue));
+            incomeStatement.setDepreciations(Long.parseLong(newValue));
             updateResfr();
         });
 
         mainText_Resfr.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setProfitBeforeInterest(Integer.parseInt(newValue));
+            incomeStatement.setProfitBeforeInterest(Long.parseLong(newValue));
             updateVisRes();
         });
 
         mainText_Rntomk.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setInterest(Integer.parseInt(newValue));
+            incomeStatement.setInterest(Long.parseLong(newValue));
             updateVisRes();
         });
     }
 
     private void updateVisRes() {
-        var profitBeforeInterest = incomeStatement.getProfitsBeforeInterest();
-        var interest = incomeStatement.getInterest();
+        long profitBeforeInterest = incomeStatement.getProfitsBeforeInterest();
+        long interest = incomeStatement.getInterest();
         var profitBeforeInterestAsString = String.valueOf(profitBeforeInterest);
         var interestAsString = String.valueOf(interest);
 
@@ -144,8 +143,8 @@ public class Controller implements Initializable {
     }
 
     private void updateResfr() {
-        var earningsContribution = incomeStatement.getEarningsContribution();
-        var depreciation = incomeStatement.getDepreciations();
+        long earningsContribution = incomeStatement.getEarningsContribution();
+        long depreciation = incomeStatement.getDepreciations();
         var earningContributionAsString = String.valueOf(earningsContribution);
         var depreciationAsString = String.valueOf(depreciation);
 
@@ -164,8 +163,8 @@ public class Controller implements Initializable {
     private void updateIndtbi() {
 
 
-        var marketingContribution = incomeStatement.getMarketingContribution();
-        var capacityCost = incomeStatement.getCapacityCost();
+        long marketingContribution = incomeStatement.getMarketingContribution();
+        long capacityCost = incomeStatement.getCapacityCost();
         var marketingContributionAsString = String.valueOf(marketingContribution);
         var capacityCostAsString = String.valueOf(capacityCost);
 
@@ -183,8 +182,8 @@ public class Controller implements Initializable {
 
     private void updateMkbi(TextField mainText_mkbi) {
         if (!mainText_mkbi.getText().isEmpty()) {
-            var grossProfits = incomeStatement.getGrossProfits();
-            var marketingCosts = incomeStatement.getMarketingCost();
+            long grossProfits = incomeStatement.getGrossProfits();
+            long marketingCosts = incomeStatement.getMarketingCost();
             var grossProfitsAsString = String.valueOf(grossProfits);
             var marketingCostAsString = String.valueOf(marketingCosts);
 

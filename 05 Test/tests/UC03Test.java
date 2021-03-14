@@ -130,7 +130,7 @@ public class UC03Test {
         var grossProfit = "1000";
         var salesPromotionCosts = "0";
 
-        int marketingContribution = incomeStatement.
+        long marketingContribution = incomeStatement.
                 calculateMarketingContribution(grossProfit, salesPromotionCosts);
         System.out.println(marketingContribution);
         incomeStatement.setMarketingContribution(marketingContribution);

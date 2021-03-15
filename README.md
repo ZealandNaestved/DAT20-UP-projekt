@@ -1,6 +1,5 @@
 # DAT20-UP-projekt
 
-![](assets/ReadmeAssets/fullview.png)
 
 # Fælles projekt for os datamatiker på dette 3 ugers projekt.
 Projektet formår, at nemmeliggøre fremtidige og nuværende økonomers arbejde i forhold til at kunne udregne specifikke værdier på effektiv vis. Ofte set er udregningen et tidskrævende arbejde, men det endelige program vil kunne hurtiggøre arbejdet i fremtiden. 
@@ -117,6 +116,53 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
 
 - Development case = DC
 
+</p>
+</details>
+
+# Vejledning til programmet
+
+
+
+
+<details><summary> Bruger Interface </summary> <p>
+  
+  Her ses vores automatiserede ui, siden at programmet er lavet til at hjælpe med at udregne et resultat budget og
+  derfor antager vi at brugeren har kendskab til de forskellige nøgle ord. nøgleord som er et skrevet i fed er
+  selvudregnene, det betyder at så længe du angiver de forhændværende felter som ikke er i fed vil de fede blive udregnet og udfyldt automatisk.
+  
+![](assets/ReadmeAssets/fullview.png)
+
+  Ud for felterne "Omsætning", "vareforbrug", "øvrige kapacitets omkostninger" og "afskrivninger (linær eller saldometoden)" er der "+" tegn til at hjælpe med at    sætte disse værdier op hvis man ikke har det forinden.
+  
+ 
+  <details><summary> Omsætning </summary> <p>
+  
+  ![](assets/ReadmeAssets/omsætning.png)
+  
+  </p>
+  </details>
+
+  <details><summary> Vareforbrug </summary> <p>
+  
+  ![](assets/ReadmeAssets/omsætning.png)
+  
+  </p>
+  </details>
+  
+  <details><summary> Øvrige kapacitets omkostninger </summary> <p>
+  
+  ![](assets/ReadmeAssets/omsætning.png)
+  
+  </p>
+  </details>
+  
+  <details><summary> Afskrivninger (linær eller saldometoden) </summary> <p>
+  
+  ![](assets/ReadmeAssets/omsætning.png)
+  
+  </p>
+  </details>
+  
 </p>
 </details>
 

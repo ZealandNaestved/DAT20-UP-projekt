@@ -47,7 +47,7 @@ public class Controller implements Initializable {
     private ImageView toggleImage;
 
     @FXML
-    private ToggleButton mainToggleButton_kr;
+    private Button mainToggleButton_onAndOff;
 
 
     @Override
@@ -270,14 +270,13 @@ public class Controller implements Initializable {
             displayMode = DisplayMode.THOUSANDS;
             var toggleOnImage = new Image("assets/ToggleOn.png");
             mainLabel_kr.setText("Beløb angives i 1000kr.");
-            mainToggleButton_kr.setText("Beløb angives i 1000kr");
+            this.mainToggleButton_onAndOff.setText("Beløb angives i 1000kr");
             toggleImage.setImage(toggleOnImage);
         } else {
-
             var toggleOffImage = new Image("assets/ToggleOff.png");
             toggleImage.setImage(toggleOffImage);
             mainLabel_kr.setText("Beløb angives i 1kr.");
-            mainToggleButton_kr.setText("Beløb angives i 1kr");
+            mainToggleButton_onAndOff.setText("Beløb angives i 1kr");
             displayMode = DisplayMode.ONES;
         }
     }

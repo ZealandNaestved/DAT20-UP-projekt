@@ -176,17 +176,17 @@ Vi er blevet til rådighed til at lave et program, dette program skal kunne hjæ
   
 <details><summary> <strong>Kort gennemgang</strong> </summary> <p>
   
-*Det første man ligger mærke til er at der står nogle tomme felter med en "titel" og et felt man kan angive numre i. I netop dette billede kan vi se er der har vi 3 felter en til omsætning, en til vareforbrug og en til bruttofortjenneste. Bruttofortjennesten bliver beregnet på denne måde "Omsætning - Vareforbrug" (Næste billede)*
+*Det første man ligger mærke til er at der står nogle tomme felter med en "titel" og et felt man kan angive numre i. I netop dette billede kan vi se er der har vi 3 felter en til omsætning, en til vareforbrug og en til bruttofortjenneste. Bruttofortjennesten bliver beregnet på denne måde **"Omsætning - Vareforbrug"** (Næste billede)*
   
-  input billede her: tomme felter
+  ![](assets/ReadmeAssets/emptyDisplay.png)
   
-*I det næste billede kan vi se at en bruger har angivet omsætningen og vareforbruget og så har systemet udregnet og vist/præsenteret bruttofortjenesten. Dette forløb sker flere gange, men med andre felter og titler, såsom "Bruttofortjenesten - Salgsfremmende Omkostninger = Markedsføringsbidrag" eller "Markedsføringsbidrag - Kapacitetsomkostninger = Intjeningsbidrag".*
+*I det næste billede kan vi se at en bruger har angivet omsætningen og vareforbruget og så har systemet udregnet og vist/præsenteret bruttofortjenesten. Dette forløb sker flere gange, men med andre felter og titler, såsom **"Bruttofortjenesten - Salgsfremmende Omkostninger = Markedsføringsbidrag"** eller **"Markedsføringsbidrag - Kapacitetsomkostninger = Intjeningsbidrag"**.*
   
-  input billede her: udfyldte felter
+  ![](assets/ReadmeAssets/displayFunction.png)
   
 *I det sidste billede kan vi se resultaet efter alle de tidligere/løbende udregninger der leder op til det endelige resultat.*
   
-  input billede her: resultat
+  ![](assets/ReadmeAssets/displayResultat.png)
   
   </p>
   </details>

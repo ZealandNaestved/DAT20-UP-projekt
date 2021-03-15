@@ -117,7 +117,7 @@
          </graphic>
       </Button>
 
-      <Button fx:id="mainButton_OvrigeKapOmk" layoutX="560.0" layoutY="471.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Udregn øvrige kapacitetomkostninger">
+      <Button fx:id="mainButton_OvrigeKapOmk" layoutX="560.0" layoutY="371.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Udregn øvrige kapacitetomkostninger">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="25.0" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -126,7 +126,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="mainButton_Afskrivninger" layoutX="560.0" layoutY="421.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Udregn afskrivninger">
+      <Button fx:id="mainButton_Afskrivninger" layoutX="560.0" layoutY="471.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Udregn afskrivninger">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="25.0" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>

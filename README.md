@@ -122,24 +122,25 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
 # Vejledning til programmet
 
 
+Vi er blevet til rådighed til at lave et program, dette program skal kunne hjælpe en årgang af handelsøkonomer med at udregne et resultat budget og skulle fungere som en udskiftning til deres normale arbejds miljø, microsoft Excel.
 
 
 <details><summary> <strong>Bruger Interface</strong> </summary> <p>
   
-  Her ses vores automatiserede ui, siden at programmet er lavet til at hjælpe med at udregne et resultat budget og
+  *Her ses vores automatiserede ui, siden at programmet er lavet til at hjælpe med at udregne et resultat budget og
   derfor antager vi at brugeren har kendskab til de forskellige nøgle ord. nøgleord som er et skrevet i fed er
-  selvudregnene, det betyder at så længe du angiver de forhændværende felter som ikke er i fed vil de fede blive udregnet og udfyldt automatisk.
+  selvudregnene, det betyder at så længe du angiver de forhændværende felter som ikke er i fed vil de fede blive udregnet og udfyldt automatisk.*
   
 ![](assets/ReadmeAssets/fullview.png)
  
   </p>
 </details>
  
- Ud for felterne "Omsætning", "vareforbrug", "øvrige kapacitets omkostninger" og "afskrivninger (linær eller saldometoden)" er der "+" tegn til at hjælpe med at    sætte disse værdier op på en mere detaljeret vis og til at lægge dem sammen inde i interfacen.
+*Ud for felterne "Omsætning", "vareforbrug", "øvrige kapacitets omkostninger" og "afskrivninger (linær eller saldometoden)" er der "+" tegn til at hjælpe med at    sætte disse værdier op på en mere detaljeret vis og til at lægge dem sammen inde i interfacen.*
  
   <details><summary> <strong>Omsætning</strong> </summary> <p>
   
-  Hvis det forkommer at man har flere omsætningskilder, så kan vores program facilitere en mere detaljeret opsætning, tilføj flere kilder, giv dem et navn, så sætter interfacen det pænt op og importere summen til den primære bruger interface.
+*Hvis det forkommer at man har flere omsætningskilder, så kan vores program facilitere en mere detaljeret opsætning, tilføj flere kilder, giv dem et navn, så sætter interfacen det pænt op og importere summen til den primære bruger interface.*
   
   ![](assets/ReadmeAssets/omsætning.png)
   
@@ -148,7 +149,7 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
 
   <details><summary> <strong>Vareforbrug</strong> </summary> <p>
   
-Her ses UI som bruges til at udregne et detaljeret vareforbrug. dette UI facilitere udregning af Vareforbrug ved at insætte de værdiger, på sigt skal dette kunne facilitere flere kilder af vareforbrug, ligesom i omsætning. derefter kan summen impoteres til det primære bruger interface.
+*Her ses UI som bruges til at udregne et detaljeret vareforbrug. dette UI facilitere udregning af Vareforbrug ved at insætte de værdiger, på sigt skal dette kunne facilitere flere kilder af vareforbrug, ligesom i omsætning. derefter kan summen impoteres til det primære bruger interface.*
 
   ![](assets/ReadmeAssets/vareforbrug.png)
   

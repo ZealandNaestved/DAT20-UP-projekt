@@ -9,5 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jafafx-11.0.2" level="application" />
     <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="javafx" level="project" />
+    <orderEntry type="library" name="javafx" level="project" />
   </component>
 </module>

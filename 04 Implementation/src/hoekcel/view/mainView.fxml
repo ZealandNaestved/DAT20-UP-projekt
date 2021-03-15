@@ -2,8 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -176,117 +174,5 @@
             </ImageView>
          </graphic>
       </Button>
-      <AnchorPane layoutX="257.0" layoutY="123.0" prefHeight="386.0" prefWidth="754.0" style="-fx-background-color: White;" visible="false">
-         <children>
-            <Label layoutX="30.0" layoutY="32.0" text="Udregn vareforbrug">
-               <font>
-                  <Font name="System Bold" size="30.0" />
-               </font>
-            </Label>
-            <Label layoutX="39.0" layoutY="104.0" text="Købspris (Kr.)">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
-            <Label layoutX="39.0" layoutY="158.0" text="Råvare">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Label>
-            <Label layoutX="39.0" layoutY="264.0" text="Vareforbrug samlet">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label layoutX="658.0" layoutY="255.0" text="Kr.">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <TextField layoutX="451.0" layoutY="100.0" prefHeight="33.0" prefWidth="239.0" />
-            <TextField layoutX="451.0" layoutY="154.0" prefHeight="33.0" prefWidth="239.0" />
-            <Button fx:id="mainButton_VisBudget1" layoutX="460.0" layoutY="323.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="256.0" style="-fx-background-color: #6200EE;" text="Overfør til resultatOpgørelse" textFill="WHITE">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button fx:id="mainButton_Oms41" layoutX="716.0" layoutY="20.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="X">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Button>
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="mod_Om" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: White;" visible="false">
-         <children>
-            <Label layoutX="80.0" layoutY="72.0" text="Udregn omsætning">
-               <font>
-                  <Font name="System Bold" size="30.0" />
-               </font>
-            </Label>
-            <Label layoutX="1239.0" layoutY="39.0" text="X">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-            <TableView layoutX="137.0" layoutY="166.0" prefHeight="200.0" prefWidth="940.0">
-              <columns>
-                <TableColumn prefWidth="147.0" text="Tilføjede vare" />
-                <TableColumn minWidth="3.0" prefWidth="229.0" text="Afsætning (Enheder)" />
-                  <TableColumn prefWidth="191.0" text="Salgspris (Kr.) " />
-                  <TableColumn prefWidth="371.0" text="Omsætning" />
-              </columns>
-            </TableView>
-            <Label layoutX="139.0" layoutY="424.0" text="Afsætning (Enheder)">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-            <Label layoutX="320.0" layoutY="424.0" text="Salgspris (Kr.)">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-            <TextField layoutX="137.0" layoutY="455.0" prefHeight="33.0" prefWidth="160.0" />
-            <TextField layoutX="320.0" layoutY="455.0" prefHeight="33.0" prefWidth="160.0" />
-            <TextField layoutX="507.0" layoutY="455.0" prefHeight="33.0" prefWidth="160.0" />
-            <Button layoutX="137.0" layoutY="503.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-style: none;" text="Tilføj ny vare til omsætningen">
-               <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="75" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../assets/BlackPlus.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Label layoutX="137.0" layoutY="652.0" text="Omsætning samlet">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-            <Label layoutX="1031.0" layoutY="656.0" text="Kr.">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-            <Button layoutX="1031.0" layoutY="722.0" mnemonicParsing="false" style="-fx-border-style: none; -fx-background-color: #6200EE;" text="Overfør til resultatOpgørelse" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Button>
-            <Button layoutX="700.0" layoutY="459.0" mnemonicParsing="false" style="-fx-background-color: White; -fx-border-style: none;" />
-            <Button layoutX="739.0" layoutY="459.0" mnemonicParsing="false" style="-fx-border-style: none; -fx-background-color: White;" />
-            <ImageView fitHeight="25.0" fitWidth="75" layoutX="675.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../assets/Approve.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="75" layoutX="704.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../assets/Deny.png" />
-               </image>
-            </ImageView>
-         </children>
-      </AnchorPane>
    </children>
 </AnchorPane>

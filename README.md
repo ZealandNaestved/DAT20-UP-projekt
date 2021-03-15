@@ -148,6 +148,8 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
 
   <details><summary> Vareforbrug </summary> <p>
   
+Her ses UI for udregn vareforbrug. dette UI facilitere udregning af, Vareforbrug ved at insætte de kravende værdiger. Når det er gjord kan man impotere til det primære bruger interface.
+
   ![](assets/ReadmeAssets/vareforbrug.png)
   
   </p>

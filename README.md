@@ -110,7 +110,7 @@ Alt som indebærer projektet. Det er blandt andet materiale som tidsregistrering
 </p>
 </details>
 
-<details><summary> 09 Environment </summary> <p>
+<details><summary>09 Environment </summary> <p>
 
 Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivningen er baseret på dens navn/formål, men yderligere information kan findes i den pågældende .md fil:
 

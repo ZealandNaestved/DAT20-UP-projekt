@@ -131,9 +131,11 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
   selvudregnene, det betyder at så længe du angiver de forhændværende felter som ikke er i fed vil de fede blive udregnet og udfyldt automatisk.
   
 ![](assets/ReadmeAssets/fullview.png)
-
-  Ud for felterne "Omsætning", "vareforbrug", "øvrige kapacitets omkostninger" og "afskrivninger (linær eller saldometoden)" er der "+" tegn til at hjælpe med at    sætte disse værdier op hvis man ikke har det forinden.
-  
+ 
+  </p>
+</details>
+ 
+ Ud for felterne "Omsætning", "vareforbrug", "øvrige kapacitets omkostninger" og "afskrivninger (linær eller saldometoden)" er der "+" tegn til at hjælpe med at    sætte disse værdier op hvis man ikke har det forinden.
  
   <details><summary> Omsætning </summary> <p>
   
@@ -163,7 +165,5 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
   </p>
   </details>
   
-</p>
-</details>
 
 

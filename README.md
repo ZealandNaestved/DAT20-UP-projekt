@@ -149,16 +149,16 @@ Vi er blevet til rådighed til at lave et program, dette program skal kunne hjæ
 
   <details><summary> <strong>Vareforbrug</strong> </summary> <p>
   
-*Her ses UI som bruges til at udregne et detaljeret vareforbrug. dette UI facilitere udregning af Vareforbrug ved at insætte de værdiger, på sigt skal dette kunne facilitere flere kilder af vareforbrug, ligesom i omsætning. derefter kan summen impoteres til det primære bruger interface.*
+*Her ses UI som bruges til at udregne et detaljeret vareforbrug. Dette UI facilitere udregning af Vareforbrug ved at insætte de værdiger, på sigt skal dette kunne facilitere flere kilder af vareforbrug, ligesom i omsætning. Derefter kan summen impoteres til det primære bruger interface.*
 
   ![](assets/ReadmeAssets/vareforbrug.png)
   
   </p>
   </details>
   
-  <details><summary> <strong>Øvrige kapacitets omkostninger</strong> </summary> <p>
+  <details><summary> <strong>Øvrige kapacitetsomkostninger</strong> </summary> <p>
   
-*I denne tab kan man udregne de øvrige kapacitetsomkostninger, man kan udregne det med forskellige ting, her ser vi at den består af løntimer, emballage, lager og maskiner, som der allerede står skrevet ind fordi de er standard, men hvis der er omkostninger der ikke står her kan man tilføje nye, og når du har indskrevet alle de omkosntninger der nu skulle være, så kan man klikke "Overfør til resultatopgørelse" for at den udregner og skriver det ind i resultatsopgørelsen.*
+*I denne tab kan man udregne de øvrige kapacitetsomkostninger, man kan udregne det med forskellige ting, her ser vi at den består af løntimer, emballage, lager og maskiner, som der allerede står skrevet ind fordi de er standard. Er omkostninger der ikke står her kan man tilføje nye, og når du har indskrevet alle de omkosntninger der nu skulle være, så kan man klikke "Overfør til resultatopgørelse" for at den udregner og importere summen ind i resultatsopgørelsen.*
   
   ![](assets/ReadmeAssets/kapacitetsomkostninger.png)
   
@@ -167,7 +167,7 @@ Vi er blevet til rådighed til at lave et program, dette program skal kunne hjæ
   
   <details><summary> <strong>Afskrivninger (linær eller saldometoden)</strong> </summary> <p>
   
-  *Afskrivninger er en repræsentation af de varer som er købt til vider salg.*
+  *Afskrivninger er en repræsentation af de varer som er købt til videresalg.*
   
   ![](assets/ReadmeAssets/afskrivningerReadme.png)
   
@@ -180,11 +180,11 @@ Vi er blevet til rådighed til at lave et program, dette program skal kunne hjæ
   
   ![](assets/ReadmeAssets/emptyDisplay.png)
   
-*I det næste billede kan vi se at en bruger har angivet omsætningen og vareforbruget og så har systemet udregnet og vist/præsenteret bruttofortjenesten. Dette forløb sker flere gange, men med andre felter og titler, såsom **"Bruttofortjenesten - Salgsfremmende Omkostninger = Markedsføringsbidrag"** eller **"Markedsføringsbidrag - Kapacitetsomkostninger = Intjeningsbidrag"**.*
+*I det næste billede kan vi se at en bruger har angivet omsætningen og vareforbruget og så har systemet udregnet og vist/præsenteret bruttofortjenesten. Dette forløb sker flere gange, men med andre felter og titler, såsom **"Bruttofortjenesten - Salgsfremmende Omkostninger = Markedsføringsbidrag"** eller **"Markedsføringsbidrag - Kapacitetsomkostninger = Indtjeningsbidrag"**.*
   
   ![](assets/ReadmeAssets/displayFunction.png)
   
-*I det sidste billede kan vi se resultaet efter alle de tidligere/løbende udregninger der leder op til det endelige resultat.*
+*I det sidste billede kan vi se resultaet af alle de tidligere/løbende udregninger der leder op til det endelige resultat.*
   
   ![](assets/ReadmeAssets/displayResultat.png)
   

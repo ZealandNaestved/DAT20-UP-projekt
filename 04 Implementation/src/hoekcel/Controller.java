@@ -85,12 +85,12 @@ public class Controller implements Initializable {
 
         mainText_Btf.textProperty().addListener((observable, oldValue, newValue) -> {
             incomeStatement.setGrossProfits(Long.parseLong(newValue));
-            updateMkbi(mainText_Mkbi);
+            updateMkbi();
         });
 
         mainText_Mfomk.textProperty().addListener((observable, oldValue, newValue) -> {
             incomeStatement.setMarketingCost(Long.parseLong(newValue));
-            updateMkbi(mainText_Btf);
+            updateMkbi();
         });
 
         mainText_Mkbi.textProperty().addListener((observable, oldValue, newValue) -> {
@@ -125,6 +125,7 @@ public class Controller implements Initializable {
     }
 
     private void updateVisRes() {
+
         long profitBeforeInterest = incomeStatement.getProfitsBeforeInterest();
         long interest = incomeStatement.getInterest();
         var profitBeforeInterestAsString = String.valueOf(profitBeforeInterest);
@@ -143,6 +144,7 @@ public class Controller implements Initializable {
     }
 
     private void updateResfr() {
+
         long earningsContribution = incomeStatement.getEarningsContribution();
         long depreciation = incomeStatement.getDepreciations();
         var earningContributionAsString = String.valueOf(earningsContribution);
@@ -162,7 +164,6 @@ public class Controller implements Initializable {
 
     private void updateIndtbi() {
 
-
         long marketingContribution = incomeStatement.getMarketingContribution();
         long capacityCost = incomeStatement.getCapacityCost();
         var marketingContributionAsString = String.valueOf(marketingContribution);
@@ -180,22 +181,22 @@ public class Controller implements Initializable {
         }
     }
 
-    private void updateMkbi(TextField mainText_mkbi) {
-        if (!mainText_mkbi.getText().isEmpty()) {
-            long grossProfits = incomeStatement.getGrossProfits();
-            long marketingCosts = incomeStatement.getMarketingCost();
-            var grossProfitsAsString = String.valueOf(grossProfits);
-            var marketingCostAsString = String.valueOf(marketingCosts);
+    private void updateMkbi() {
 
-            try {
-                var marketingContribution = incomeStatement.calculateMarketingContribution(grossProfitsAsString, marketingCostAsString);
+        long grossProfits = incomeStatement.getGrossProfits();
+        long marketingCosts = incomeStatement.getMarketingCost();
+        var grossProfitsAsString = String.valueOf(grossProfits);
+        var marketingCostAsString = String.valueOf(marketingCosts);
 
-                incomeStatement.setMarketingContribution(marketingContribution);
-                mainText_Mkbi.setText(String.valueOf(incomeStatement.getMarketingContribution()));
+        try {
+            var marketingContribution = incomeStatement.
+                    calculateMarketingContribution(grossProfitsAsString, marketingCostAsString);
 
-            } catch (EmptyInput | DoesNotContainNumbersOnly | NegativNumberException exception) {
+            incomeStatement.setMarketingContribution(marketingContribution);
+            mainText_Mkbi.setText(String.valueOf(incomeStatement.getMarketingContribution()));
 
-            }
+        } catch (EmptyInput | DoesNotContainNumbersOnly | NegativNumberException exception) {
+
         }
     }
 }

@@ -167,6 +167,8 @@ Vi er blevet til rådighed til at lave et program, dette program skal kunne hjæ
   
   <details><summary> <strong>Afskrivninger (linær eller saldometoden)</strong> </summary> <p>
   
+  *Afskrivninger er en repræsentation af de varer som er købt til vider salg.*
+  
   ![](assets/ReadmeAssets/afskrivningerReadme.png)
   
   </p>

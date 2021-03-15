@@ -1,6 +1,7 @@
 package hoekcel.model;
 
 import java.math.BigInteger;
+import java.util.HashMap;
 
 public class IncomeStatement {
 
@@ -16,6 +17,34 @@ public class IncomeStatement {
     private BigInteger interest = new BigInteger("0");
     private BigInteger result = new BigInteger("0");
 
+
+    public static void main(String[] args) {
+        var incomeStatement = new IncomeStatement();
+        incomeStatement.getFieldsAndValues().forEach((k,v)->
+                System.out.println("key: " + k + "value: " + v));
+
+        var hashMap = incomeStatement.getFieldsAndValues();
+    }
+
+    ///TIL EXCEL(?) ANDERS
+    public HashMap<Object, Object> getFieldsAndValues() {
+
+        var hashMap = new HashMap<>();
+        hashMap.put("turnover", turnover);
+        hashMap.put("product", productConsumption);
+        hashMap.put("grossProfits", grossProfits);
+        hashMap.put("marketingCost", marketingCost);
+        hashMap.put("marketingControbution", marketingContribution);
+        hashMap.put("capacityCost", capacityCost);
+        hashMap.put("earningsContribution", earningsContribution);
+        hashMap.put("depreciation", profitBeforeInterest);
+        hashMap.put("profitBeforeInterest", profitBeforeInterest);
+        hashMap.put("interest", interest);
+        hashMap.put("result", result);
+
+        return hashMap;
+    }
+
     public BigInteger calculateTurnover(BigInteger amountOfGoods, BigInteger priceOfgood) {
 
         return amountOfGoods.multiply(priceOfgood);
@@ -25,7 +54,6 @@ public class IncomeStatement {
 
         return amountOfGoods.multiply(priceOfgood);
     }
-
 
     public BigInteger calculateGrossProfit(BigInteger turnover, BigInteger costOfGoods) {
 

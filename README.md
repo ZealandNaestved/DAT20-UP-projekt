@@ -6,7 +6,7 @@ Projektet formår, at nemmeliggøre fremtidige og nuværende økonomers arbejde 
 
 Til udviklere som er interesseret i produktet, forneden vil I se hvor alt information gemmer sig. 
 
-<details><summary><strong>01 Buisness Modeling</strong></summary> <p>
+<details><summary><strong>01 Business Modeling</strong></summary> <p>
   
 Indeholder artifakter der straks er relateret til virksomheds-aspektet:
   
@@ -176,7 +176,7 @@ Vi er blevet til rådighed til at lave et program, dette program skal kunne hjæ
   
 <details><summary> <strong>Kort gennemgang</strong> </summary> <p>
   
-*Det første man ligger mærke til er at der står nogle tomme felter med en "titel" og et felt man kan angive numre i. I netop dette billede kan vi se er der har vi 3 felter en til omsætning, en til vareforbrug og en til bruttofortjenneste. Bruttofortjennesten bliver beregnet på denne måde **"Omsætning - Vareforbrug"** (Næste billede)*
+*Det første man ligger mærke til er at der står nogle tomme felter med en "titel" og et felt man kan angive numre i. I dette billede kan vi se at vi har 3 felter som arbejder sammen, en til omsætning, en til vareforbrug og en til bruttofortjenneste. Bruttofortjennesten bliver beregnet på denne måde **"Omsætning - Vareforbrug"** (Næste billede)*
   
   ![](assets/ReadmeAssets/emptyDisplay.png)
   

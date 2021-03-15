@@ -1,4 +1,4 @@
-package hoekcel;
+package hoekcel.controller;
 
 import hoekcel.inputvalidation.InputChecker;
 import hoekcel.model.IncomeStatement;
@@ -56,7 +56,6 @@ public class Controller implements Initializable {
         this.incomeStatementFactory = new IncomeStatementFactory();
         this.incomeStatement = incomeStatementFactory.getIncomeStatement();
         this.inputChecker = new InputChecker();
-
 
         mainText_Om.textProperty().addListener((observable, oldValue, newValue) -> {
 

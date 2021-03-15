@@ -1,5 +1,4 @@
 package hoekcel.model;
-
 import java.math.BigInteger;
 import java.util.HashMap;
 
@@ -17,15 +16,11 @@ public class IncomeStatement {
     private BigInteger interest = new BigInteger("0");
     private BigInteger result = new BigInteger("0");
 
-
     public static void main(String[] args) {
         var incomeStatement = new IncomeStatement();
         incomeStatement.getFieldsAndValues().forEach((k,v)->
                 System.out.println("key: " + k + "value: " + v));
-
-        var hashMap = incomeStatement.getFieldsAndValues();
     }
-
     ///TIL EXCEL(?) ANDERS
     public HashMap<Object, Object> getFieldsAndValues() {
 

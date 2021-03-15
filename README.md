@@ -1,7 +1,7 @@
 # DAT20-UP-projekt
 
 
-# Fælles projekt for os datamatiker på dette 3 ugers projekt.
+## Fælles projekt for os datamatiker på dette 3 ugers projekt.
 Projektet formår, at nemmeliggøre fremtidige og nuværende økonomers arbejde i forhold til at kunne udregne specifikke værdier på effektiv vis. Ofte set er udregningen et tidskrævende arbejde, men det endelige program vil kunne hurtiggøre arbejdet i fremtiden. 
 
 Til udviklere som er interesseret i produktet, forneden vil I se hvor alt information gemmer sig. 
@@ -119,7 +119,7 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
 </p>
 </details>
 
-# Vejledning til programmet
+## Vejledning til programmet
 
 
 Vi er blevet til rådighed til at lave et program, dette program skal kunne hjælpe en årgang af handelsøkonomer med at udregne et resultat budget og skulle fungere som en udskiftning til deres normale arbejds miljø, microsoft Excel.

@@ -135,11 +135,11 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
   </p>
 </details>
  
- Ud for felterne "Omsætning", "vareforbrug", "øvrige kapacitets omkostninger" og "afskrivninger (linær eller saldometoden)" er der "+" tegn til at hjælpe med at    sætte disse værdier op hvis man ikke har det forinden.
+ Ud for felterne "Omsætning", "vareforbrug", "øvrige kapacitets omkostninger" og "afskrivninger (linær eller saldometoden)" er der "+" tegn til at hjælpe med at    sætte disse værdier op på en mere detaljeret vis og til at lægge dem sammen inde i interfacen.
  
   <details><summary> Omsætning </summary> <p>
   
-  Hvis det forkommer at man har flere omsætningskilder, i så kan vores program facilitere en mere detaljeret opsætning, tilføj flere kilder, giv dem et navn og så bliver det stillet pænt op og afsluttes med at importere til den primære bruger interface.
+  Hvis det forkommer at man har flere omsætningskilder, så kan vores program facilitere en mere detaljeret opsætning, tilføj flere kilder, giv dem et navn, så sætter interfacen det pænt op og importere summen til den primære bruger interface.
   
   ![](assets/ReadmeAssets/omsætning.png)
   

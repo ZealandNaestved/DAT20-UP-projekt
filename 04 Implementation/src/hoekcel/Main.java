@@ -13,7 +13,8 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("view/mainView.fxml"));
         root.getStylesheets().add(getClass().getResource("main.css").toExternalForm());
         primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 1000, 800));
+        primaryStage.setScene(new Scene(root, 1300, 800));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

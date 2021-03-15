@@ -1,5 +1,6 @@
 package hoekcel.inputvalidation;
 
+import java.math.BigInteger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -7,7 +8,8 @@ public class InputChecker {
 
     public boolean onlyDigits(String input) {
 
-        String regex = "-?[0-9]+";
+        String regexOld = "-?[0-9]+";
+        String regex = "-?[0-9]?[0-9]*";
 
         Pattern p = Pattern.compile(regex);
 
@@ -17,11 +19,11 @@ public class InputChecker {
 
         Matcher m = p.matcher(input);
 
-        return m.matches();
+        return !m.matches();
     }
 
     public boolean isNegative(String input) {
-        String regex = "^[+]?\\d+([.]\\d+)?$";
+        String regex = "[0-9]?[0-9]*";
 
         Pattern p = Pattern.compile(regex);
 
@@ -36,8 +38,8 @@ public class InputChecker {
     }
 
     public static void main(String[] args) {
-        InputChecker inputChecker = new InputChecker();
-        System.out.println(inputChecker.onlyDigits("100"));
 
+        InputChecker inputChecker = new InputChecker();
+        System.out.println(inputChecker.isNegative("1"));
     }
 }

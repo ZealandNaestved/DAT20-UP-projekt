@@ -1,227 +1,140 @@
 package hoekcel.model;
 
-import hoekcel.exceptions.DoesNotContainNumbersOnly;
-import hoekcel.exceptions.EmptyInput;
-import hoekcel.exceptions.NegativNumberException;
-import hoekcel.inputvalidation.InputChecker;
+
+
+import java.math.BigInteger;
 
 public class IncomeStatement {
 
-    InputChecker inputChecker;
-    private long turnover;
-    private long productConsumption;
-    private long grossProfits;
-    private long marketingCost;
-    private long marketingContribution;
-    private long capacityCost;
-    private long earningsContribution;
-    private long depreciations;
-    private long profitBeforeInterest;
-    private long interest;
-    private long result;
 
-    public IncomeStatement() {
-        inputChecker = new InputChecker();
+    private BigInteger turnover = new BigInteger("0");
+    private BigInteger productConsumption = new BigInteger("0");
+    private BigInteger grossProfits = new BigInteger("0");
+    private BigInteger marketingCost = new BigInteger("0");
+    private BigInteger marketingContribution = new BigInteger("0");
+    private BigInteger capacityCost = new BigInteger("0");
+    private BigInteger earningsContribution = new BigInteger("0");
+    private BigInteger depreciations = new BigInteger("0");
+    private BigInteger profitBeforeInterest = new BigInteger("0");
+    private BigInteger interest = new BigInteger("0");
+    private BigInteger result = new BigInteger("0");
+
+    public BigInteger calculateTurnover(BigInteger amountOfGoods, BigInteger priceOfgood) {
+
+        return amountOfGoods.multiply(priceOfgood);
+    }
+
+    public BigInteger calculateProductConsumption(BigInteger amountOfGoods, BigInteger priceOfgood) {
+
+        return amountOfGoods.multiply(priceOfgood);
     }
 
 
-    public long calculateTurnover(String amountOfGoods, String priceOfgood) throws DoesNotContainNumbersOnly, EmptyInput, NegativNumberException {
-        checkInputNotEmpty(amountOfGoods);
-        checkInputNotEmpty(priceOfgood);
-        checkInputsNondigits(amountOfGoods);
-        checkInputsNondigits(priceOfgood);
-        checkNegativ(amountOfGoods);
-        checkNegativ(priceOfgood);
+    public BigInteger calculateGrossProfit(BigInteger turnover, BigInteger costOfGoods) {
 
-        long amountOfGoodsAsint = Long.parseLong(amountOfGoods);
-        long priceOfGoodAsint = Long.parseLong(priceOfgood);
-
-        return amountOfGoodsAsint * priceOfGoodAsint;
+        return turnover.subtract(costOfGoods);
     }
 
-    public long calculateProductConsumption(String amountOfGoods, String priceOfgood) throws DoesNotContainNumbersOnly, EmptyInput, NegativNumberException {
-        checkInputNotEmpty(amountOfGoods);
-        checkInputNotEmpty(priceOfgood);
-        checkInputsNondigits(amountOfGoods);
-        checkInputsNondigits(priceOfgood);
-        checkNegativ(amountOfGoods);
-        checkNegativ(priceOfgood);
+    public BigInteger calculateMarketingContribution(BigInteger grossProfits, BigInteger salesPromotionCosts) {
 
-        long amountOfGoodsAsint = Long.parseLong(amountOfGoods);
-        long priceOfGoodAsint = Long.parseLong(priceOfgood);
-
-        return amountOfGoodsAsint * priceOfGoodAsint;
+        return grossProfits.subtract(salesPromotionCosts);
     }
 
+    public BigInteger calculateEarningsContribution(BigInteger marketingContribution, BigInteger cashCapacityCosts)  {
 
-
-    public long calculateGrossProfit(String turnover, String costOfGoods) throws EmptyInput, DoesNotContainNumbersOnly, NegativNumberException {
-        checkInputNotEmpty(turnover);
-        checkInputNotEmpty(costOfGoods);
-        checkInputsNondigits(turnover);
-        checkInputsNondigits(costOfGoods);
-        checkNegativ(turnover);
-        checkNegativ(costOfGoods);
-
-        long turnoverAsint = Long.parseLong(turnover);
-        long costOfGoodsAsint = Long.parseLong(costOfGoods);
-
-
-        return (turnoverAsint - costOfGoodsAsint);
+        return marketingContribution.subtract(cashCapacityCosts);
     }
 
-    public long calculateMarketingContribution(String grossProfit, String salesPromotionCosts) throws DoesNotContainNumbersOnly, NegativNumberException, EmptyInput {
-        checkInputNotEmpty(grossProfit);
-        checkInputNotEmpty(salesPromotionCosts);
-        checkInputsNondigits(grossProfit);
-        checkInputsNondigits(salesPromotionCosts);
-        checkNegativ(salesPromotionCosts);
+    public BigInteger calculateProfitBeforeInterest(BigInteger earningsContribution, BigInteger depreciation)  {
 
-        long grossProfitsAsint = Long.parseLong(grossProfit);
-        long salesPromotionCostsAsint = Long.parseLong(salesPromotionCosts);
-
-        return grossProfitsAsint - salesPromotionCostsAsint;
+        return earningsContribution.subtract(depreciation);
     }
 
-    public long calculateEarningsContribution(String marketingContribution, String cashCapacityCosts) throws DoesNotContainNumbersOnly, NegativNumberException, EmptyInput {
-        checkInputNotEmpty(marketingContribution);
-        checkInputsNondigits(marketingContribution);
-        checkInputNotEmpty(cashCapacityCosts);
-        checkInputsNondigits(cashCapacityCosts);
-        checkNegativ(marketingContribution);
-        checkNegativ(cashCapacityCosts);
+    public BigInteger calculateResult(BigInteger profitBeforeInterest, BigInteger interest) {
 
-        long marketingContributionAsint = Long.parseLong(marketingContribution);
-        long cashCapacityCostsAsint = Long.parseLong(cashCapacityCosts);
-
-        return marketingContributionAsint - cashCapacityCostsAsint;
+        return profitBeforeInterest.subtract(interest);
     }
 
-    public long calculateProfitBeforeInterest(String earningsContribution, String depreciation) throws DoesNotContainNumbersOnly, NegativNumberException, EmptyInput {
-        checkInputNotEmpty(earningsContribution);
-        checkInputNotEmpty(depreciation);
-        checkInputsNondigits(earningsContribution);
-        checkInputsNondigits(depreciation);
-        checkNegativ(depreciation);
-
-
-        long earningsContributionAsint = Long.parseLong(earningsContribution);
-        long depreciationAsint = Long.parseLong(depreciation);
-
-        return earningsContributionAsint - depreciationAsint;
-    }
-
-    public long calculateResult(String profitBeforeInterest, String interest) throws DoesNotContainNumbersOnly, EmptyInput {
-        checkInputNotEmpty(profitBeforeInterest);
-        checkInputNotEmpty(interest);
-        checkInputsNondigits(profitBeforeInterest);
-        checkInputsNondigits(interest);
-
-
-        long profitBeforeInterestAsint = Long.parseLong(profitBeforeInterest);
-        long depreciationAsint = Long.parseLong(interest);
-
-        return profitBeforeInterestAsint - depreciationAsint;
-    }
-
-    public void setTurnover(long turnover) {
+    public void setTurnover(BigInteger turnover) {
         this.turnover = turnover;
     }
 
-    public void setProductConsumption(long productConsumption) {
+    public void setProductConsumption(BigInteger productConsumption) {
         this.productConsumption = productConsumption;
     }
 
-    public void setMarketingCost(long marketingCost) {
+    public void setMarketingCost(BigInteger marketingCost) {
         this.marketingCost = marketingCost;
     }
 
-    public void setGrossProfits(long grossProfits) {
+    public void setGrossProfits(BigInteger grossProfits) {
         this.grossProfits = grossProfits;
     }
 
-    public void setMarketingContribution(long marketingContribution) {
+    public void setMarketingContribution(BigInteger marketingContribution) {
         this.marketingContribution = marketingContribution;
     }
 
-    public void setCapacityCost(long capacityCost) {
+    public void setCapacityCost(BigInteger capacityCost) {
         this.capacityCost = capacityCost;
     }
 
-    public void setEarningsContribution(long earningsContribution) {
+    public void setEarningsContribution(BigInteger earningsContribution) {
         this.earningsContribution = earningsContribution;
     }
 
-    public void setDepreciations(long depreciations) {
+    public void setDepreciations(BigInteger depreciations) {
         this.depreciations = depreciations;
     }
 
-    public void setProfitBeforeInterest(long profitBeforeInterest) {
+    public void setProfitBeforeInterest(BigInteger profitBeforeInterest) {
         this.profitBeforeInterest = profitBeforeInterest;
     }
-    public void setInterest(long interest) {
+    public void setInterest(BigInteger interest) {
         this.interest = interest;
     }
-    public void setResult(long result) {
+    public void setResult(BigInteger result) {
         this.result = result;
     }
 
-    public long getTurnover() {
+    public BigInteger getTurnover() {
         return this.turnover;
     }
-    public long getProductConsumption() {
+    public BigInteger getProductConsumption() {
         return this.productConsumption;
     }
-    public long getGrossProfits() {
+    public BigInteger getGrossProfits() {
         return this.grossProfits;
     }
-    public long getMarketingCost() {
+    public BigInteger getMarketingCost() {
         return this.marketingCost;
     }
-    public long getMarketingContribution() {
+    public BigInteger getMarketingContribution() {
         return this.marketingContribution;
     }
 
-    public long getCapacityCost() {
+    public BigInteger getCapacityCost() {
         return this.capacityCost;
     }
 
-    public long getEarningsContribution() {
+    public BigInteger getEarningsContribution() {
         return this.earningsContribution;
     }
 
-    public long getDepreciations() {
+    public BigInteger getDepreciations() {
         return this.depreciations;
     }
 
-    public long getProfitsBeforeInterest() {
+    public BigInteger getProfitsBeforeInterest() {
         return this.profitBeforeInterest;
     }
 
-    public long getInterest() {
+    public BigInteger getInterest() {
         return this.interest;
     }
 
-    public long getResult() {
+    public BigInteger getResult() {
         return result;
     }
 
-    private void checkInputsNondigits(String input) throws DoesNotContainNumbersOnly {
-        if (!inputChecker.onlyDigits(input)) {
-            throw new DoesNotContainNumbersOnly("Tegn kan ikke benyttes. " +
-                    "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).");
-        }
-    }
-
-    private void checkNegativ(String salesPromotionCosts) throws NegativNumberException {
-        if (inputChecker.isNegative(salesPromotionCosts)) {
-            throw new NegativNumberException("Negative tal kan ikke benyttes. Du skal angive et heltal.");
-        }
-    }
-
-    private void checkInputNotEmpty(String input) throws EmptyInput {
-        if (input.isEmpty()) {
-            throw new EmptyInput("Indput mangler");
-        }
-    }
 }

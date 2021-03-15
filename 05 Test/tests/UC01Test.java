@@ -13,7 +13,7 @@ public class UC01Test {
     IncomeStatementFactory incomeStatementFactory = new IncomeStatementFactory();
 
     //Text
-    @Test
+   /* @Test
     public void TestCase01() {
 
         var incomeStatement = incomeStatementFactory.getIncomeStatement();
@@ -33,7 +33,7 @@ public class UC01Test {
         Assertions.assertEquals("Tegn kan ikke benyttes. " +
                         "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).",
                 errorMessage);
-    }
+    }*/
 
     //Negativ numbers
     @Test

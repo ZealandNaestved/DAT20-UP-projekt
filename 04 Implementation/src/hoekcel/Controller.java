@@ -1,37 +1,44 @@
 package hoekcel;
 
-import hoekcel.exceptions.DoesNotContainNumbersOnly;
-import hoekcel.exceptions.EmptyInput;
-import hoekcel.exceptions.NegativNumberException;
+import hoekcel.inputvalidation.InputChecker;
 import hoekcel.model.IncomeStatement;
 import hoekcel.model.IncomeStatementFactory;
+import hoekcel.view.presenters.PresentAsOnes;
+import hoekcel.view.presenters.Presenter;
+import hoekcel.view.presenters.PresenterFactory;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import javafx.scene.control.ToggleButton;
+import javafx.scene.control.*;
 
+import java.math.BigInteger;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
 
     IncomeStatementFactory incomeStatementFactory;
+    PresenterFactory presenterFactory;
     IncomeStatement incomeStatement;
+    InputChecker inputChecker;
+    Presenter presenter;
+
+    final String ERROR_HEADER_TEGN = "Du kan ikke bruge tegn.";
+    final String ERROR_MESSAGE_TEGN = "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).";
+    final String ERROR_HEADER_NEGATIV = "Negative tal kan ikke benyttes";
+    final String ERROR_MESSAGE_NEGATIV = "Negative tal kan ikke benyttes. Du skal angive et heltal.";
 
     @FXML
-    private Label mainLabel_Title, mainLabel_kr, mainLabel_Om, mainLabel_Vf, mainLabel_Btf,mainLabel_Mfomk,
+    private Label mainLabel_Title, mainLabel_kr, mainLabel_Om, mainLabel_Vf, mainLabel_Btf, mainLabel_Mfomk,
             mainLabel_Mkbi, mainLabel_Indtbi, mainLabel_Resfr, mainLabel_Afskr, mainLabel_Ovkpomk,
-            mainLabel_Rntomk, mainLabel_ResText,mainLabel_VisRes;
+            mainLabel_Rntomk, mainLabel_ResText, mainLabel_VisRes;
 
     @FXML
     private TextField mainText_Om, mainText_Mfomk, mainText_Mkbi, mainText_Ovkpomk, mainText_Indtbi,
-            mainText_Afskr, mainText_Resfr,mainText_Rntomk, mainText_Vf, mainText_Btf;
+            mainText_Afskr, mainText_Resfr, mainText_Rntomk, mainText_Vf, mainText_Btf;
 
     @FXML
-    private Button mainButton_Close, mainButton_Help,mainButton_addComment,mainButton_VisBudget,
-            mainButton_GenBudget,mainButton_Eksporter,mainButton_Oms, mainButton_Vareforbrug,
+    private Button mainButton_Close, mainButton_Help, mainButton_addComment, mainButton_VisBudget,
+            mainButton_GenBudget, mainButton_Eksporter, mainButton_Oms, mainButton_Vareforbrug,
             mainButton_OvrigeKapOmk, mainButton_Afskrivninger;
 
     @FXML
@@ -40,163 +47,301 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
         this.incomeStatementFactory = new IncomeStatementFactory();
+        this.presenterFactory = new PresenterFactory();
         this.incomeStatement = incomeStatementFactory.getIncomeStatement();
+        this.inputChecker = new InputChecker();
+        this.presenter = new PresentAsOnes();
+
 
         mainText_Om.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setTurnover(Long.parseLong(newValue));
 
-            if (!mainText_Vf.getText().isEmpty()) {
+            if (checkInputOnlydigits(newValue)) {
 
-                var turnoverAsString = String.valueOf(incomeStatement.getTurnover());
-                var productConsumptionAsString = String.valueOf(incomeStatement.getProductConsumption());
+                showError(ERROR_HEADER_TEGN, ERROR_MESSAGE_TEGN);
+                mainText_Om.setText(oldValue);
+                return;
+            }
 
-                try {
+            if (checkNegativ(newValue)) {
 
-                    var grossProfit = incomeStatement.calculateGrossProfit(turnoverAsString, productConsumptionAsString);
-                    incomeStatement.setGrossProfits(grossProfit);
-                    mainText_Btf.setText(String.valueOf(incomeStatement.getGrossProfits()));
+                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                mainText_Om.setText(oldValue);
+                return;
+            }
+            incomeStatement.setTurnover(new BigInteger(newValue));
 
-                } catch (EmptyInput | DoesNotContainNumbersOnly | NegativNumberException exception) {
+            if (isFilled(mainText_Vf)) {
 
-                }
+                updateBtf();
             }
         });
 
         mainText_Vf.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setProductConsumption(Long.parseLong(newValue));
-            if (!mainText_Om.getText().isEmpty()) {
-                long turnover = incomeStatement.getTurnover();
-                long productConsumption = incomeStatement.getProductConsumption();
-                var turnoverAsString = String.valueOf(turnover);
-                var productionConsumptionAsString = String.valueOf(productConsumption);
 
-                try {
-                    var grossProfit = incomeStatement.calculateGrossProfit(turnoverAsString, productionConsumptionAsString);
+            if (checkInputOnlydigits(newValue)) {
 
-                    incomeStatement.setGrossProfits(grossProfit);
-                    mainText_Btf.setText(String.valueOf(incomeStatement.getGrossProfits()));
+                showError(ERROR_HEADER_TEGN, ERROR_MESSAGE_TEGN);
+                mainText_Vf.setText(oldValue);
+                return;
+            }
 
-                } catch (EmptyInput | DoesNotContainNumbersOnly | NegativNumberException exception) {
+            if (checkNegativ(newValue)) {
 
-                }
+                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                mainText_Vf.setText(oldValue);
+                return;
+            }
+
+            incomeStatement.setProductConsumption(new BigInteger(newValue));
+            if (isFilled(mainText_Om)) {
+
+                updateBtf();
             }
         });
 
         mainText_Btf.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setGrossProfits(Long.parseLong(newValue));
-            updateMkbi();
+            if (checkInputOnlydigits(newValue)) {
+
+                showError(ERROR_HEADER_TEGN, ERROR_MESSAGE_TEGN);
+                mainText_Btf.setText(oldValue);
+                return;
+            }
+
+            incomeStatement.setGrossProfits(new BigInteger(newValue));
+
+            if (isFilled(mainText_Ovkpomk)) {
+
+                updateMkbi();
+            }
         });
 
         mainText_Mfomk.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setMarketingCost(Long.parseLong(newValue));
-            updateMkbi();
+
+            if (checkInputOnlydigits(newValue)) {
+
+                showError(ERROR_HEADER_TEGN, ERROR_MESSAGE_TEGN);
+                mainText_Mfomk.setText(oldValue);
+                return;
+            }
+
+            if (checkNegativ(newValue)) {
+
+                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                mainText_Mfomk.setText(oldValue);
+                return;
+            }
+
+            incomeStatement.setMarketingCost(new BigInteger(newValue));
+
+            if (isFilled(mainText_Btf)) {
+
+                updateMkbi();
+            }
         });
 
         mainText_Mkbi.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setMarketingContribution(Long.parseLong(newValue));
-            updateIndtbi();
+
+            if (checkInputOnlydigits(newValue)) {
+
+                showError(ERROR_HEADER_TEGN, ERROR_MESSAGE_TEGN);
+                mainText_Mkbi.setText(oldValue);
+                return;
+            }
+
+            incomeStatement.setMarketingContribution(new BigInteger(newValue));
+
+            if (isFilled(mainText_Ovkpomk)) {
+
+                updateIndtbi();
+            }
         });
 
         mainText_Ovkpomk.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setCapacityCost(Long.parseLong(newValue));
-            updateIndtbi();
+
+            if (checkInputOnlydigits(newValue)) {
+
+                mainText_Ovkpomk.setText(oldValue);
+                return;
+            }
+
+            if (checkNegativ(newValue)) {
+
+                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                mainText_Ovkpomk.setText(oldValue);
+                return;
+            }
+            incomeStatement.setCapacityCost(new BigInteger(newValue));
+
+            if (isFilled(mainText_Mkbi)) {
+
+                updateIndtbi();
+            }
         });
 
         mainText_Indtbi.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setEarningsContribution(Long.parseLong(newValue));
-            updateResfr();
+
+            if (checkInputOnlydigits(newValue)) {
+
+                mainText_Indtbi.setText(oldValue);
+                return;
+            }
+
+            incomeStatement.setEarningsContribution(new BigInteger(newValue));
+
+            if (isFilled(mainText_Afskr)) {
+
+                updateResfr();
+            }
         });
 
         mainText_Afskr.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setDepreciations(Long.parseLong(newValue));
-            updateResfr();
+
+            if (checkInputOnlydigits(newValue)) {
+
+                mainText_Afskr.setText(oldValue);
+                return;
+            }
+
+            if (checkNegativ(newValue)) {
+
+                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                mainText_Afskr.setText(oldValue);
+                return;
+            }
+
+            incomeStatement.setDepreciations(new BigInteger(newValue));
+
+            if (isFilled(mainText_Indtbi)) {
+
+                updateResfr();
+            }
         });
 
         mainText_Resfr.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setProfitBeforeInterest(Long.parseLong(newValue));
-            updateVisRes();
+
+            if (checkInputOnlydigits(newValue)) {
+
+                mainText_Resfr.setText(oldValue);
+                return;
+            }
+
+            incomeStatement.setProfitBeforeInterest(new BigInteger(newValue));
+
+            if (isFilled(mainText_Rntomk)) {
+
+                updateVisRes();
+            }
         });
 
         mainText_Rntomk.textProperty().addListener((observable, oldValue, newValue) -> {
-            incomeStatement.setInterest(Long.parseLong(newValue));
-            updateVisRes();
+
+            if (checkInputOnlydigits(newValue)) {
+
+                mainText_Rntomk.setText(oldValue);
+                return;
+            }
+
+            if (checkNegativ(newValue)) {
+
+                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                mainText_Rntomk.setText(oldValue);
+                return;
+            }
+
+            incomeStatement.setInterest(new BigInteger(newValue));
+
+            if (isFilled(mainText_Resfr)) {
+
+                updateVisRes();
+            }
         });
+
+    }
+
+    private void updateBtf() {
+
+        var turnover = incomeStatement.getTurnover();
+        var productConsumption = incomeStatement.getProductConsumption();
+
+        var grossProfit = incomeStatement.calculateGrossProfit(turnover, productConsumption);
+        incomeStatement.setGrossProfits(grossProfit);
+        mainText_Btf.setText(presenter.convertOutput(incomeStatement.getGrossProfits()));
     }
 
     private void updateVisRes() {
 
-        long profitBeforeInterest = incomeStatement.getProfitsBeforeInterest();
-        long interest = incomeStatement.getInterest();
-        var profitBeforeInterestAsString = String.valueOf(profitBeforeInterest);
-        var interestAsString = String.valueOf(interest);
+        var profitBeforeInterest = incomeStatement.getProfitsBeforeInterest();
+        var interest = incomeStatement.getInterest();
 
-        try {
-            var result = incomeStatement.
-                    calculateResult(profitBeforeInterestAsString, interestAsString);
+        var result = incomeStatement.
+                calculateResult(profitBeforeInterest, interest);
 
-            incomeStatement.setResult(result);
-            mainLabel_VisRes.setText(String.valueOf(incomeStatement.getResult()));
-
-        } catch (EmptyInput | DoesNotContainNumbersOnly exception) {
-
-        }
+        incomeStatement.setResult(result);
+        mainLabel_VisRes.setText(String.valueOf(incomeStatement.getResult()));
     }
 
     private void updateResfr() {
 
-        long earningsContribution = incomeStatement.getEarningsContribution();
-        long depreciation = incomeStatement.getDepreciations();
-        var earningContributionAsString = String.valueOf(earningsContribution);
-        var depreciationAsString = String.valueOf(depreciation);
+        var earningsContribution = incomeStatement.getEarningsContribution();
+        var depreciation = incomeStatement.getDepreciations();
 
-        try {
-            var profitBeforeInterest = incomeStatement.
-                    calculateProfitBeforeInterest(earningContributionAsString, depreciationAsString);
+        var profitBeforeInterest = incomeStatement.
+                calculateProfitBeforeInterest(earningsContribution, depreciation);
 
-            incomeStatement.setProfitBeforeInterest(profitBeforeInterest);
-            mainText_Resfr.setText(String.valueOf(incomeStatement.getProfitsBeforeInterest()));
+        incomeStatement.setProfitBeforeInterest(profitBeforeInterest);
+        mainText_Resfr.setText(String.valueOf(incomeStatement.getProfitsBeforeInterest()));
 
-        } catch (EmptyInput | DoesNotContainNumbersOnly | NegativNumberException exception) {
-
-        }
     }
 
     private void updateIndtbi() {
 
-        long marketingContribution = incomeStatement.getMarketingContribution();
-        long capacityCost = incomeStatement.getCapacityCost();
-        var marketingContributionAsString = String.valueOf(marketingContribution);
-        var capacityCostAsString = String.valueOf(capacityCost);
+        var marketingContribution = incomeStatement.getMarketingContribution();
+        var capacityCost = incomeStatement.getCapacityCost();
 
-        try {
-            var earningsContribution = incomeStatement.calculateEarningsContribution(marketingContributionAsString,
-                    capacityCostAsString);
+        var earningsContribution = incomeStatement.calculateEarningsContribution(marketingContribution,
+                capacityCost);
 
-            incomeStatement.setEarningsContribution(earningsContribution);
-            mainText_Indtbi.setText(String.valueOf(incomeStatement.getEarningsContribution()));
-
-        } catch (EmptyInput | DoesNotContainNumbersOnly | NegativNumberException exception) {
-
-        }
+        incomeStatement.setEarningsContribution(earningsContribution);
+        mainText_Indtbi.setText(String.valueOf(incomeStatement.getEarningsContribution()));
     }
 
     private void updateMkbi() {
 
-        long grossProfits = incomeStatement.getGrossProfits();
-        long marketingCosts = incomeStatement.getMarketingCost();
-        var grossProfitsAsString = String.valueOf(grossProfits);
-        var marketingCostAsString = String.valueOf(marketingCosts);
+        var grossProfits = incomeStatement.getGrossProfits();
+        var marketingCosts = incomeStatement.getMarketingCost();
 
-        try {
-            var marketingContribution = incomeStatement.
-                    calculateMarketingContribution(grossProfitsAsString, marketingCostAsString);
+        var marketingContribution = incomeStatement.
+                calculateMarketingContribution(grossProfits, marketingCosts);
 
-            incomeStatement.setMarketingContribution(marketingContribution);
-            mainText_Mkbi.setText(String.valueOf(incomeStatement.getMarketingContribution()));
+        incomeStatement.setMarketingContribution(marketingContribution);
+        mainText_Mkbi.setText(String.valueOf(incomeStatement.getMarketingContribution()));
+    }
 
-        } catch (EmptyInput | DoesNotContainNumbersOnly | NegativNumberException exception) {
+    private void showError(String headerText, String errorMessage) {
 
+        Alert alert = new Alert(Alert.AlertType.INFORMATION, errorMessage, ButtonType.OK);
+        alert.setTitle("Fejl i indput");
+        alert.setHeaderText(headerText);
+        alert.setWidth(500);
+        alert.setHeight(200);
+        alert.showAndWait();
+
+        if (alert.getResult() == ButtonType.OK) {
+            alert.close();
         }
+    }
+
+    private boolean checkInputOnlydigits(String input) {
+        return inputChecker.onlyDigits(input);
+    }
+
+    private boolean checkNegativ(String input) {
+        return inputChecker.isNegative(input);
+    }
+
+    private boolean isFilled(TextField field) {
+        return !field.getText().isEmpty();
     }
 }

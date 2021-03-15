@@ -8,14 +8,14 @@
 4. Hvis omsætningen ikke er kendt på forhånd - Tryk på + ikonet.
 
 5. Udfyld de tomme felter med relevante værdier
-   * Værdierne må ikke være negative eller med bogstaver
+   * Værdierne må ikke være negative (Undtaget disse: bruttofortjeneste, markedsførisnbsbidrag, indtjeningsbidrag, renteførresultat) eller med bogstaver.
    * TIP: Hvis faldende eller stigende omsætninger procenter, så hold musen ind over omsætninger feltet og skriv ind antallet af procenter.
 
-6. ngiv vareforbrug i feltet.
+6. Angiv vareforbrug i feltet.
 
-7. ruttofortjenesten udregnes automatisk. 
+7. Bruttofortjenesten udregnes automatisk. 
 
-8. ngiv markedsføringsomkostninger i feltet.
+8. Angiv markedsføringsomkostninger i feltet.
 
 9. Markedsføringsbidrag udregnes automatisk.
 

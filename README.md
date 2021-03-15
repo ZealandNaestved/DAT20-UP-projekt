@@ -144,21 +144,21 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
 
   <details><summary> Vareforbrug </summary> <p>
   
-  ![](assets/ReadmeAssets/omsætning.png)
+  ![](assets/ReadmeAssets/vareforbrug.png)
   
   </p>
   </details>
   
   <details><summary> Øvrige kapacitets omkostninger </summary> <p>
   
-  ![](assets/ReadmeAssets/omsætning.png)
+  ![](assets/ReadmeAssets/kapacitetsomkostninger.png)
   
   </p>
   </details>
   
   <details><summary> Afskrivninger (linær eller saldometoden) </summary> <p>
   
-  ![](assets/ReadmeAssets/omsætning.png)
+  ![](assets/ReadmeAssets/afskrivningerReadme.png)
   
   </p>
   </details>

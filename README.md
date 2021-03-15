@@ -139,6 +139,8 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
  
   <details><summary> Omsætning </summary> <p>
   
+  Hvis det forkommer at man har flere omsætningskilder, i så kan vores program facilitere en mere detaljeret opsætning, tilføj flere kilder, giv dem et navn og så bliver det stillet pænt op og afsluttes med at importere til den primære bruger interface.
+  
   ![](assets/ReadmeAssets/omsætning.png)
   
   </p>

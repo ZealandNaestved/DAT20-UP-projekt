@@ -1,23 +1,56 @@
-# Testene er baseret på kundemøde 2 (03-03-21)
+## Test scenarie 1
 
-## Test relevant for uønsket input
+**Test scenarie beskrivelse**
 
-Der testes for uønsked input som bogstaver, tomme felter og tegn. Der testes også for accept af tal. Der testes ikke for negative tal da de bliver konverteret.
+> Et input felt bliver glemt. Brugeren bliver vist en fejlmeddelelse.
 
-| Test beskrivelse                     | Test trin                                            | Test data | Data type | Forventet resultat |
-| ------------------------------------ | ---------------------------------------------------- | --------- | --------- | ------------------ |
-| Der skal godkendes tal               | Checker om input felterne udelukkende indeholder tal | 1942      | String    | True               |
-| Der skal ikke godkendes tegn         | Checker om input felterne udelukkende indeholder tal | &"/(%&)   | String    | False              |
-| Der skal ikke godkendes bogstaver    | Checker om input felterne udelukkende indeholder tal | ABCdef    | String    | False              |
-| Der skal ikke godkendes tomme felter | Checker om input felterne udelukkende indeholder tal |           | String    | False              |
+**Test Data**
 
-<br>
+> Markedsføringsbidrag: "30120"
+> Øvrige Kapacitetsomkostninger: ""
 
-## Test relevant for visualisering
+**Test trin**
 
-Der testes for korrekt formatering i forbindelse med visualiseringen af resultatopgørelsen.
+> 1. Indtast Øvrige Kapacitetsomkostninger.
 
-| Test beskrivelse                                 | Test trin                                           | Test data | Data type | Forventet resultat | Resultat | Gennemført |
-| ------------------------------------------------ | --------------------------------------------------- | --------- | --------- | ------------------ | -------- | ---------- |
-| 4 decimal tal skal omskrives korrekt med punktum | Check om punktum er sat korrekt på et 4 decimal tal | 4100      | String    | 4.100              | 4.100    | PASS       |
-| Tal skal omskrives korrekt                       | Check om punktum er sat korrekt på et 4 decimal tal | 4100      | String    | 4.100              | 40.10    | FAIL       |
+**Forventet resultat**
+
+> Fejlmeddelelse: "Fejl: Udfyld venligst alle felter"
+
+## Test scenarie 2
+
+**Test scenarie beskrivelse**
+
+> Indtaster bogstav i input felt. Brugeren bliver vist en fejlmeddelelse.
+
+**Test Data**
+
+> Markedsføringsbidrag: "301a20"
+> Øvrige Kapacitetsomkostninger: "25a00"
+
+**Test trin**
+
+> 1. Indtast Øvrige Kapacitetsomkostninger.
+
+**Forventet resultat**
+
+> Fejlmeddelelse: "Fejl: Brug venligst kun tal"
+
+## Test scenarie 3
+
+**Test scenarie beskrivelse**
+
+> Indtaster negative tal. Brugeren bliver vist en fejlmeddelelse.
+
+**Test Data**
+
+> Markedsføringsbidrag: "30120"
+> Øvrige Kapacitetsomkostninger: "-2500"
+
+**Test trin**
+
+> 1. Indtast Øvrige Kapacitetsomkostninger.
+
+**Forventet resultat**
+
+> Fejlmeddelelse: "Fejl: Omsætning kan kun være positiv"

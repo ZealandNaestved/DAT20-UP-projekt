@@ -157,7 +157,7 @@ Her ses UI som bruges til at udregne et detaljeret vareforbrug. dette UI facilit
   
   <details><summary> Øvrige kapacitets omkostninger </summary> <p>
   
->I denne tab kan man udregne de øvrige kapacitetsomkostninger, man kan udregne det med forskellige ting, her ser vi at den består af løntimer, emballage, lager og maskiner, som der allerede står skrevet ind fordi de er standard, men hvis der er omkostninger der ikke står her kan man tilføje nye, og når du har indskrevet alle de omkosntninger der nu skulle være, så kan man klikke "Overfør til resultatopgørelse" for at den udregner og skriver det ind i resultatsopgørelsen.
+|I denne tab kan man udregne de øvrige kapacitetsomkostninger, man kan udregne det med forskellige ting, her ser vi at den består af løntimer, emballage, lager og maskiner, som der allerede står skrevet ind fordi de er standard, men hvis der er omkostninger der ikke står her kan man tilføje nye, og når du har indskrevet alle de omkosntninger der nu skulle være, så kan man klikke "Overfør til resultatopgørelse" for at den udregner og skriver det ind i resultatsopgørelsen.|
   
   ![](assets/ReadmeAssets/kapacitetsomkostninger.png)
   

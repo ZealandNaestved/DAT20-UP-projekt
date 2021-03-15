@@ -3,12 +3,13 @@ package hoekcel;
 import hoekcel.inputvalidation.InputChecker;
 import hoekcel.model.IncomeStatement;
 import hoekcel.model.IncomeStatementFactory;
-import hoekcel.view.presenters.PresentAsOnes;
-import hoekcel.view.presenters.Presenter;
-import hoekcel.view.presenters.PresenterFactory;
+import hoekcel.view.DisplayMode;
+import hoekcel.view.presenters.INOUTFormat;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 import java.math.BigInteger;
 import java.net.URL;
@@ -17,15 +18,16 @@ import java.util.ResourceBundle;
 public class Controller implements Initializable {
 
     IncomeStatementFactory incomeStatementFactory;
-    PresenterFactory presenterFactory;
     IncomeStatement incomeStatement;
     InputChecker inputChecker;
-    Presenter presenter;
 
     final String ERROR_HEADER_TEGN = "Du kan ikke bruge tegn.";
     final String ERROR_MESSAGE_TEGN = "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).";
     final String ERROR_HEADER_NEGATIV = "Negative tal kan ikke benyttes";
     final String ERROR_MESSAGE_NEGATIV = "Negative tal kan ikke benyttes. Du skal angive et heltal.";
+
+    DisplayMode displayMode = DisplayMode.THOUSANDS;
+
 
     @FXML
     private Label mainLabel_Title, mainLabel_kr, mainLabel_Om, mainLabel_Vf, mainLabel_Btf, mainLabel_Mfomk,
@@ -42,6 +44,9 @@ public class Controller implements Initializable {
             mainButton_OvrigeKapOmk, mainButton_Afskrivninger;
 
     @FXML
+    private ImageView toggleImage;
+
+    @FXML
     private ToggleButton mainToggleButton_kr;
 
 
@@ -49,10 +54,8 @@ public class Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         this.incomeStatementFactory = new IncomeStatementFactory();
-        this.presenterFactory = new PresenterFactory();
         this.incomeStatement = incomeStatementFactory.getIncomeStatement();
         this.inputChecker = new InputChecker();
-        this.presenter = new PresentAsOnes();
 
 
         mainText_Om.textProperty().addListener((observable, oldValue, newValue) -> {
@@ -260,6 +263,25 @@ public class Controller implements Initializable {
 
     }
 
+    @FXML
+    private void flipDisplayMode() {
+        if (displayMode.equals(DisplayMode.ONES)) {
+
+            displayMode = DisplayMode.THOUSANDS;
+            var toggleOnImage = new Image("assets/ToggleOn.png");
+            mainLabel_kr.setText("Beløb angives i 1000kr.");
+            mainToggleButton_kr.setText("Beløb angives i 1000kr");
+            toggleImage.setImage(toggleOnImage);
+        } else {
+
+            var toggleOffImage = new Image("assets/ToggleOff.png");
+            toggleImage.setImage(toggleOffImage);
+            mainLabel_kr.setText("Beløb angives i 1kr.");
+            mainToggleButton_kr.setText("Beløb angives i 1kr");
+            displayMode = DisplayMode.ONES;
+        }
+    }
+
     private void updateBtf() {
 
         var turnover = incomeStatement.getTurnover();
@@ -267,7 +289,8 @@ public class Controller implements Initializable {
 
         var grossProfit = incomeStatement.calculateGrossProfit(turnover, productConsumption);
         incomeStatement.setGrossProfits(grossProfit);
-        mainText_Btf.setText(presenter.convertOutput(incomeStatement.getGrossProfits()));
+
+        mainText_Btf.setText(INOUTFormat.convertOutput(incomeStatement.getGrossProfits()));
     }
 
     private void updateVisRes() {

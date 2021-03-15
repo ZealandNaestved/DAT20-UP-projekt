@@ -1,11 +1,8 @@
 package hoekcel.model;
 
-
-
 import java.math.BigInteger;
 
 public class IncomeStatement {
-
 
     private BigInteger turnover = new BigInteger("0");
     private BigInteger productConsumption = new BigInteger("0");

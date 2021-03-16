@@ -7,16 +7,19 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+    private static Scene scene;
+
+    public static Scene getScene() {
+        return scene;
+    }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
-
+    public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("view/mainView.fxml"));
-        primaryStage.setTitle("Høkcel");
-        primaryStage.setScene(new Scene(root, 1300, 800));
-        primaryStage.show();
-        
-        
+        scene = new Scene(root, 1300, 800);
+        stage.setScene(scene);
+        stage.setTitle("Høkcel");
+        stage.show();
     }
 
     public static void main(String[] args) {

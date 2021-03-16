@@ -1,6 +1,8 @@
 package hoekcel.controller;
 
+import hoekcel.Main;
 import hoekcel.controller.errorHandler.InputErrorHandler;
+import hoekcel.controller.export.Excel;
 import hoekcel.validationHandler.InputValidation;
 import hoekcel.model.IncomeStatement;
 import hoekcel.model.IncomeStatementFactory;
@@ -10,9 +12,14 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.FileChooser;
 
+import java.io.File;
 import java.math.BigInteger;
 import java.net.URL;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
@@ -255,6 +262,19 @@ public class MainController implements Initializable {
             }
         });
 
+    }
+
+    public void exportToExcel() {
+        var fileChooser = new FileChooser();
+        fileChooser.setInitialFileName(String.format("Resultatopgørelse_%s", getDateTime()));
+        var projectFile = fileChooser.showSaveDialog(Main.getScene().getWindow());
+        if(projectFile != null) new Excel().export(incomeStatement.getFieldsAndValues(), projectFile.getAbsolutePath());
+    }
+
+    private String getDateTime() {
+        var localDateTime = LocalDateTime.now();
+        var dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy_HHmm");
+        return localDateTime.format(dateTimeFormatter);
     }
 
     @FXML

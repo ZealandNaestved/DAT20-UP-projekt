@@ -12,10 +12,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.stage.DirectoryChooser;
+import javafx.stage.Stage;
 import javafx.stage.FileChooser;
 
-import java.io.File;
 import java.math.BigInteger;
 import java.net.URL;
 import java.time.LocalDateTime;
@@ -357,9 +356,15 @@ public class MainController implements Initializable {
 
     private void showError(String headerText, String errorMessage) {
 
-        Alert alert = new Alert(Alert.AlertType.INFORMATION, errorMessage, ButtonType.OK);
-        alert.setTitle("Fejl i indput");
-        alert.setHeaderText(headerText);
+        var okButton = new ButtonType("Ok", ButtonBar.ButtonData.LEFT);
+        Alert alert = new Alert(Alert.AlertType.NONE, errorMessage, okButton);
+
+        alert.getDialogPane().getStylesheets().add("stylesheets/errorStyle.css");
+        var dialogStage = (Stage) alert.getDialogPane().getScene().getWindow();
+
+        dialogStage.getIcons().add(new Image("assets/whiteIconForError.png"));
+        alert.setTitle(headerText);
+        alert.setHeaderText(null);
         alert.setWidth(500);
         alert.setHeight(200);
         alert.showAndWait();

@@ -1,7 +1,7 @@
 package hoekcel.controller;
 
 import hoekcel.controller.errorHandler.InputErrorHandler;
-import hoekcel.validationHandler.InputChecker;
+import hoekcel.validationHandler.InputValidation;
 import hoekcel.model.IncomeStatement;
 import hoekcel.model.IncomeStatementFactory;
 import hoekcel.view.DisplayMode;
@@ -19,7 +19,7 @@ public class MainController implements Initializable {
 
     IncomeStatementFactory incomeStatementFactory;
     IncomeStatement incomeStatement;
-    InputChecker inputChecker;
+    InputValidation inputChecker;
 
     DisplayMode displayMode = DisplayMode.THOUSANDS;
 
@@ -50,7 +50,7 @@ public class MainController implements Initializable {
 
         this.incomeStatementFactory = new IncomeStatementFactory();
         this.incomeStatement = incomeStatementFactory.getIncomeStatement();
-        this.inputChecker = new InputChecker();
+        this.inputChecker = new InputValidation();
 
         mainText_Om.textProperty().addListener((observable, oldValue, newValue) -> {
 

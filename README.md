@@ -2,13 +2,13 @@
 
 
 ## Fælles projekt for os datamatiker på dette 3 ugers projekt.
-Projektet formår, at nemmeliggøre fremtidige og nuværende økonomers arbejde i forhold til at kunne udregne specifikke værdier på effektiv vis. Ofte set er udregningen et tidskrævende arbejde, men det endelige program vil kunne hurtiggøre arbejdet i fremtiden. 
+Projektet formår, at simplificere fremtidige og nuværende økonomers arbejde i forhold til at kunne udregne specifikke værdier på effektiv vis. Ofte set er udregningen et tidskrævende arbejde, men det endelige program vil kunne hurtiggøre arbejdet i fremtiden. 
 
-Til udviklere som er interesseret i produktet, forneden vil I se hvor alt information gemmer sig. 
+Til udviklere, som er interesseret i produktet, forneden vil i se hvor alt information gemmer sig. 
 
 <details><summary><strong>01 Business Modeling</strong></summary> <p>
   
-Indeholder artifakter der straks er relateret til virksomheds-aspektet:
+Indeholder artefakter, der straks er relateret til virksomheds-aspektet:
   
 - Vision document = VD
 - FURPS+ = FURPS
@@ -26,7 +26,7 @@ Indeholder artifakter der straks er relateret til virksomheds-aspektet:
 
 <details><summary><strong>02 Requirements</strong></summary> <p> 
   
-Indeholder artifakter der straks er relateret til requirements:
+Indeholder artefakter, der straks er relateret til requirements:
 
 - Use Cases = UC
 - Use Case diagrammer = UCD
@@ -42,7 +42,7 @@ Indeholder artifakter der straks er relateret til requirements:
 
 <details><summary><strong>03 Design</strong></summary> <p>
   
-Indeholder artifakter der straks er relateret til designet af produktet:
+Indeholder artefakter, der straks er relateret til designet af produktet:
 
 - Class Diagrammer = CD
 - Design Model = DEM
@@ -65,7 +65,7 @@ Filnavne i koden skal være på engelsk og skrives med camelCase.
 
 <details><summary><strong>05 Test</strong></summary> <p>
   
-Indeholder artifakter der straks er relateret til test af produktet:
+Indeholder artefakter, der straks er relateret til test af produktet:
   
 - Checklister til Review
 - Test-kode (undermappe med navn test, hvor koden ligger henne) 
@@ -77,10 +77,10 @@ Indeholder artifakter der straks er relateret til test af produktet:
 
 <details><summary><strong>06 Deployment</strong></summary> <p>
   
-Indeholder artifakter der straks er relateret til deployment af produktet: 
+Indeholder artefakter, der straks er relateret til deployment af produktet: 
   
 - .exe software 
-- Installations artifakter : scripts, tools, filer, guides, licensing information 
+- Installations artefakter : scripts, tools, filer, guides, licensing information 
 - Udgivelses Noter, beskrivelse af release for slut brugeren
 - Support Materiale, bruger manual
 - Trænings Materiale
@@ -91,7 +91,7 @@ Indeholder artifakter der straks er relateret til deployment af produktet:
 
 <details><summary><strong>07 Configuration & CM</strong></summary> <p>
   
-Indeholder artifakter der straks er relateret til Configuration & CM: 
+Indeholder artefakter, der straks er relateret til Configuration & CM: 
 
 - Configuration management plan
 - Change requests 
@@ -102,7 +102,7 @@ Indeholder artifakter der straks er relateret til Configuration & CM:
 
 <details><summary><strong>08 Project Management</strong></summary> <p>
   
-Alt som indebærer projektet. Det er blandt andet materiale som tidsregistrering, iterationsplaner, kundemøder og lignende:
+Alt som projektet indebærer. Blandt andet materiale som tidsregistrering, iterationsplaner, kundemøder og lignende:
 
 - Iterationsplan(er) = IP
 - Kundemøder = KM
@@ -160,7 +160,7 @@ Vi er blevet til rådighed til at lave et program, dette program skal kunne hjæ
   
   <details><summary> <strong>Øvrige kapacitetsomkostninger</strong> </summary> <p>
   
-*I denne tab kan man udregne de øvrige kapacitetsomkostninger, man kan udregne det med forskellige ting, her ser vi at den består af løntimer, emballage, lager og maskiner, som der allerede står skrevet ind fordi de er standard. Er omkostninger der ikke står her kan man tilføje nye, og når du har indskrevet alle de omkosntninger der nu skulle være, så kan man klikke "Overfør til resultatopgørelse" for at den udregner og importere summen ind i resultatsopgørelsen.*
+*I denne tab kan man udregne de øvrige kapacitetsomkostninger, man kan udregne det med forskellige ting, her ser vi at den består af løntimer, emballage, lager og maskiner, som der allerede står skrevet ind fordi de er standard. Er omkostninger ikke angivet, kan man tilføje nye selv og når du har indskrevet alle de omkosntninger der nu skulle være, så kan man klikke "Overfør til resultatopgørelse" for at den udregner og importere summen ind i resultatsopgørelsen.*
   
   ![](/assets/ReadmeAssets/kapacitetsomkostninger.png)
   
@@ -186,7 +186,7 @@ Vi er blevet til rådighed til at lave et program, dette program skal kunne hjæ
   
   ![](/assets/ReadmeAssets/displayFunction.png)
   
-*I det sidste billede kan vi se resultaet af alle de tidligere/løbende udregninger der leder op til det endelige resultat.*
+*I det sidste billede kan vi se resultaet af alle de tidligere/løbende udregninger, der leder op til det endelige resultat.*
   
   ![](/assets/ReadmeAssets/displayResultat.png)
   

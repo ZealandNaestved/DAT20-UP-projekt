@@ -102,7 +102,7 @@ Indeholder artefakter, der straks er relateret til Configuration & CM:
 
 <details><summary><strong>08 Project Management</strong></summary> <p>
   
-Alt som projektet indebærer. Blandt andet materiale som tidsregistrering, iterationsplaner, kundemøder og lignende:
+Alt som projektet indebærer administrative opgaver. tidsregistrering, iterationsplaner, kundemøder og lignende:
 
 - Iterationsplan(er) = IP
 - Kundemøder = KM

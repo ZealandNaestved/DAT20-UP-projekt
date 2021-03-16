@@ -24,7 +24,7 @@ Dette er et allerede aftalt program der er specifikt udviklet til de HØK-studer
 
 # Potentielle Salgsmodeller
 
-Havde dette ikke været et skoleprojekt ville man kunne have sælge produktet under følgende salgsmodeller.
+Havde dette ikke været et skoleprojekt ville man kunne have solgt produktet under følgende salgsmodeller.
 
 - Abonnoment
 - Fast Pris

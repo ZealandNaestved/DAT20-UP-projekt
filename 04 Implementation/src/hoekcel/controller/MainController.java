@@ -1,10 +1,10 @@
 package hoekcel.controller;
 
+import hoekcel.controller.errorHandler.InputErrorHandler;
 import hoekcel.validationHandler.InputChecker;
 import hoekcel.model.IncomeStatement;
 import hoekcel.model.IncomeStatementFactory;
 import hoekcel.view.DisplayMode;
-import hoekcel.view.presenters.INOUTFormat;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -20,11 +20,6 @@ public class MainController implements Initializable {
     IncomeStatementFactory incomeStatementFactory;
     IncomeStatement incomeStatement;
     InputChecker inputChecker;
-
-    final String ERROR_HEADER_TEGN = "Du kan ikke bruge tegn.";
-    final String ERROR_MESSAGE_TEGN = "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).";
-    final String ERROR_HEADER_NEGATIV = "Negative tal kan ikke benyttes";
-    final String ERROR_MESSAGE_NEGATIV = "Negative tal kan ikke benyttes. Du skal angive et heltal.";
 
     DisplayMode displayMode = DisplayMode.THOUSANDS;
 
@@ -61,18 +56,18 @@ public class MainController implements Initializable {
 
             if (checkInputOnlydigits(newValue)) {
 
-                showError(ERROR_HEADER_TEGN, ERROR_MESSAGE_TEGN);
+                showError(InputErrorHandler.getHeaderText("tegn"), InputErrorHandler.getMessageText("tegn"));
                 mainText_Om.setText(oldValue);
                 return;
             }
 
             if (checkNegativ(newValue)) {
 
-                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                showError(InputErrorHandler.getHeaderText("negativ"), InputErrorHandler.getMessageText("negativ"));
                 mainText_Om.setText(oldValue);
                 return;
             }
-            incomeStatement.setTurnover(new BigInteger(newValue));
+            incomeStatement.setTurnover(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
 
             if (isFilled(mainText_Vf)) {
 
@@ -84,19 +79,19 @@ public class MainController implements Initializable {
 
             if (checkInputOnlydigits(newValue)) {
 
-                showError(ERROR_HEADER_TEGN, ERROR_MESSAGE_TEGN);
+                showError(InputErrorHandler.getHeaderText("tegn"), InputErrorHandler.getMessageText("tegn"));
                 mainText_Vf.setText(oldValue);
                 return;
             }
 
             if (checkNegativ(newValue)) {
 
-                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                showError(InputErrorHandler.getMessageText("negativ"), InputErrorHandler.getHeaderText("negativ"));
                 mainText_Vf.setText(oldValue);
                 return;
             }
 
-            incomeStatement.setProductConsumption(new BigInteger(newValue));
+            incomeStatement.setProductConsumption(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
             if (isFilled(mainText_Om)) {
 
                 updateBtf();
@@ -106,12 +101,12 @@ public class MainController implements Initializable {
         mainText_Btf.textProperty().addListener((observable, oldValue, newValue) -> {
             if (checkInputOnlydigits(newValue)) {
 
-                showError(ERROR_HEADER_TEGN, ERROR_MESSAGE_TEGN);
+                showError(InputErrorHandler.getHeaderText("tegn"), InputErrorHandler.getMessageText("tegn"));
                 mainText_Btf.setText(oldValue);
                 return;
             }
 
-            incomeStatement.setGrossProfits(new BigInteger(newValue));
+            incomeStatement.setGrossProfits(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
 
             if (isFilled(mainText_Ovkpomk)) {
 
@@ -123,19 +118,19 @@ public class MainController implements Initializable {
 
             if (checkInputOnlydigits(newValue)) {
 
-                showError(ERROR_HEADER_TEGN, ERROR_MESSAGE_TEGN);
+                showError(InputErrorHandler.getHeaderText("tegn"), InputErrorHandler.getMessageText("tegn"));
                 mainText_Mfomk.setText(oldValue);
                 return;
             }
 
             if (checkNegativ(newValue)) {
 
-                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                showError(InputErrorHandler.getMessageText("negativ"), InputErrorHandler.getHeaderText("negativ"));
                 mainText_Mfomk.setText(oldValue);
                 return;
             }
 
-            incomeStatement.setMarketingCost(new BigInteger(newValue));
+            incomeStatement.setMarketingCost(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
 
             if (isFilled(mainText_Btf)) {
 
@@ -147,12 +142,12 @@ public class MainController implements Initializable {
 
             if (checkInputOnlydigits(newValue)) {
 
-                showError(ERROR_HEADER_TEGN, ERROR_MESSAGE_TEGN);
+                showError(InputErrorHandler.getHeaderText("tegn"), InputErrorHandler.getMessageText("tegn"));
                 mainText_Mkbi.setText(oldValue);
                 return;
             }
 
-            incomeStatement.setMarketingContribution(new BigInteger(newValue));
+            incomeStatement.setMarketingContribution(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
 
             if (isFilled(mainText_Ovkpomk)) {
 
@@ -170,11 +165,11 @@ public class MainController implements Initializable {
 
             if (checkNegativ(newValue)) {
 
-                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                showError(InputErrorHandler.getMessageText("negativ"), InputErrorHandler.getHeaderText("negativ"));
                 mainText_Ovkpomk.setText(oldValue);
                 return;
             }
-            incomeStatement.setCapacityCost(new BigInteger(newValue));
+            incomeStatement.setCapacityCost(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
 
             if (isFilled(mainText_Mkbi)) {
 
@@ -190,7 +185,7 @@ public class MainController implements Initializable {
                 return;
             }
 
-            incomeStatement.setEarningsContribution(new BigInteger(newValue));
+            incomeStatement.setEarningsContribution(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
 
             if (isFilled(mainText_Afskr)) {
 
@@ -208,12 +203,12 @@ public class MainController implements Initializable {
 
             if (checkNegativ(newValue)) {
 
-                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                showError(InputErrorHandler.getMessageText("negativ"), InputErrorHandler.getHeaderText("negativ"));
                 mainText_Afskr.setText(oldValue);
                 return;
             }
 
-            incomeStatement.setDepreciations(new BigInteger(newValue));
+            incomeStatement.setDepreciations(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
 
             if (isFilled(mainText_Indtbi)) {
 
@@ -229,7 +224,7 @@ public class MainController implements Initializable {
                 return;
             }
 
-            incomeStatement.setProfitBeforeInterest(new BigInteger(newValue));
+            incomeStatement.setProfitBeforeInterest(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
 
             if (isFilled(mainText_Rntomk)) {
 
@@ -247,12 +242,12 @@ public class MainController implements Initializable {
 
             if (checkNegativ(newValue)) {
 
-                showError(ERROR_HEADER_NEGATIV, ERROR_MESSAGE_NEGATIV);
+                showError(InputErrorHandler.getMessageText("negativ"), InputErrorHandler.getHeaderText("negativ"));
                 mainText_Rntomk.setText(oldValue);
                 return;
             }
 
-            incomeStatement.setInterest(new BigInteger(newValue));
+            incomeStatement.setInterest(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
 
             if (isFilled(mainText_Resfr)) {
 
@@ -288,7 +283,7 @@ public class MainController implements Initializable {
         var grossProfit = incomeStatement.calculateGrossProfit(turnover, productConsumption);
         incomeStatement.setGrossProfits(grossProfit);
 
-        mainText_Btf.setText(INOUTFormat.convertOutput(incomeStatement.getGrossProfits()));
+        mainText_Btf.setText(incomeStatement.getGrossProfits().toString());
     }
 
     private void updateVisRes() {

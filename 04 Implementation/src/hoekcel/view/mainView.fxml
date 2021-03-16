@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane fx:controller="hoekcel.controller.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hoekcel.controller.MainController">
    <children>
       <Label fx:id="mainLabel_Title" layoutX="30.0" layoutY="34.0" text="Resultatopgørelse">
          <font>
@@ -32,8 +27,8 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="mainText_Vf" layoutX="400.0" layoutY="170.0" prefHeight="35.0" prefWidth="160.0" text="0"/>
-      <TextField fx:id="mainText_Btf" layoutX="400.0" layoutY="220.0" prefHeight="35.0" prefWidth="160.0" text="0"/>
+      <TextField fx:id="mainText_Vf" layoutX="400.0" layoutY="170.0" prefHeight="35.0" prefWidth="160.0" text="0" />
+      <TextField fx:id="mainText_Btf" layoutX="400.0" layoutY="220.0" prefHeight="35.0" prefWidth="160.0" text="0" />
       <Label fx:id="mainLabel_Btf" layoutX="30.0" layoutY="220.0" text="Bruttofortjeneste">
          <font>
             <Font name="System Bold" size="16.0" />
@@ -74,20 +69,20 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="mainText_Mfomk" layoutX="400.0" layoutY="270.0" prefHeight="35.0" prefWidth="160.0" text="0"/>
-      <TextField fx:id="mainText_Mkbi" layoutX="400.0" layoutY="320.0" prefHeight="35.0" prefWidth="160.0" text="0"/>
-      <TextField fx:id="mainText_Ovkpomk" layoutX="400.0" layoutY="370.0" prefHeight="35.0" prefWidth="160.0" text="0"/>
-      <TextField fx:id="mainText_Indtbi" layoutX="400.0" layoutY="420.0" prefHeight="35.0" prefWidth="160.0" text="0"/>
-      <TextField fx:id="mainText_Afskr" layoutX="400.0" layoutY="470.0" prefHeight="35.0" prefWidth="160.0" text="0"/>
-      <TextField fx:id="mainText_Resfr" layoutX="400.0" layoutY="520.0" prefHeight="35.0" prefWidth="160.0" text="0"/>
-      <TextField fx:id="mainText_Rntomk" layoutX="400.0" layoutY="570.0" prefHeight="35.0" prefWidth="160.0" text="0"/>
+      <TextField fx:id="mainText_Mfomk" layoutX="400.0" layoutY="270.0" prefHeight="35.0" prefWidth="160.0" text="0" />
+      <TextField fx:id="mainText_Mkbi" layoutX="400.0" layoutY="320.0" prefHeight="35.0" prefWidth="160.0" text="0" />
+      <TextField fx:id="mainText_Ovkpomk" layoutX="400.0" layoutY="370.0" prefHeight="35.0" prefWidth="160.0" text="0" />
+      <TextField fx:id="mainText_Indtbi" layoutX="400.0" layoutY="420.0" prefHeight="35.0" prefWidth="160.0" text="0" />
+      <TextField fx:id="mainText_Afskr" layoutX="400.0" layoutY="470.0" prefHeight="35.0" prefWidth="160.0" text="0" />
+      <TextField fx:id="mainText_Resfr" layoutX="400.0" layoutY="520.0" prefHeight="35.0" prefWidth="160.0" text="0" />
+      <TextField fx:id="mainText_Rntomk" layoutX="400.0" layoutY="570.0" prefHeight="35.0" prefWidth="160.0" text="0" />
       <Label fx:id="mainLabel_ResText" layoutX="30.0" layoutY="630.0" text="Resultat">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="mainLabel_VisRes" layoutX="312.0" layoutY="630.0" prefHeight="32.0" prefWidth="150.0" />
-      <Button fx:id="mainButton_VisBudget" layoutX="30.0" layoutY="736.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="108.0" style="-fx-background-color: #6200EE;" text="Visualiser budget" textFill="WHITE" />
+      <Label fx:id="mainLabel_VisRes" layoutX="405.0" layoutY="630.0" prefHeight="32.0" prefWidth="150.0" />
+      <Button fx:id="mainButton_VisBudget" layoutX="30.0" layoutY="736.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="150.0" style="-fx-background-color: #6200EE;" text="Visualiser budget" textFill="WHITE" />
       <Button fx:id="mainButton_Eksporter" layoutX="410.0" layoutY="736.0" mnemonicParsing="false" style="-fx-background-color: #6200EE;" text="Eksporter" textFill="WHITE">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="25.0" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
@@ -135,7 +130,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="mainButton_GenBudget" layoutX="190.0" layoutY="736.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="170.0" style="-fx-border: none; -fx-background-color: #6200EE;" text="Generer balancebudget" textFill="WHITE">
+      <Button fx:id="mainButton_GenBudget" layoutX="190.0" layoutY="736.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="210.0" style="-fx-border: none; -fx-background-color: #6200EE;" text="Generer balancebudget" textFill="WHITE">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="25.0" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -158,7 +153,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="mainButton_addComment" layoutX="858.0" layoutY="31.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Tilføj kommentarer til resultatopgørelse">
+      <Button fx:id="mainButton_addComment" layoutX="827.0" layoutY="31.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Tilføj kommentarer til resultatopgørelse">
       <graphic>
          <ImageView fitHeight="25" fitWidth="25" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -167,7 +162,7 @@
          </ImageView>
       </graphic>
    </Button>
-      <Button fx:id="mainToggleButton_onAndOff" onAction="#flipDisplayMode" layoutX="658.0" layoutY="31.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Beløb angives i 1000kr.">
+      <Button fx:id="mainToggleButton_onAndOff" layoutX="606.0" layoutY="31.0" mnemonicParsing="false" onAction="#flipDisplayMode" style="-fx-border: none; -fx-background-color: white;" text="Beløb angives i 1000kr.">
          <graphic>
             <ImageView fx:id="toggleImage" fitHeight="25.0" fitWidth="75" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>

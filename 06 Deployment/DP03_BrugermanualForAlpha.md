@@ -2,9 +2,9 @@
 
 <details><summary> <strong>Bruger Interface</strong> </summary> <p>
   
-  *Her ses vores automatiserede ui, siden at programmet er lavet til at hjælpe med at udregne et resultat budget og
-  derfor antager vi at brugeren har kendskab til de forskellige nøgle ord. nøgleord som er et skrevet i fed er
-  selvudregnene, det betyder at så længe du angiver de forhændværende felter som ikke er i fed vil de fede blive udregnet og udfyldt automatisk.*
+  *Her ses vores automatiserede UI, siden at programmet er lavet til at hjælpe med at udregne et resultat budget og
+  derfor antager, vi at brugeren har kendskab til de forskellige nøgle ord. nøgleord som er et skrevet i fed er
+  selvudregnene, det betyder at så længe du angiver de forhændværende felter, som ikke er i fed vil de fede blive udregnet og udfyldt automatisk.*
   
 ![](/assets/ReadmeAssets/fullview.png)
  
@@ -49,11 +49,11 @@
   
 <details><summary> <strong>Kort gennemgang</strong> </summary> <p>
   
-*Det første man ligger mærke til er at der står nogle tomme felter med en "titel" og et felt man kan angive numre i. I dette billede kan vi se at vi har 3 felter som arbejder sammen, en til omsætning, en til vareforbrug og en til bruttofortjenneste. Bruttofortjennesten bliver beregnet på denne måde **"Omsætning - Vareforbrug"** (Næste billede)*
+*Det første man ligger mærke til, er at der står nogle tomme felter med en "titel" og et felt man kan angive numre i. I dette billede kan vi se, at vi har 3 felter som arbejder sammen, en til omsætning, en til vareforbrug og en til bruttofortjenneste. Bruttofortjennesten bliver beregnet på denne måde **"Omsætning - Vareforbrug"** (Næste billede)*
   
   ![](/assets/ReadmeAssets/emptyDisplay.png)
   
-*I det næste billede kan vi se at en bruger har angivet omsætningen og vareforbruget og så har systemet udregnet og vist/præsenteret bruttofortjenesten. Dette forløb sker flere gange, men med andre felter og titler, såsom **"Bruttofortjenesten - Salgsfremmende Omkostninger = Markedsføringsbidrag"** eller **"Markedsføringsbidrag - Kapacitetsomkostninger = Indtjeningsbidrag"**.*
+*I det næste billede kan vi se, at en bruger har angivet omsætningen og vareforbruget og så har systemet udregnet og vist/præsenteret bruttofortjenesten. Dette forløb sker flere gange, men med andre felter og titler, såsom **"Bruttofortjenesten - Salgsfremmende Omkostninger = Markedsføringsbidrag"** eller **"Markedsføringsbidrag - Kapacitetsomkostninger = Indtjeningsbidrag"**.*
   
   ![](/assets/ReadmeAssets/displayFunction.png)
   

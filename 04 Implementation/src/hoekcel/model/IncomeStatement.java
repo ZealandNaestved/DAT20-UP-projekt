@@ -1,6 +1,6 @@
 package hoekcel.model;
 import java.math.BigInteger;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class IncomeStatement {
 
@@ -22,22 +22,22 @@ public class IncomeStatement {
                 System.out.println("key: " + k + "value: " + v));
     }
 
-    public HashMap<Object, Object> getFieldsAndValues() {
+    public LinkedHashMap<Object, Object> getFieldsAndValues() {
 
-        var hashMap = new HashMap<>();
-        hashMap.put("turnover", turnover);
-        hashMap.put("product", productConsumption);
-        hashMap.put("grossProfits", grossProfits);
-        hashMap.put("marketingCost", marketingCost);
-        hashMap.put("marketingControbution", marketingContribution);
-        hashMap.put("capacityCost", capacityCost);
-        hashMap.put("earningsContribution", earningsContribution);
-        hashMap.put("depreciation", profitBeforeInterest);
-        hashMap.put("profitBeforeInterest", profitBeforeInterest);
-        hashMap.put("interest", interest);
-        hashMap.put("result", result);
+        var linkedHashMap = new LinkedHashMap<>();
+        linkedHashMap.put(0, turnover);
+        linkedHashMap.put(1, productConsumption);
+        linkedHashMap.put(2, grossProfits);
+        linkedHashMap.put(3, marketingCost);
+        linkedHashMap.put(4, marketingContribution);
+        linkedHashMap.put(5, capacityCost);
+        linkedHashMap.put(6, earningsContribution);
+        linkedHashMap.put(7, profitBeforeInterest);
+        linkedHashMap.put(8, profitBeforeInterest);
+        linkedHashMap.put(9, interest);
+        linkedHashMap.put(10, result);
 
-        return hashMap;
+        return linkedHashMap;
     }
 
     public BigInteger calculateTurnover(BigInteger amountOfGoods, BigInteger priceOfgood) {

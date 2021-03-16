@@ -3,39 +3,37 @@
 
 2. Tryk ind om budgettet er i “1000 kr” eller ej.
 
-3. Hvis omsætningen er kendt, angiv denne værdi i det tomme felt.
+3. Hvis omsætningen ikke er kendt på forhånd - Tryk på + ikonet.
 
-4. Hvis omsætningen ikke er kendt på forhånd - Tryk på + ikonet.
-
-5. Udfyld de tomme felter med relevante værdier
+4. Udfyld de tomme felter med relevante værdier
    * Værdierne må ikke være negative (Undtaget disse: bruttofortjeneste, markedsførisnbsbidrag, indtjeningsbidrag, renteførresultat) eller med bogstaver.
    * TIP: Hvis faldende eller stigende omsætninger procenter, så hold musen ind over omsætninger feltet og skriv ind antallet af procenter.
 
-6. Angiv vareforbrug i feltet.
+5. Angiv vareforbrug i feltet.
 
-7. Bruttofortjenesten udregnes automatisk. 
+6. Bruttofortjenesten udregnes automatisk. 
 
-8. Angiv markedsføringsomkostninger i feltet.
+7. Angiv markedsføringsomkostninger i feltet.
 
-9. Markedsføringsbidrag udregnes automatisk.
+8. Markedsføringsbidrag udregnes automatisk.
 
-10. Angiv øvrige kapacitetsomkostninger ved at trykke på + ikonet
+9. Hvis øvrige kapacitetsomkostninger ikke er kendt, tryk på + ikonet.
     * på ‘Tilføj ny kapacitetsomkostninger’ og udfyldt felterne 
 
-11. Indtjeningsbidraget udregnes automatisk. 
+10. Indtjeningsbidraget udregnes automatisk. 
 
-12. Hvis afskrivninger ikke er kendt, tryk på + ikonet.
+11. Hvis afskrivninger ikke er kendt, tryk på + ikonet.
     * Udfyld felterne under ‘Lineær afskrivninger’ og ‘Saldometoden’.
 
-13. Resultat før renter beregnes automatisk.
+12. Resultat før renter beregnes automatisk.
 
-14. Angiv renteomkostninger i feltet.
+15. Angiv renteomkostninger i feltet.
 
-15. Resultatet for budgettet præsenteres. 
+16. Resultatet for budgettet præsenteres. 
 
-16. Hvis det ønskes, kan der tilføjes kommentarer til de ønsket nøgleord/felter. 
+17. Hvis det ønskes, kan der tilføjes kommentarer til de ønsket nøgleord/felter. 
 
-17. Eksporter til den relevante filtype.
+18. Eksporter til den relevante filtype.
 
 
 
@@ -54,7 +52,7 @@
 
 <br/>
 
-**Problem**: Bugs (Fejl der ikke skyldes brugeren)
+**Problem**: Bugs (Fejl der ikke skyldes af brugeren)
 * **Løsning**: Kontakt en datamatiker
 
 <br/>

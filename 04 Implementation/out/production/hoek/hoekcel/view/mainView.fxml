@@ -2,8 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -117,7 +115,7 @@
          </graphic>
       </Button>
 
-      <Button fx:id="mainButton_OvrigeKapOmk" layoutX="560.0" layoutY="471.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Udregn øvrige kapacitetomkostninger">
+      <Button fx:id="mainButton_OvrigeKapOmk" layoutX="560.0" layoutY="371.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Udregn øvrige kapacitetomkostninger">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="25.0" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -126,7 +124,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="mainButton_Afskrivninger" layoutX="560.0" layoutY="421.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Udregn afskrivninger">
+      <Button fx:id="mainButton_Afskrivninger" layoutX="560.0" layoutY="471.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Udregn afskrivninger">
          <graphic>
             <ImageView fitHeight="150.0" fitWidth="25.0" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -158,7 +156,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="mainButton_addComment" layoutX="858.0" layoutY="31.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Tilføj kommentarer til resultatopgørelse">
+      <Button fx:id="mainButton_addComment" layoutX="845.0" layoutY="31.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Tilføj kommentarer til resultatopgørelse">
       <graphic>
          <ImageView fitHeight="25" fitWidth="25" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -167,7 +165,7 @@
          </ImageView>
       </graphic>
    </Button>
-      <Button fx:id="mainToggleButton_onAndOff" layoutX="658.0" layoutY="31.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Beløb angives i 1000kr.">
+      <Button fx:id="mainToggleButton_onAndOff" layoutX="618.0" layoutY="31.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Beløb angives i 1000kr.">
          <graphic>
             <ImageView fitHeight="25.0" fitWidth="75" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -176,82 +174,5 @@
             </ImageView>
          </graphic>
       </Button>
-      <AnchorPane fx:id="mod_Om" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: White;">
-         <children>
-            <Label layoutX="80.0" layoutY="72.0" text="Udregn omsætning">
-               <font>
-                  <Font name="System Bold" size="30.0" />
-               </font>
-            </Label>
-            <Label layoutX="1239.0" layoutY="39.0" text="X">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-            <TableView layoutX="137.0" layoutY="166.0" prefHeight="200.0" prefWidth="900.0">
-              <columns>
-                <TableColumn prefWidth="147.0" text="Tilføjede vare" />
-                <TableColumn minWidth="3.0" prefWidth="196.0" text="Afsætning (Enheder)" />
-                  <TableColumn prefWidth="162.0" text="Salgspris (Kr.) " />
-                  <TableColumn prefWidth="394.0" text="Omsætning" />
-              </columns>
-            </TableView>
-            <Label layoutX="139.0" layoutY="424.0" text="Afsætning (Enheder)">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-            <Label layoutX="320.0" layoutY="424.0" text="Salgspris (Kr.)">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-            <TextField layoutX="137.0" layoutY="455.0" prefHeight="33.0" prefWidth="160.0" />
-            <TextField layoutX="320.0" layoutY="455.0" prefHeight="33.0" prefWidth="160.0" />
-            <TextField layoutX="507.0" layoutY="455.0" prefHeight="33.0" prefWidth="160.0" />
-            <Button layoutX="137.0" layoutY="503.0" mnemonicParsing="false" style="-fx-background-color: white; -fx-border-style: none;" text="Tilføj ny vare til omsætningen">
-               <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="75" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../assets/BlackPlus.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Label layoutX="137.0" layoutY="652.0" text="Omsætning samlet">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-            <Label layoutX="1031.0" layoutY="656.0" text="Kr.">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Label>
-            <Button layoutX="1031.0" layoutY="722.0" mnemonicParsing="false" style="-fx-border-style: none; -fx-background-color: #6200EE;" text="Overfør til resultatOpgørelse" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="16.0" />
-               </font>
-            </Button>
-            <Button layoutX="700.0" layoutY="459.0" mnemonicParsing="false" >
-               <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="75" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../assets/Approve.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button layoutX="739.0" layoutY="459.0" mnemonicParsing="false" >
-               <graphic>
-                  <ImageView fitHeight="25.0" fitWidth="75" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../assets/Deny.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-         </children>
-      </AnchorPane>
    </children>
 </AnchorPane>

@@ -156,7 +156,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Button fx:id="mainButton_addComment" layoutX="858.0" layoutY="31.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Tilføj kommentarer til resultatopgørelse">
+      <Button fx:id="mainButton_addComment" layoutX="845.0" layoutY="31.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Tilføj kommentarer til resultatopgørelse">
       <graphic>
          <ImageView fitHeight="25" fitWidth="25" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -165,7 +165,7 @@
          </ImageView>
       </graphic>
    </Button>
-      <Button fx:id="mainToggleButton_onAndOff" layoutX="658.0" layoutY="31.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Beløb angives i 1000kr.">
+      <Button fx:id="mainToggleButton_onAndOff" layoutX="618.0" layoutY="31.0" mnemonicParsing="false" style="-fx-border: none; -fx-background-color: white;" text="Beløb angives i 1000kr.">
          <graphic>
             <ImageView fitHeight="25.0" fitWidth="75" layoutX="1108.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>

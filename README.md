@@ -118,7 +118,14 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
 
 </p>
 </details>
-# Brugervejledning Til Alpha
+
+
+## Vejledning til programmet
+
+
+Vi er blevet til rådighed til at lave et program, dette program skal kunne hjælpe en årgang af handelsøkonomer med at udregne et resultat budget og skulle fungere som en udskiftning til deres normale arbejds miljø, microsoft Excel.
+
+
 
 <details><summary> <strong>Bruger Interface</strong> </summary> <p>
   
@@ -127,9 +134,11 @@ Environment - denne mappe indebærer alt procedure-relateret materiale. Navngivn
   automatisk udregnet, det betyder at så længe du angiver de forhendværende felter, som ikke er i fed vil de fede blive udregnet og udfyldt automatisk.*
   
 ![](/assets/ReadmeAssets/fullview.png)
- *Ud for felterne "Omsætning", "vareforbrug", "øvrige kapacitets omkostninger" og "afskrivninger (linær eller saldometoden)" er der "+" tegn til at hjælpe med at    sætte disse værdier op på en mere detaljeret vis og til at lægge dem sammen inde i interfacen.*
+ 
   </p>
 </details>
+ 
+*Ud for felterne "Omsætning", "vareforbrug", "øvrige kapacitets omkostninger" og "afskrivninger (linær eller saldometoden)" er der "+" tegn til at hjælpe med at    sætte disse værdier op på en mere detaljeret vis og til at lægge dem sammen inde i interfacen.*
  
   <details><summary> <strong>Omsætning</strong> </summary> <p>
   

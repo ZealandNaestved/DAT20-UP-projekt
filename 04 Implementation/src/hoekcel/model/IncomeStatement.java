@@ -21,7 +21,7 @@ public class IncomeStatement {
         incomeStatement.getFieldsAndValues().forEach((k,v)->
                 System.out.println("key: " + k + "value: " + v));
     }
-    ///TIL EXCEL(?) ANDERS
+
     public HashMap<Object, Object> getFieldsAndValues() {
 
         var hashMap = new HashMap<>();

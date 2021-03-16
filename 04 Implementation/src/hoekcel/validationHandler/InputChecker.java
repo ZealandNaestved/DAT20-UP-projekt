@@ -1,4 +1,4 @@
-package hoekcel.inputvalidation;
+package hoekcel.validationHandler;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

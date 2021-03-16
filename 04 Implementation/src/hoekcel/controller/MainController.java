@@ -1,6 +1,6 @@
 package hoekcel.controller;
 
-import hoekcel.inputvalidation.InputChecker;
+import hoekcel.validationHandler.InputChecker;
 import hoekcel.model.IncomeStatement;
 import hoekcel.model.IncomeStatementFactory;
 import hoekcel.view.DisplayMode;
@@ -15,7 +15,7 @@ import java.math.BigInteger;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class MainController implements Initializable {
 
     IncomeStatementFactory incomeStatementFactory;
     IncomeStatement incomeStatement;

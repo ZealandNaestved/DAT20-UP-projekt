@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="mainLabel_Title" layoutX="34.0" layoutY="34.0" text="Resultatopgørelse">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainLabel_kr" layoutX="34.0" layoutY="66.0" text="i 1.000 kr." />
+      <Label fx:id="mainLabel_Om" layoutX="34.0" layoutY="103.0" text="Omsætning">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mainText_Om" layoutX="312.0" layoutY="103.0" />
+      <Label fx:id="mainLabel_Vf" layoutX="32.0" layoutY="133.0" text="Vareforbrug">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mainText_Vf" layoutX="312.0" layoutY="133.0" />
+      <TextField fx:id="mainText_Btf" layoutX="312.0" layoutY="163.0" />
+      <Label fx:id="mainLabel_Btf" layoutX="32.0" layoutY="163.0" text="Bruttofortjeneste">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainLabel_Mfomk" layoutX="32.0" layoutY="193.0" text="Markedsføringsomkostninger">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainLabel_Mkbi" layoutX="32.0" layoutY="223.0" text="Markedsføringsbidrag">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainLabel_Indtbi" layoutX="34.0" layoutY="283.0" text="Indtjeningsbidrag">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainLabel_Resfr" layoutX="34.0" layoutY="343.0" text="Resultat før renter">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainLabel_Afskr" layoutX="34.0" layoutY="313.0" text="Afskrivninger">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainLabel_Ovkpomk" layoutX="34.0" layoutY="253.0" text="Øvrige kapacitetsomkostninger">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainLabel_Rntomk" layoutX="34.0" layoutY="373.0" text="Renteomkostninger">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mainText_Mfomk" layoutX="312.0" layoutY="193.0" />
+      <TextField fx:id="mainText_Mkbi" layoutX="312.0" layoutY="223.0" />
+      <TextField fx:id="mainText_Ovkpomk" layoutX="312.0" layoutY="253.0" />
+      <TextField fx:id="mainText_Indtbi" layoutX="312.0" layoutY="283.0" />
+      <TextField fx:id="mainText_Afskr" layoutX="312.0" layoutY="313.0" />
+      <TextField fx:id="mainText_Resfr" layoutX="312.0" layoutY="343.0" />
+      <TextField fx:id="mainText_Rntomk" layoutX="312.0" layoutY="373.0" />
+      <Label fx:id="mainLabel_ResText" layoutX="34.0" layoutY="430.0" text="Resultat">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="mainLabel_VisRes" layoutX="311.0" layoutY="428.0" prefHeight="32.0" prefWidth="150.0" />
+      <Button fx:id="mainButton_Close" layoutX="737.0" layoutY="34.0" mnemonicParsing="false" text=" X " />
+      <Button fx:id="mainButton_Help" layoutX="667.0" layoutY="34.0" mnemonicParsing="false" text="i   Hjælp" />
+      <Button fx:id="mainButton_addComment" layoutX="570.0" layoutY="34.0" mnemonicParsing="false" text="+ Kommentar" />
+      <ToggleButton fx:id="mainToggleButton_kr" layoutX="497.0" layoutY="34.0" mnemonicParsing="false" text="i 1.000 kr" />
+      <Button fx:id="mainButton_VisBudget" layoutX="34.0" layoutY="546.0" mnemonicParsing="false" text="Visualiser budget" />
+      <Button fx:id="mainButton_GenBudget" layoutX="150.0" layoutY="546.0" mnemonicParsing="false" text="+ Generer balancebudget" />
+      <Button fx:id="mainButton_Eksporter" layoutX="312.0" layoutY="546.0" mnemonicParsing="false" text="Eksporter" />
+      <Button fx:id="mainButton_Oms" layoutX="471.0" layoutY="103.0" mnemonicParsing="false" text="+ Udregn omsætning" />
+      <Button fx:id="mainButton_Vareforbrug" layoutX="471.0" layoutY="133.0" mnemonicParsing="false" text="+ Udregn vareforbrug" />
+      <Button fx:id="mainButton_OvrigeKapOmk" layoutX="471.0" layoutY="253.0" mnemonicParsing="false" text="+ Udregn øvrige kapacitetomkostninger" />
+      <Button fx:id="mainButton_Afskrivninger" layoutX="471.0" layoutY="313.0" mnemonicParsing="false" text="+ Udregn afskrivninger" />
+   </children>
+</AnchorPane>

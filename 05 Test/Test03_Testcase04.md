@@ -6,13 +6,12 @@
 
 **Test Data**
 
-> Omsætning: ""
-> Vareforbrug: "2500"
+> Markedsføringsbidrag: "30120"
+> Øvrige Kapacitetsomkostninger: ""
 
 **Test trin**
 
-> 1. Indtast beregnede omsætning.
-> 2. Indtast vareforbrug.
+> 1. Indtast Øvrige Kapacitetsomkostninger.
 
 **Forventet resultat**
 
@@ -26,13 +25,12 @@
 
 **Test Data**
 
-> Omsætning: "301a20"
-> Vareforbrug: "2500"
+> Markedsføringsbidrag: "301a20"
+> Øvrige Kapacitetsomkostninger: "25a00"
 
 **Test trin**
 
-> 1. Indtaster beregnede omsætning.
-> 2. Indtaster vareforbrug.
+> 1. Indtast Øvrige Kapacitetsomkostninger.
 
 **Forventet resultat**
 
@@ -46,13 +44,12 @@
 
 **Test Data**
 
-> Omsætning: "-30120"
-> Vareforbrug: "2500"
+> Markedsføringsbidrag: "30120"
+> Øvrige Kapacitetsomkostninger: "-2500"
 
 **Test trin**
 
-> 1. Indtaster beregnede omsætning som negativt tal.
-> 2. Indtaster vareforbrug.
+> 1. Indtast Øvrige Kapacitetsomkostninger.
 
 **Forventet resultat**
 

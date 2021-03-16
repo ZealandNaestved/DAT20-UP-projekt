@@ -4,7 +4,7 @@
   
   *Her ses vores automatiserede UI, siden at programmet er lavet til at hjælpe med at udregne et resultat budget og
   derfor antager, vi at brugeren har kendskab til de forskellige nøgleord. Nøgleord som er skrevet i fed bliver
-  automatisk udregnet, det betyder at så længe du angiver de forhændværende felter, som ikke er i fed vil de fede blive udregnet og udfyldt automatisk.*
+  automatisk udregnet, det betyder at så længe du angiver de forhendværende felter, som ikke er i fed vil de fede blive udregnet og udfyldt automatisk.*
   
 ![](/assets/ReadmeAssets/fullview.png)
  

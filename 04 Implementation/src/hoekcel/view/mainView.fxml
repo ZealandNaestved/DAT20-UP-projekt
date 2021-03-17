@@ -26,14 +26,14 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="mainText_Om" layoutX="450.0" layoutY="128.0" prefHeight="35.0" prefWidth="250.0" text="0" />
+      <TextField fx:id="mainText_Om" layoutX="450.0" layoutY="128.0" prefHeight="35.0" prefWidth="250.0" text="" />
       <Label fx:id="mainLabel_Vf" layoutX="30.0" layoutY="170.0" text="Vareforbrug">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="mainText_Vf" layoutX="450.0" layoutY="178.0" prefHeight="35.0" prefWidth="250.0" text="0" />
-      <TextField fx:id="mainText_Btf" layoutX="450.0" layoutY="228.0" prefHeight="35.0" prefWidth="250.0" text="0" />
+      <TextField fx:id="mainText_Vf" layoutX="450.0" layoutY="178.0" prefHeight="35.0" prefWidth="250.0" text="" />
+      <TextField fx:id="mainText_Btf" layoutX="450.0" layoutY="228.0" prefHeight="35.0" prefWidth="250.0" text="" />
       <Label fx:id="mainLabel_Btf" layoutX="30.0" layoutY="220.0" text="Bruttofortjeneste">
          <font>
             <Font name="System Bold" size="16.0" />
@@ -74,13 +74,13 @@
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="mainText_Mfomk" layoutX="450.0" layoutY="278.0" prefHeight="35.0" prefWidth="250.0" text="0" />
-      <TextField fx:id="mainText_Mkbi" layoutX="450.0" layoutY="328.0" prefHeight="35.0" prefWidth="250.0" text="0" />
-      <TextField fx:id="mainText_Ovkpomk" layoutX="450.0" layoutY="378.0" prefHeight="35.0" prefWidth="250.0" text="0" />
-      <TextField fx:id="mainText_Indtbi" layoutX="450.0" layoutY="428.0" prefHeight="35.0" prefWidth="250.0" text="0" />
-      <TextField fx:id="mainText_Afskr" layoutX="450.0" layoutY="478.0" prefHeight="35.0" prefWidth="250.0" text="0" />
-      <TextField fx:id="mainText_Resfr" layoutX="450.0" layoutY="528.0" prefHeight="35.0" prefWidth="250.0" text="0" />
-      <TextField fx:id="mainText_Rntomk" layoutX="450.0" layoutY="578.0" prefHeight="35.0" prefWidth="250.0" text="0" />
+      <TextField fx:id="mainText_Mfomk" layoutX="450.0" layoutY="278.0" prefHeight="35.0" prefWidth="250.0" text="" />
+      <TextField fx:id="mainText_Mkbi" layoutX="450.0" layoutY="328.0" prefHeight="35.0" prefWidth="250.0" text="" />
+      <TextField fx:id="mainText_Ovkpomk" layoutX="450.0" layoutY="378.0" prefHeight="35.0" prefWidth="250.0" text="" />
+      <TextField fx:id="mainText_Indtbi" layoutX="450.0" layoutY="428.0" prefHeight="35.0" prefWidth="250.0" text="" />
+      <TextField fx:id="mainText_Afskr" layoutX="450.0" layoutY="478.0" prefHeight="35.0" prefWidth="250.0" text="" />
+      <TextField fx:id="mainText_Resfr" layoutX="450.0" layoutY="528.0" prefHeight="35.0" prefWidth="250.0" text="" />
+      <TextField fx:id="mainText_Rntomk" layoutX="450.0" layoutY="578.0" prefHeight="35.0" prefWidth="250.0" text="" />
       <Label fx:id="mainLabel_ResText" layoutX="30.0" layoutY="630.0" text="Resultat">
          <font>
             <Font name="System Bold" size="18.0" />

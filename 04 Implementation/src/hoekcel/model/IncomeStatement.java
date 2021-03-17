@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 
 public class IncomeStatement {
 
-    private BigInteger turnover = new BigInteger("0");
+    private BigInteger turnover= new BigInteger("0");
     private BigInteger productConsumption = new BigInteger("0");
     private BigInteger grossProfits = new BigInteger("0");
     private BigInteger marketingCost = new BigInteger("0");

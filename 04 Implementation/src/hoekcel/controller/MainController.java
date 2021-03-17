@@ -19,6 +19,7 @@ import java.math.BigInteger;
 import java.net.URL;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
@@ -57,6 +58,9 @@ public class MainController implements Initializable {
         this.incomeStatementFactory = new IncomeStatementFactory();
         this.incomeStatement = incomeStatementFactory.getIncomeStatement();
         this.inputChecker = new InputValidation();
+
+        var listOfFieldsExceptResult = buildListOfTextFieldsExceptResultField();
+
 
         mainText_Om.textProperty().addListener((observable, oldValue, newValue) -> {
 
@@ -232,7 +236,7 @@ public class MainController implements Initializable {
 
             incomeStatement.setProfitBeforeInterest(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
 
-            if (isFilled(mainText_Rntomk)) {
+            if (isAllFilled(listOfFieldsExceptResult)) {
 
                 updateVisRes();
             }
@@ -256,12 +260,27 @@ public class MainController implements Initializable {
 
             incomeStatement.setInterest(new BigInteger((newValue.isEmpty()) ? "0" : newValue));
 
-            if (isFilled(mainText_Resfr)) {
+            if (isAllFilled(listOfFieldsExceptResult)) {
 
                 updateVisRes();
             }
         });
 
+    }
+
+    private ArrayList<TextField> buildListOfTextFieldsExceptResultField() {
+        var listOfFieldsExceptResult = new ArrayList<TextField>();
+        listOfFieldsExceptResult.add(mainText_Om);
+        listOfFieldsExceptResult.add(mainText_Vf);
+        listOfFieldsExceptResult.add(mainText_Btf);
+        listOfFieldsExceptResult.add(mainText_Mfomk);
+        listOfFieldsExceptResult.add(mainText_Mkbi);
+        listOfFieldsExceptResult.add(mainText_Ovkpomk);
+        listOfFieldsExceptResult.add( mainText_Indtbi);
+        listOfFieldsExceptResult.add(mainText_Afskr);
+        listOfFieldsExceptResult.add(mainText_Resfr);
+        listOfFieldsExceptResult.add(mainText_Rntomk);
+        return listOfFieldsExceptResult;
     }
 
     public void exportToExcel() {
@@ -386,4 +405,17 @@ public class MainController implements Initializable {
     private boolean isFilled(TextField field) {
         return !field.getText().isEmpty();
     }
+    private boolean isAllFilled(ArrayList<TextField> fields) {
+        var isFieldsFilled = true;
+        for (TextField field : fields
+        ) {
+            if(!isFilled(field)){
+                isFieldsFilled = false;
+            }
+        }
+        System.out.println(isFieldsFilled);
+        return isFieldsFilled;
+    }
+
 }
+

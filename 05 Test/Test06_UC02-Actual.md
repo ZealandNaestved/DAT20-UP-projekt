@@ -23,6 +23,7 @@
 **Aktuelt resultat**
 
 > Programmet opdateres/beregner løbende og når feltet forbliver tomt tror programmet at man mener "0" og derfor bliver outputtet = -2500.
+
 > Failed (Kind of).
 
 
@@ -51,6 +52,7 @@
 **Aktuelt resultat**
 
 > Fejl: "Du kan ikke bruge tegn" - "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet)."
+
 > Passed
 
 
@@ -80,6 +82,8 @@
 
 > Fejl: "Negativ tal kan ikke benyttes" - "Negative tal kan ikke benyttes. Du skal angive et heltal."
 
+> Passed
+
 
 
 
@@ -106,6 +110,7 @@
 **Aktuelt resultat**
 
 > "-2500"
+
 > Passed
 
 
@@ -134,4 +139,5 @@
 **Aktuelt resultat**
 
 > "-100"
+
 > Passed

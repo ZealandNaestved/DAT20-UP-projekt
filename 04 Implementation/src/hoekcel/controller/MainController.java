@@ -92,7 +92,7 @@ public class MainController implements Initializable {
 
             if (checkNegativ(newValue)) {
 
-                showError(InputErrorHandler.getMessageText("negativ"), InputErrorHandler.getHeaderText("negativ"));
+                showError(InputErrorHandler.getHeaderText("negativ"), InputErrorHandler.getMessageText("negativ"));
                 mainText_Vf.setText(oldValue);
                 return;
             }
@@ -131,7 +131,7 @@ public class MainController implements Initializable {
 
             if (checkNegativ(newValue)) {
 
-                showError(InputErrorHandler.getMessageText("negativ"), InputErrorHandler.getHeaderText("negativ"));
+                showError(InputErrorHandler.getHeaderText("negativ"), InputErrorHandler.getMessageText("negativ"));
                 mainText_Mfomk.setText(oldValue);
                 return;
             }
@@ -164,14 +164,14 @@ public class MainController implements Initializable {
         mainText_Ovkpomk.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (checkInputOnlydigits(newValue)) {
-
+                showError(InputErrorHandler.getHeaderText("tegn"), InputErrorHandler.getMessageText("tegn"));
                 mainText_Ovkpomk.setText(oldValue);
                 return;
             }
 
             if (checkNegativ(newValue)) {
 
-                showError(InputErrorHandler.getMessageText("negativ"), InputErrorHandler.getHeaderText("negativ"));
+                showError(InputErrorHandler.getHeaderText("negativ"), InputErrorHandler.getMessageText("negativ"));
                 mainText_Ovkpomk.setText(oldValue);
                 return;
             }
@@ -186,7 +186,7 @@ public class MainController implements Initializable {
         mainText_Indtbi.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (checkInputOnlydigits(newValue)) {
-
+                showError(InputErrorHandler.getHeaderText("tegn"), InputErrorHandler.getMessageText("tegn"));
                 mainText_Indtbi.setText(oldValue);
                 return;
             }
@@ -202,14 +202,14 @@ public class MainController implements Initializable {
         mainText_Afskr.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (checkInputOnlydigits(newValue)) {
-
+                showError(InputErrorHandler.getHeaderText("tegn"), InputErrorHandler.getMessageText("tegn"));
                 mainText_Afskr.setText(oldValue);
                 return;
             }
 
             if (checkNegativ(newValue)) {
 
-                showError(InputErrorHandler.getMessageText("negativ"), InputErrorHandler.getHeaderText("negativ"));
+                showError(InputErrorHandler.getHeaderText("negativ"), InputErrorHandler.getMessageText("negativ"));
                 mainText_Afskr.setText(oldValue);
                 return;
             }
@@ -225,7 +225,7 @@ public class MainController implements Initializable {
         mainText_Resfr.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (checkInputOnlydigits(newValue)) {
-
+                showError(InputErrorHandler.getHeaderText("tegn"), InputErrorHandler.getMessageText("tegn"));
                 mainText_Resfr.setText(oldValue);
                 return;
             }
@@ -241,14 +241,14 @@ public class MainController implements Initializable {
         mainText_Rntomk.textProperty().addListener((observable, oldValue, newValue) -> {
 
             if (checkInputOnlydigits(newValue)) {
-
+                showError(InputErrorHandler.getHeaderText("tegn"), InputErrorHandler.getMessageText("tegn"));
                 mainText_Rntomk.setText(oldValue);
                 return;
             }
 
             if (checkNegativ(newValue)) {
 
-                showError(InputErrorHandler.getMessageText("negativ"), InputErrorHandler.getHeaderText("negativ"));
+                showError(InputErrorHandler.getHeaderText("negativ"), InputErrorHandler.getMessageText("negativ"));
                 mainText_Rntomk.setText(oldValue);
                 return;
             }

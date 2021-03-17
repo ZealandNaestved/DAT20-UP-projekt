@@ -13,8 +13,8 @@ public class InputErrorHandler {
 
     public static String getMessageText(String messageName) {
         return switch (messageName.toLowerCase()) {
-            case "tegn" -> "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet).";
-            case "negativ" -> "Negative tal kan ikke benyttes. Du skal angive et heltal.";
+            case "tegn" -> "Du skal angive et heltal uden tegn (tegn kan f.eks. være komma, punktum, procent og meget andet).";
+            case "negativ" -> "Negative tal kan ikke benyttes. Du skal angive et positivt tal.";
             default -> null;
         };
     }

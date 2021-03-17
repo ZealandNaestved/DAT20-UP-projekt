@@ -5,7 +5,7 @@ UseCase navn | Beregn vareforbrug |
 Scope        | HOEK
 Primary Actor| HOEK-studerende
 Level        | User-goal
-Description  | Systemet skal kunne udregne vareforbruget ved at gange købspris med råvarer for hver vare. Resultatet skal herefter præsenteres for de HØK-studerende. 
+Description  | Systemet skal kunne udregne vareforbruget ved at gange købspris med råvarer for hver varetype. Det samlede vareforbrug skal herefter præsenteres for de HØK-studerende. 
 Stakeholders and Interests  | HOEK-studerende
 Preconditions  | UC1 og Købspris og råvarer er kendt.
 Succes Guarantee  | Vareforbruget bliver beregnet og præsenteret.

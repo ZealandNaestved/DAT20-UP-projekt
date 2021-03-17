@@ -246,6 +246,7 @@ public class MainController implements Initializable {
                 return;
             }
 
+
             if (checkNegativ(newValue)) {
 
                 showError(InputErrorHandler.getHeaderText("negativ"), InputErrorHandler.getMessageText("negativ"));

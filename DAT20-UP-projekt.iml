@@ -9,12 +9,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="javafx-sdk-11.0.2" level="application" />
-    <orderEntry type="library" exported="" name="org.junit.jupiter:junit-jupiter:5.5.2" level="application" />
+    <orderEntry type="library" name="javafx-sdk-11.0.2" level="application" />
+    <orderEntry type="library" name="org.junit.jupiter:junit-jupiter:5.5.2" level="application" />
+    <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="org.apache.poi:poi-ooxml:4.1.1" level="project" />
     <orderEntry type="library" name="org.apache.poi:poi:4.1.1" level="project" />
-    <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="library" name="javafx" level="project" />
     <orderEntry type="library" name="javafx" level="project" />
   </component>
 </module>

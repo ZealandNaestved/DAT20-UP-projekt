@@ -38,8 +38,8 @@ public class Excel {
     }
 
     private void generateCells(LinkedHashMap<Object, Object> data) {
-        String[] arr = new String[]{"Omsætning", "Vareforbrug", "Bruttofortjenste", "Reklameomkostninger",
-                "Markedsføringsbidrag", "Kontante kapacitetsomkostninger", "Indtjeningsbidrag", "Afskrivninger",
+        String[] arr = new String[]{"Omsætning", "Vareforbrug", "Bruttofortjenste", "Salgsfremmende omkostninger",
+                "Markedsføringsbidrag", "Øvrige kapacitetsomkostninger", "Indtjeningsbidrag", "Afskrivninger",
                 "Resultat før renter", "Renteomkostninger", "Resultat"};
 
         for (int i = 0; i < data.size(); i++) {

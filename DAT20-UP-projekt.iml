@@ -14,5 +14,6 @@
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="library" name="org.apache.poi:poi-ooxml:4.1.1" level="project" />
     <orderEntry type="library" name="org.apache.poi:poi:4.1.1" level="project" />
+    <orderEntry type="library" name="javafx" level="project" />
   </component>
 </module>

@@ -20,6 +20,14 @@
 
 > Fejlmeddelelse: "Fejl: Udfyld venligst alle felter"
 
+**Aktuelt resultat**
+
+> Programmet opdateres/beregner løbende og når feltet forbliver tomt tror programmet at man mener "0" og derfor bliver outputtet = -2500.
+> Failed (Kind of).
+
+
+
+
 ## Test scenarie 2
 
 **Test scenarie beskrivelse**
@@ -40,6 +48,14 @@
 
 > Fejlmeddelelse: "Fejl: Brug venligst kun tal"
 
+**Aktuelt resultat**
+
+> Fejl: "Du kan ikke bruge tegn" - "Du skal angive et heltal uden tegn (tegn kan f.eks. være kommer, punktum, procent og meget andet)."
+> Passed
+
+
+
+
 ## Test scenarie 3
 
 **Test scenarie beskrivelse**
@@ -59,3 +75,63 @@
 **Forventet resultat**
 
 > Fejlmeddelelse: "Fejl: Omsætning kan kun være positiv"
+
+**Aktuelt resultat**
+
+> Fejl: "Negativ tal kan ikke benyttes" - "Negative tal kan ikke benyttes. Du skal angive et heltal."
+
+
+
+
+## Test scenarie 4
+
+**Test scenarie beskrivelse**
+
+> Indtaster "0". Brugeren bliver vist et negativ resultat.
+
+**Test Data**
+
+> Omsætning: "0"
+> Vareforbrug: "2500"
+
+**Test trin**
+
+> 1. Indtaster beregnede omsætning som negativt tal.
+> 2. Indtaster vareforbrug.
+
+**Forventet resultat**
+
+> "-2500"
+
+**Aktuelt resultat**
+
+> "-2500"
+> Passed
+
+
+
+
+## Test scenarie 5
+
+**Test scenarie beskrivelse**
+
+> Indtaster negative tal. Brugeren bliver vist en fejlmeddelelse.
+
+**Test Data**
+
+> Omsætning: "0100"
+> Vareforbrug: "0200"
+
+**Test trin**
+
+> 1. Indtaster beregnede omsætning som negativt tal.
+> 2. Indtaster vareforbrug.
+
+**Forventet resultat**
+
+> "-100"
+
+**Aktuelt resultat**
+
+> "-100"
+> Passed
